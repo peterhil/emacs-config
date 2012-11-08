@@ -66,7 +66,7 @@
 	   "coffee"
 	   "python"
 	   "php"
-	   ;; "multi-web-mode"
+	   "multi-web-mode"
 	   ;; "cake"
 	   "common-lisp"
 	   ;; "lush"
