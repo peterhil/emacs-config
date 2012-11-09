@@ -43,7 +43,8 @@
 ;; http://www.emacswiki.org/emacs/ErcHighlightNicknames#toc6
 
 (setq erc-nick-color-alist '(("peterhil" . "orange")
-                             ("peterhil`" . "orange")))
+                             ("peterhil`" . "orange")
+			     ("peterhil-" . "orange")))
 
 (defun erc-get-color-for-nick (nick)
   "Gets a color for NICK. If NICK is specified in erc-nick-color-alist, use it, else hash the nick and get a color from that"

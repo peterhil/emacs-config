@@ -48,7 +48,7 @@
 	   "images"
 	   "audio"
 	   "color-theme"
-	   ;; "erc"
+	   "erc"
 	   ;; "textmate"
 
 	   ;; -- Programming tools
@@ -65,6 +65,7 @@
 	   "js"
 	   "coffee"
 	   "python"
+	   "ruby"
 	   "php"
 	   "multi-web-mode"
 	   ;; "cake"

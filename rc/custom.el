@@ -17,6 +17,7 @@
  '(bongo-vlc-interactive nil)
  '(bongo-vlc-program-name "/Applications/_Media/VLC/VLC.app/Contents/MacOS/VLC")
  '(default-frame-alist (quote ((tool-bar-lines . 1) (menu-bar-lines . 1) (cursor-type . box) (vertical-scroll-bars . right) (internal-border-width . 0) (left-fringe . 1) (right-fringe) (fringe) (border-color . "black") (background-color . "white") (foreground-color . "black") (background-mode . light) (mouse-color . "grey15") (cursor-color . "grey15"))))
+ '(erc-modules (quote (autojoin button completion fill irccontrols keep-place list log match menu move-to-prompt netsplit networks noncommands readonly ring services stamp track)))
  '(global-linum-mode t)
  '(ns-tool-bar-display-mode (quote labels) t)
  '(ns-tool-bar-size-mode (quote regular) t)
