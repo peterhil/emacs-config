@@ -13,4 +13,4 @@
 ;; (color-theme-midnight)
 
 ;; (require 'color-theme-solarized)
-;; (color-theme-solarized-dark)
+;; (color-theme-solarized-light)
