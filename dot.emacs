@@ -48,7 +48,7 @@
 	   "images"
 	   "audio"
 	   "color-theme"
-	   "erc"
+	   ;; "erc"
 	   ;; "textmate"
 
 	   ;; -- Programming tools
