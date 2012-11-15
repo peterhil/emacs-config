@@ -48,6 +48,7 @@
 	   "images"
 	   "audio"
 	   "color-theme"
+	   "rainbow-mode"
 	   ;; "erc"
 	   ;; "textmate"
 
@@ -81,3 +82,4 @@
 	   "wikipedia"
 	   ))
   (configure include))
+(configure "rainbow-mode")
