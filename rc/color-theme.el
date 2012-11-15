@@ -8,9 +8,10 @@
 (color-theme-initialize)
 (setq color-theme-is-global t)
 
+(require 'color-theme-solarized)
+(color-theme-solarized-light)
+
 ;; (color-theme-emacs-nw)
 (color-theme-gtk-ide)
 ;; (color-theme-midnight)
 
-;; (require 'color-theme-solarized)
-;; (color-theme-solarized-dark)
