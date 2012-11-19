@@ -20,7 +20,7 @@
  '(erc-modules (quote (autojoin button completion fill irccontrols keep-place list log match menu move-to-prompt netsplit networks noncommands readonly ring services stamp track)))
  '(ecb-options-version "2.40")
  '(global-linum-mode t)
- '(ns-tool-bar-display-mode (quote both) t)
+ '(ns-tool-bar-display-mode (quote labels) t)
  '(ns-tool-bar-size-mode (quote regular) t)
  '(safe-local-variable-values (quote ((Syntax . ANSI-Common-Lisp) (syntax . ANSI-Common-Lisp))))
  '(visual-line-mode nil t))
@@ -31,3 +31,4 @@
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
  )
+

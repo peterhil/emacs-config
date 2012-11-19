@@ -10,7 +10,6 @@
 
 ;; Basic themes
 ;; ------------------------------------------------------------------------------
-
 ;; (color-theme-emacs-nw)
 ;; (color-theme-gtk-ide)
 ;; (color-theme-midnight)
