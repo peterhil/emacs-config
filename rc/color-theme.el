@@ -8,9 +8,26 @@
 (color-theme-initialize)
 (setq color-theme-is-global t)
 
+;; Basic themes
+;; ------------------------------------------------------------------------------
+
 ;; (color-theme-emacs-nw)
-(color-theme-gtk-ide)
+;; (color-theme-gtk-ide)
 ;; (color-theme-midnight)
 
+;; Solarized
+;; ------------------------------------------------------------------------------
 ;; (require 'color-theme-solarized)
-;; (color-theme-solarized-light)
+;; (color-theme-solarized-dark)
+
+;; Almost Monokai
+;; ------------------------------------------------------------------------------
+;; (require 'color-theme-almost-monokai)
+;; (load-file "~/.emacs.d/site-lisp/color-theme-almost-monokai/color-theme-almost-monokai.el")
+;; (color-theme-almost-monokai)
+
+;; Monokai
+;; ------------------------------------------------------------------------------
+;; (load-file "~/.emacs.d/site-lisp/color-theme-monokai/color-theme-monokai.el")
+(require 'color-theme-monokai)
+(color-theme-monokai)
