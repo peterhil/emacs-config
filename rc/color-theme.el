@@ -11,12 +11,12 @@
 ;; Basic themes
 ;; ------------------------------------------------------------------------------
 ;; (color-theme-emacs-nw)
-;; (color-theme-gtk-ide)
+(color-theme-gtk-ide)
 ;; (color-theme-midnight)
 
 ;; Solarized
 ;; ------------------------------------------------------------------------------
-;; (require 'color-theme-solarized)
+(require 'color-theme-solarized)
 ;; (color-theme-solarized-dark)
 
 ;; Almost Monokai
@@ -29,4 +29,4 @@
 ;; ------------------------------------------------------------------------------
 ;; (load-file "~/.emacs.d/site-lisp/color-theme-monokai/color-theme-monokai.el")
 (require 'color-theme-monokai)
-(color-theme-monokai)
+;; (color-theme-monokai)
