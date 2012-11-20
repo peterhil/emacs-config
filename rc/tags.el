@@ -7,5 +7,8 @@
   "Create tags file."
   (interactive "Directory: ")
   (shell-command
-   (format "%s -f %s/TAGS -e -R %s" path-to-ctags dir-name (directory-file-name dir-name))))
+   (format "%s -e --verbose=yes --exclude=cache --exclude='vendor*' --exclude=backups --exclude=node_modules -f %sTAGS -R %s"
+	   path-to-ctags
+	   dir-name
+	   (directory-file-name dir-name))))
 

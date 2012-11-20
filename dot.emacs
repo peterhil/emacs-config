@@ -53,7 +53,7 @@
 	   ;; "textmate"
 
 	   ;; -- Programming tools
-	   ;; "cedet"
+	   "cedet"
 	   "diff"
 	   "git"
 	   "tags"
