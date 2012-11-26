@@ -11,8 +11,9 @@
 ;; Basic themes
 ;; ------------------------------------------------------------------------------
 ;; (color-theme-emacs-nw)
-(color-theme-gtk-ide)
+;; (color-theme-gtk-ide)
 ;; (color-theme-midnight)
+;; (color-theme-jsc-dark)
 
 ;; Solarized
 ;; ------------------------------------------------------------------------------

@@ -39,47 +39,48 @@
   (load-file (concat rc-dir path ".el")))
 
 (dolist (include
-	 '(
-	   "locale"
-	   "editing"
-	   "keyboard-shortcuts"
-	   "dired"
-	   "hex"
-	   "images"
-	   "audio"
-	   "color-theme"
-	   "rainbow-mode"
-	   ;; "erc"
-	   ;; "textmate"
+         '(
+           "locale"
+           "editing"
+           "keyboard-shortcuts"
+           "dired"
+           "hex"
+           "images"
+           "audio"
+           "color-theme"
+           "rainbow-mode"
+           ;; "erc"
+           ;; "textmate"
+           "shell"
 
-	   ;; -- Programming tools
-	   "cedet"
-	   "diff"
-	   "git"
-	   "tags"
-	   "ecb"
-	   "auto-completion"
-	   "yasnippet"
-	   ;; "jira"
+           ;; -- Programming tools
+           "cedet"
+           "diff"
+           "git"
+           "tags"
+           "ecb"
+           "auto-completion"
+           "yasnippet"
+           ;; "jira"
 
-	   ;; -- Languages
-	   "js"
-	   "coffee"
-	   "python"
-	   "ruby"
-	   "php"
-	   "multi-web-mode"
-	   ;; "cake"
-	   "common-lisp"
-	   ;; "lush"
-	   ;; "scheme"
-	   ;; "rebol"
+           ;; -- Languages
+           "js"
+           "coffee"
+           "python"
+           "ruby"
+           "php"
+           "multi-web-mode"
+           ;; "cake"
+           "common-lisp"
+           ;; "lush"
+           ;; "scheme"
+           ;; "rebol"
 
-	   ;; -- Markup
-	   ;; "org"
-	   "html-markup"
-	   "markdown"
-	   "wikipedia"
-	   ))
+           ;; -- Markup
+           ;; "org"
+           "html-markup"
+           "markdown"
+           "wikipedia"
+           ))
   (configure include))
-(configure "rainbow-mode")
+;; (configure "shell")
