@@ -20,7 +20,7 @@
    (c-set-offset 'arglist-intro 'ywb-php-lineup-arglist-intro)
    (c-set-offset 'arglist-close 'ywb-php-lineup-arglist-close)))
 
-;; ;; php-completion
+;; php-completion
 (add-hook 'php-mode-hook
           '(lambda ()
             (require 'php-completion)
@@ -30,7 +30,7 @@
 (add-hook 'php-mode-hook
 	  '(lambda () (define-abbrev php-mode-abbrev-table "ex" "extends")))
 
-;; ;; Cooperation with auto-complete.el:
+;; Cooperation with auto-complete.el:
 (add-hook 'php-mode-hook
 	  '(lambda ()
              (when (require 'auto-complete nil t)
@@ -40,3 +40,10 @@
                ;; use `ac-source-php-completion-patial' instead of `ac-source-php-completion'.
                ;(add-to-list 'ac-sources 'ac-source-php-completion-patial)
                (auto-complete-mode t))))
+
+;; Custom coding standards
+(add-hook 'php-mode-hook
+            (lambda ()
+              (set (make-local-variable 'tab-width) 4)
+              (set (make-local-variable 'c-basic-offset) 4)
+              (set (make-local-variable 'indent-tabs-mode) nil)))
