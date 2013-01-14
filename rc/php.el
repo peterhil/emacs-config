@@ -47,4 +47,5 @@
           (lambda ()
             (set (make-local-variable 'tab-width) 4)
             (set (make-local-variable 'c-basic-offset) 4)
+            (set (make-local-variable 'c-default-style) "bsd")
             (set (make-local-variable 'indent-tabs-mode) nil)))
