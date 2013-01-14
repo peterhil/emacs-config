@@ -8,31 +8,32 @@
 (add-to-list 'auto-mode-alist '("\\.php$" . php-mode))
 (add-to-list 'auto-mode-alist '("\\.inc$" . php-mode))
 
-(add-hook 'php-mode-hook (lambda ()
-   (defun ywb-php-lineup-arglist-intro (langelem)
-     (save-excursion
-       (goto-char (cdr langelem))
-       (vector (+ (current-column) c-basic-offset))))
-   (defun ywb-php-lineup-arglist-close (langelem)
-     (save-excursion
-       (goto-char (cdr langelem))
-       (vector (current-column))))
-   (c-set-offset 'arglist-intro 'ywb-php-lineup-arglist-intro)
-   (c-set-offset 'arglist-close 'ywb-php-lineup-arglist-close)))
+(add-hook 'php-mode-hook
+          (lambda ()
+            (defun ywb-php-lineup-arglist-intro (langelem)
+              (save-excursion
+                (goto-char (cdr langelem))
+                (vector (+ (current-column) c-basic-offset))))
+            (defun ywb-php-lineup-arglist-close (langelem)
+              (save-excursion
+                (goto-char (cdr langelem))
+                (vector (current-column))))
+            (c-set-offset 'arglist-intro 'ywb-php-lineup-arglist-intro)
+            (c-set-offset 'arglist-close 'ywb-php-lineup-arglist-close)))
 
 ;; php-completion
 (add-hook 'php-mode-hook
           '(lambda ()
-            (require 'php-completion)
-            (php-completion-mode t)
-            (define-key php-mode-map (kbd "C-o") 'phpcmp-complete)))
+             (require 'php-completion)
+             (php-completion-mode t)
+             (define-key php-mode-map (kbd "C-o") 'phpcmp-complete)))
 
 (add-hook 'php-mode-hook
-	  '(lambda () (define-abbrev php-mode-abbrev-table "ex" "extends")))
+          '(lambda () (define-abbrev php-mode-abbrev-table "ex" "extends")))
 
 ;; Cooperation with auto-complete.el:
 (add-hook 'php-mode-hook
-	  '(lambda ()
+          '(lambda ()
              (when (require 'auto-complete nil t)
                (make-variable-buffer-local 'ac-sources)
                (add-to-list 'ac-sources 'ac-source-php-completion)
@@ -43,7 +44,7 @@
 
 ;; Custom coding standards
 (add-hook 'php-mode-hook
-            (lambda ()
-              (set (make-local-variable 'tab-width) 4)
-              (set (make-local-variable 'c-basic-offset) 4)
-              (set (make-local-variable 'indent-tabs-mode) nil)))
+          (lambda ()
+            (set (make-local-variable 'tab-width) 4)
+            (set (make-local-variable 'c-basic-offset) 4)
+            (set (make-local-variable 'indent-tabs-mode) nil)))
