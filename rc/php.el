@@ -45,7 +45,6 @@
 ;; Custom coding standards
 (add-hook 'php-mode-hook
           (lambda ()
-            (set (make-local-variable 'tab-width) 4)
-            (set (make-local-variable 'c-basic-offset) 4)
-            (set (make-local-variable 'c-default-style) "bsd")
-            (set (make-local-variable 'indent-tabs-mode) nil)))
+            (setq indent-tabs-mode t)
+            (setq tab-width (default-value 'tab-width))
+            ))

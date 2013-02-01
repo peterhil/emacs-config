@@ -3,7 +3,7 @@
 ;; ------------------------------------------------------------------------------
 
 ;; Whitespace
-                                        ;(require 'whitespace)
+;(require 'whitespace)
 
 ;; Or autoload at least one of the commands`whitespace-mode',
 ;; `whitespace-toggle-options', `global-whitespace-mode' or
@@ -28,4 +28,4 @@
   "Minor mode for editing long lines." t)
 
 ;; Display line numbers in margin (fringe). Emacs 23 only.
-(global-linum-mode 1) ; always show line numbers
+;(global-linum-mode 1) ; always show line numbers

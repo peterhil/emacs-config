@@ -60,6 +60,7 @@
            "tags"
            "ecb"
            "auto-completion"
+           "smart-tabs"
            "yasnippet"
            ;; "jira"
 
@@ -69,7 +70,7 @@
            "python"
            "ruby"
            "php"
-           "multi-web-mode"
+           ;; "multi-web-mode"
            ;; "cake"
            "common-lisp"
            ;; "lush"
