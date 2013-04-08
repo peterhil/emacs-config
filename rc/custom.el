@@ -16,7 +16,6 @@
  '(bongo-mplayer-program-name "mplayer")
  '(bongo-vlc-interactive nil)
  '(bongo-vlc-program-name "/Applications/_Media/VLC/VLC.app/Contents/MacOS/VLC")
- '(c-basic-offset 4)
  '(c-echo-syntactic-information-p t)
  '(c-special-indent-hook (quote (ignore)))
  '(c-tab-always-indent (quote other))
@@ -39,7 +38,8 @@
  '(web-mode-code-indent-offset 4)
  '(web-mode-css-indent-offset 4)
  '(web-mode-markup-indent-offset 4)
- '(yaml-indent-offset 4))
+ '(yaml-indent-offset 4)
+ '(x-select-enable-clipboard t))
 
 
 (custom-set-faces

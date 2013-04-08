@@ -2,9 +2,12 @@
 ;; Javascript
 ;; ------------------------------------------------------------------------------
 
-(autoload 'js2-mode "js2-mode" "Javascript Mode." t)
-(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
+(fset 'prog-mode 'text-mode)
 
+(require 'js2-mode)
+
+(autoload 'js2-mode "js2-mode" "Js2-mode" t)
+(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
 
 ;; ==============================================================================
 ;; Json

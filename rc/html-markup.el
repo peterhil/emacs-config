@@ -29,8 +29,6 @@
              (cons (concat "\\." (regexp-opt '("xml" "xsd" "sch" "rng" "xslt" "svg" "rss") t) "\\'")
                    'nxml-mode))
 
-(unify-8859-on-decoding-mode)
-
 (setq magic-mode-alist
       (cons '("<＼＼?xml " . nxml-mode)
             magic-mode-alist))
@@ -44,10 +42,13 @@
 ;; HTML and SGML options
 ;; ------------------------------------------------------------------------------
 
+(require 'nxhtml-mode)
+
 (add-hook 'sgml-mode-hook
   (lambda ()
     ;; Default indentation, but let SGML mode guess, too.
-    (set (make-local-variable 'sgml-basic-offset) 4)
+    (make-local-variable 'sgml-basic-offset)
+    (setq-default sgml-basic-offset 4)
     (sgml-guess-indent)))
 
 ;; ==============================================================================
@@ -78,6 +79,6 @@
 ;; Custom coding standards
 (add-hook 'web-mode-hook
           (lambda ()
-            (setq indent-tabs-mode t)
+            (setq indent-tabs-mode nil)
             (setq tab-width (default-value 'tab-width))
             ))

@@ -45,6 +45,6 @@
 ;; Custom coding standards
 (add-hook 'php-mode-hook
           (lambda ()
-            (setq indent-tabs-mode t)
+            (setq indent-tabs-mode nil)
             (setq tab-width (default-value 'tab-width))
             ))

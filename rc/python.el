@@ -4,7 +4,7 @@
 
 (autoload 'python-mode "python-mode" "Python Mode." t)
 (add-to-list 'auto-mode-alist '("\\.py\\'" . python-mode))
-(add-to-list 'interpreter-mode-alist '("python" . python-mode))
+;; (add-to-list 'interpreter-mode-alist '("python" . python-mode))
 
 ;; (add-hook 'python-mode-hook 'color-theme-monokai)
 
@@ -37,8 +37,8 @@
   ;; Ropemacs may redefine some standard Emacs and your custom key
   ;; bindings.  To prevent this, put the following example lines to your
   ;; ``~/.emacs`` *before* (pymacs-load "ropemacs" "rope-"):
-  (setq ropemacs-enable-shortcuts nil)
-  (setq ropemacs-local-prefix "C-c C-p"))
+  (setq-default ropemacs-enable-shortcuts nil)
+  (setq-default ropemacs-local-prefix "C-c C-p"))
 
 ;; Note that rope and ropemacs should be in your ``PYTHONPATH`` for this to work.
 ;; (pymacs-load "ropemacs" "rope-")
@@ -56,8 +56,10 @@
   (require 'pymacs)
   (pymacs-load "ropemacs" "rope-")
   ;; Automatically save project python buffers before refactorings
-  (setq ropemacs-confirm-saving 'nil))
+  (setq-default ropemacs-confirm-saving 'nil))
+
+;; Execute ``load-ropemacs`` (or use ``C-x p l``) whenever you want
+;; to use ropemacs.
+
 (global-set-key "\C-xpl" 'load-ropemacs)
 
-;; And execute ``load-ropemacs`` (or use ``C-x p l``) whenever you want
-;; to use ropemacs.

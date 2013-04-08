@@ -2,7 +2,9 @@
 
 ;; C like languages
 
-(setq-default tab-width 4) ; or any other preferred value
+(make-local-variable 'tab-width)
+(setq tab-width (or (default-value 'tab-width) 4))
+
 (setq cua-auto-tabify-rectangles nil)
 
 (defadvice align (around smart-tabs activate)

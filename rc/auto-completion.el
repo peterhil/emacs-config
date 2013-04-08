@@ -7,16 +7,15 @@
 (global-set-key "\M-q" 'ac-start)
 
 (require 'ac-dabbrev)
+(global-set-key '[C-M-tab] 'dabbrev-expand)
 
 ;;; Tips:
 ;;
 ;; Use C-n/C-p to select candidates
 ;; --------------------------------
-;;
-;; Add following code to your .emacs.
 (define-key ac-complete-mode-map "\C-n" 'ac-next)
 (define-key ac-complete-mode-map "\C-p" 'ac-previous)
-;;
+
 ;; Don't start completion automatically
 ;; ------------------------------------
 ;;
@@ -92,9 +91,4 @@
 (require 'smart-tab)
 (global-smart-tab-mode t)
 (global-set-key '[M-tab] 'smart-tab)
-
-(load-library "icicles")
-(require 'icicles)
-
-(global-set-key '[C-M-tab] 'dabbrev-expand)
 

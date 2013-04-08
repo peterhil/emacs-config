@@ -47,41 +47,44 @@
            "hex"
            "images"
            "audio"
-           "color-theme"
-           "rainbow-mode"
            ;; "erc"
            ;; "textmate"
            "shell"
 
            ;; -- Programming tools
-           "cedet"
+           ;; "cedet"
            "diff"
            "git"
            "tags"
-           "ecb"
+           ;; "ecb"
            "auto-completion"
            "smart-tabs"
            "yasnippet"
            ;; "jira"
-
-           ;; -- Languages
-           "js"
-           "coffee"
-           "python"
-           "ruby"
-           "php"
-           ;; "multi-web-mode"
-           ;; "cake"
-           "common-lisp"
-           ;; "lush"
-           ;; "scheme"
-           ;; "rebol"
 
            ;; -- Markup
            ;; "org"
            "html-markup"
            "markdown"
            "wikipedia"
+           ;; "multi-web-mode"
+           ;; "cake"
+           "zencoding"
+
+           ;; -- Languages
+           "common-lisp"
+           ;; "scheme"
+           ;; "lush"
+           "python"
+           "ruby"
+           ;; "rebol"
+           "coffee"
+           "js"
+           "php"
+
+           ;; -- Colors
+           "rainbow-mode"
+           "color-theme"
            ))
   (configure include))
 ;; (configure "shell")
