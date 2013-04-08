@@ -9,6 +9,34 @@
 (autoload 'js2-mode "js2-mode" "Js2-mode" t)
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
 
+(add-to-list 'auto-mode-alist
+             (cons (concat "\\."
+                           (regexp-opt
+                            '(
+                              "js"
+                              "x?html?"
+                              "mustache"
+                              ) t)
+                           "\\'")
+                   'js2-mode))
+
+;; Custom coding standards
+(add-hook 'js-mode-hook
+          (lambda ()
+            (setq indent-tabs-mode t)
+            (setq tab-width (default-value 'tab-width))
+            ))
+
+;; ;; JS2-mode
+
+; (smart-tabs-advice js2-indent-line js2-basic-offset)
+
+;; Custom coding standards
+(add-hook 'js2-mode-hook
+          (lambda ()
+            (setq indent-tabs-mode t)
+            (setq tab-width (default-value 'tab-width))
+            ))
 ;; ==============================================================================
 ;; Json
 ;; ------------------------------------------------------------------------------

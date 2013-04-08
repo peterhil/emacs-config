@@ -46,7 +46,3 @@
 
 (smart-tabs-advice c-indent-line c-basic-offset)
 (smart-tabs-advice c-indent-region c-basic-offset)
-
-;; JS2-mode
-
-(smart-tabs-advice js2-indent-line js2-basic-offset)

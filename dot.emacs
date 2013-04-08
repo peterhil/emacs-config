@@ -88,3 +88,5 @@
            ))
   (configure include))
 ;; (configure "shell")
+
+(put 'downcase-region 'disabled nil)

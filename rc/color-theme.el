@@ -22,6 +22,6 @@
 
 ;; Monokai
 ;; ------------------------------------------------------------------------------
-;; (load-file "~/.emacs.d/site-lisp/color-theme-monokai/color-theme-monokai.el")
+(load-file "~/.emacs.d/site-lisp/color-theme-monokai/color-theme-monokai.el")
 (require 'color-theme-monokai)
 (color-theme-monokai)
