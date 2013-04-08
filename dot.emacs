@@ -62,15 +62,6 @@
            "yasnippet"
            ;; "jira"
 
-           ;; -- Markup
-           ;; "org"
-           "html-markup"
-           "markdown"
-           "wikipedia"
-           ;; "multi-web-mode"
-           ;; "cake"
-           "zencoding"
-
            ;; -- Languages
            "common-lisp"
            ;; "scheme"
@@ -81,6 +72,15 @@
            "coffee"
            "js"
            "php"
+
+           ;; -- Markup
+           ;; "org"
+           "html-markup" ; Keep after php.el
+           "markdown"
+           "wikipedia"
+           ;; "multi-web-mode"
+           ;; "cake"
+           "zencoding"
 
            ;; -- Colors
            "rainbow-mode"
