@@ -88,4 +88,4 @@
   "Minor mode for editing long lines." t)
 
 ;; Display line numbers in margin (fringe). Emacs 23 only.
-;(global-linum-mode 1) ; always show line numbers
+(global-linum-mode 1) ; always show line numbers
