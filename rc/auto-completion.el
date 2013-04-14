@@ -83,12 +83,3 @@
 ;;     (add-hook 'emacs-lisp-mode-hook
 ;;                 (lambda ()
 ;;                   (setq ac-sources '(ac-source-words-in-buffer ac-source-symbols))))
-
-;; ==============================================================================
-;; Tab completion (smart-tab & icicles)
-;; ------------------------------------------------------------------------------
-
-(require 'smart-tab)
-(global-smart-tab-mode t)
-(global-set-key '[M-tab] 'smart-tab)
-

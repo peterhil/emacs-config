@@ -23,7 +23,7 @@
  '(color-theme-is-cumulative t)
  '(current-language-environment "UTF-8")
  '(debug-on-error t)
- '(default-frame-alist (quote ((tool-bar-lines . 0) (menu-bar-lines . 1) (border-color . "#0f0f0f") (foreground-color . "#F8F8F2") (background-color . "#272822") (background-mode . dark) (cursor-color . "#73d216") (mouse-color . "#73d216") (left-fringe) (right-fringe))))
+ '(default-frame-alist (quote ((right-fringe . 0) (left-fringe) (border-color . "#0f0f0f") (menu-bar-lines . 1) (tool-bar-lines . 0) (foreground-color . "#F8F8F2") (background-color . "#272822") (background-mode . dark) (cursor-color . "#73d216") (mouse-color . "#73d216"))))
  '(default-input-method "finnish-keyboard")
  '(ecb-options-version "2.40")
  '(ecb-tree-stickynode-indent-string " ")
