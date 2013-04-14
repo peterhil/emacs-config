@@ -23,6 +23,7 @@
     (dired-do-async-shell-command
      my-open-command current-prefix-arg
      (dired-get-marked-files t current-prefix-arg))))
+
 (define-key dired-mode-map (kbd "<S-M-o>") 'dired-do-shell-launch-file-default)
 
 ;; Unmount a disk in dired
@@ -30,8 +31,14 @@
 (defun dired-do-shell-unmount-device ()
   (interactive)
   (save-window-excursion
-    (dired-do-async-shell-command
-     "umount" current-prefix-arg ;; linux
-     ;; "diskutil unmount" current-prefix-arg ;; mac os x
-     (dired-get-marked-files t current-prefix-arg))))
+    (let ((umount (cond ((eq system-type "linux") "umount")
+                        ((eq system-type "darwin") "diskutil unmount"))))
+      (dired-do-async-shell-command umount current-prefix-arg
+                                    (dired-get-marked-files t current-prefix-arg)))))
+
 (define-key dired-mode-map (kbd "s-u") 'dired-do-shell-unmount-device)
+
+(add-hook 'dired-mode-hook
+ (lambda ()
+   (define-key dired-mode-map (kbd "^")  ; was dired-up-directory
+     (lambda () (interactive) (find-alternate-file "..")))))
