@@ -10,13 +10,13 @@
 (require 'less-css-mode)
 (add-to-list 'auto-mode-alist '("\\.less\\'" . less-css-mode))
 
-(add-hook 'less-css-mode-hook
-          (lambda ()
-	    (rainbow-mode t)))
+;; (add-hook 'less-css-mode-hook
+;;           (lambda ()
+;; 	    (rainbow-mode t)))
 
-(add-hook 'css-mode-hook
-          (lambda ()
-	    (rainbow-mode t)))
+;; (add-hook 'css-mode-hook
+;;           (lambda ()
+;; 	    (rainbow-mode t)))
 
 ;; ==============================================================================
 ;; nXhtml - package (includes php-mode and LOTS of other stuff)
@@ -60,8 +60,7 @@
     (make-local-variable 'sgml-basic-offset)
     (setq-default sgml-basic-offset 4)
     (sgml-guess-indent)
-	;; (use-tabs t)
-	))
+    ))
 
 ;; ==============================================================================
 ;; Web mode -- https://github.com/fxbois/web-mode
@@ -69,24 +68,24 @@
 
 (require 'web-mode)
 
-(add-to-list 'auto-mode-alist '("\\.phtml$" . web-mode))
+;(add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
 
-(add-to-list 'auto-mode-alist
-             (cons (concat "\\."
-                           (regexp-opt
-                            '(
-                              "php[3-5]?"
-                              "phtml"
-                              "x?html?"
-                              "tpl\\.php"
-                              "jsp"
-                              "as[cp]x"
-                              "erb"
-                              "mustache"
-                              "ctp"
-                              ) t)
-                           "\\'")
-                   'web-mode))
+;; (add-to-list 'auto-mode-alist
+;;              (cons (concat "\\."
+;;                            (regexp-opt
+;;                             '(
+;;                               "php[3-5]?"
+;;                               "phtml"
+;;                               "x?html?"
+;;                               "tpl\\.php"
+;;                               "jsp"
+;;                               "as[cp]x"
+;;                               "erb"
+;;                               "mustache"
+;;                               "ctp"
+;;                               ) t)
+;;                            "\\'")
+;;                    'web-mode))
 
 ; The matching is done on the path. You can alo configure like this if your templates are stored in a subdirectory called views, html or templates.
-(add-to-list 'auto-mode-alist '("/\\(views\\|html\\|templates\\)/.*\\.\\(php\\|html\\)\\'" . web-mode))
+;(add-to-list 'auto-mode-alist '("/\\(views\\|html\\|templates\\)/.*\\.\\(php\\|html\\)\\'" . web-mode))

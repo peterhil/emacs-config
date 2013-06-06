@@ -54,13 +54,17 @@
            ;; -- Programming tools
            ;; "cedet"
            "diff"
-           "git"
+           ;; "git"
            "tags"
            ;; "ecb"
            "auto-completion"
            "smart-tabs"
            "yasnippet"
            ;; "jira"
+
+           ;; -- Colors
+           "rainbow-mode"
+           "color-theme"
 
            ;; -- Languages
            "common-lisp"
@@ -81,12 +85,8 @@
            ;; "multi-web-mode"
            ;; "cake"
            "zencoding"
-
-           ;; -- Colors
-           "rainbow-mode"
-           "color-theme"
            ))
   (configure include))
-;; (configure "shell")
+;; (configure "html-markup")
 
 (put 'downcase-region 'disabled nil)
