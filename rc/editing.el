@@ -45,6 +45,9 @@
 
 (global-set-key (kbd "<f5>") 'copy-buffer-dir)
 
+(global-set-key (kbd "H-l f") 'forward-page)
+(global-set-key (kbd "H-l b") 'backward-page)
+
 
 ;; ==============================================================================
 ;; Whitespace

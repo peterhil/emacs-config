@@ -3,10 +3,12 @@
 ;; ------------------------------------------------------------------------------
 
 (require 'auto-complete)
-(auto-complete-mode t)
+(global-auto-complete-mode t)
+
 (global-set-key "\M-q" 'ac-start)
 
 (require 'ac-dabbrev)
+
 (global-set-key '[C-M-tab] 'dabbrev-expand)
 
 ;;; Tips:
@@ -25,6 +27,7 @@
 ;; or
 ;;     ;; start completion when entered 3 characters
 ;;     (setq ac-auto-start 3)
+(setq ac-auto-start 3)
 
 ;;
 ;; Stop completion

@@ -12,4 +12,4 @@
                   (css-mode "<style +type=\"text/css\"[^>]*>" "</style>"))
       )
 (setq mweb-filename-extensions '("php[3-5]?" "twig" "(p\\|x)?html?" "ctp"))
-;; (multi-web-global-mode t)
+(multi-web-global-mode t)

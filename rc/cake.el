@@ -11,7 +11,7 @@
 ;; If you use default key map, Put the following expression into your ~/.emacs.
 (cake-set-default-keymap)
 
-(add-to-list 'auto-mode-alist '("\\.ctp$" . php-mode))
+(add-to-list 'auto-mode-alist '("\\.ctp\\'" . php-mode))
 
 ;; ------------------------------------------------------------------------------
 ;; Cake auto-complete

@@ -1,10 +1,5 @@
 ;; See http://www.emacswiki.org/SmartTabs
 
-;; C like languages
-
-(make-local-variable 'tab-width)
-(setq tab-width (or (default-value 'tab-width) 4))
-
 (setq cua-auto-tabify-rectangles nil)
 
 (defadvice align (around smart-tabs activate)

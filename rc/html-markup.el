@@ -2,17 +2,21 @@
 ;; Markup
 ;; ------------------------------------------------------------------------------
 
+(require 'jinja2-mode)
+
 (require 'yaml-mode)
-(add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
+(add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
 
 (require 'less-css-mode)
-(add-to-list 'auto-mode-alist '("\\.less$" . less-css-mode))
+(add-to-list 'auto-mode-alist '("\\.less\\'" . less-css-mode))
 
 (add-hook 'less-css-mode-hook
           (lambda ()
-            (setq indent-tabs-mode t)
-            (setq tab-width (default-value 'tab-width))
-            ))
+			(rainbow-mode t)))
+
+(add-hook 'css-mode-hook
+          (lambda ()
+			(rainbow-mode t)))
 
 ;; ==============================================================================
 ;; nXhtml - package (includes php-mode and LOTS of other stuff)
@@ -56,14 +60,17 @@
     (make-local-variable 'sgml-basic-offset)
     (setq-default sgml-basic-offset 4)
     (sgml-guess-indent)
-    ;; Use tabs
-    (setq indent-tabs-mode t)))
+	;; (use-tabs t)
+	))
 
 ;; ==============================================================================
 ;; Web mode -- https://github.com/fxbois/web-mode
 ;; ------------------------------------------------------------------------------
 
 (require 'web-mode)
+
+(add-to-list 'auto-mode-alist '("\\.phtml$" . web-mode))
+
 (add-to-list 'auto-mode-alist
              (cons (concat "\\."
                            (regexp-opt
@@ -82,11 +89,4 @@
                    'web-mode))
 
 ; The matching is done on the path. You can alo configure like this if your templates are stored in a subdirectory called views, html or templates.
-;(add-to-list 'auto-mode-alist '("/\\(views\\|html\\|templates\\)/.*\\.php\\'" . web-mode))
-
-;; Custom coding standards
-(add-hook 'web-mode-hook
-          (lambda ()
-            (setq indent-tabs-mode nil)
-            (setq tab-width (default-value 'tab-width))
-            ))
+(add-to-list 'auto-mode-alist '("/\\(views\\|html\\|templates\\)/.*\\.\\(php\\|html\\)\\'" . web-mode))

@@ -5,8 +5,7 @@
 (require 'php-mode)
 (autoload 'php-mode "php-mode" "Major mode for editing php code." t)
 
-(add-to-list 'auto-mode-alist '("\\.php$" . php-mode))
-(add-to-list 'auto-mode-alist '("\\.inc$" . php-mode))
+(add-to-list 'auto-mode-alist '("\\.php\\'" . php-mode))
 
 (add-hook 'php-mode-hook
           (lambda ()
@@ -42,9 +41,15 @@
                ;(add-to-list 'ac-sources 'ac-source-php-completion-patial)
                (auto-complete-mode t))))
 
-;; Custom coding standards
-(add-hook 'php-mode-hook
-          (lambda ()
-            (setq indent-tabs-mode nil)
-            (setq tab-width (default-value 'tab-width))
-            ))
+
+
+;; Project-specific Indentation Configuration
+;; http://www.emacswiki.org/emacs/IndentationBasics#toc4
+
+;; The 'nil' configuration applies to all modes.
+;; ((nil . ((indent-tabs-mode . t)
+;; 				 (tab-width . 4)
+;; 				 (eval . (highlight-regexp "^ *"))))
+;; Highlight leading space characters in specific modes.
+;; (web-mode . ((eval . (highlight-regexp "^ *"))))
+;; )

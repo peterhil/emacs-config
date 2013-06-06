@@ -42,7 +42,7 @@
 ;; ------------------------------------------------------------------------------
 
 (autoload 'json-mode "json-mode" "JSON Mode." t)
-(add-to-list 'auto-mode-alist '("\\.json$" . json-mode))
+(add-to-list 'auto-mode-alist '("\\.json\\'" . json-mode))
 
 
 ;; ==============================================================================
