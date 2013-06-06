@@ -12,11 +12,11 @@
 
 (add-hook 'less-css-mode-hook
           (lambda ()
-			(rainbow-mode t)))
+	    (rainbow-mode t)))
 
 (add-hook 'css-mode-hook
           (lambda ()
-			(rainbow-mode t)))
+	    (rainbow-mode t)))
 
 ;; ==============================================================================
 ;; nXhtml - package (includes php-mode and LOTS of other stuff)
