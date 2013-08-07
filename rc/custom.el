@@ -8,7 +8,7 @@
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
  '(aquamacs-additional-fontsets nil t)
- '(aquamacs-customization-version-id 215 t)
+ '(aquamacs-customization-version-id 216 t)
  '(aquamacs-tool-bar-user-customization nil t)
  '(bongo-enabled-backends (quote (mpg123 vlc mplayer speexdec)))
  '(bongo-mplayer-extra-arguments (quote ("-fs")))
@@ -54,5 +54,5 @@
   ;; If you edit it by hand, you could mess it up, so be careful.
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
- )
+ '(html-mode-default ((t (:inherit sgml-mode-default :height 120 :family "Monaco"))) t))
 
