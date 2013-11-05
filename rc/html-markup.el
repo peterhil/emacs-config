@@ -4,10 +4,12 @@
 
 (require 'jinja2-mode)
 
-(require 'yaml-mode)
+;; (require 'yaml-mode)
+(autoload 'yaml-mode "yaml-mode" "YAML mode." t)
 (add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
 
-(require 'less-css-mode)
+;; (require 'less-css-mode)
+(autoload 'less-css-mode "less-css-mode" "Less CSS mode." t)
 (add-to-list 'auto-mode-alist '("\\.less\\'" . less-css-mode))
 
 ;; (add-hook 'less-css-mode-hook
