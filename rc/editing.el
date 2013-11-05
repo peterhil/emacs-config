@@ -53,6 +53,16 @@
 ;; Whitespace
 ;; ------------------------------------------------------------------------------
 
+;; Fuzzy whitespace format (tabs or spaces)
+;; ------------------------------------------------------------------------------
+
+(require 'fuzzy-format)
+(setq fuzzy-format-default-indent-tabs-mode nil)
+(global-fuzzy-format-mode t)
+
+;; Whitespace mode
+;; ------------------------------------------------------------------------------
+
 ;; (require 'whitespace)
 
 ;; Or autoload at least one of the commands:
