@@ -2,7 +2,7 @@
 ;; PHP mode
 ;; ------------------------------------------------------------------------------
 
-(require 'php-mode)
+;; (require 'php-mode)
 (autoload 'php-mode "php-mode" "Major mode for editing php code." t)
 
 (add-to-list 'auto-mode-alist '("\\.php\\'" . php-mode))
@@ -41,6 +41,12 @@
                ;(add-to-list 'ac-sources 'ac-source-php-completion-patial)
                (auto-complete-mode t))))
 
+;; Use tabs
+(add-hook 'php-mode-hook
+          '(lambda ()
+             (set (make-local-variable 'tab-width) 4)
+              (set (make-local-variable 'c-basic-offset) 4)
+              (set (make-local-variable 'indent-tabs-mode) t)))
 
 
 ;; Project-specific Indentation Configuration

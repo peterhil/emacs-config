@@ -37,40 +37,43 @@
 ;; (set 'nxml-path "/opt/local/share/emacs/23.3/lisp/nxml/")
 ;; (load (concat nxml-path "rng-auto.el"))
 
-(add-to-list 'auto-mode-alist
-             (cons (concat "\\." (regexp-opt '("xml" "xsd" "sch" "rng" "xslt" "svg" "rss") t) "\\'")
-                   'nxml-mode))
+;; (add-to-list 'auto-mode-alist
+;;              (cons (concat "\\." (regexp-opt '("xml" "xsd" "sch" "rng" "xslt" "svg" "rss") t) "\\'")
+;;                    'nxml-mode))
 
-(setq magic-mode-alist
-      (cons '("<\\?xml " . nxml-mode)
-            magic-mode-alist))
+;; (setq magic-mode-alist
+;;       (cons '("<\\?xml " . nxml-mode)
+;;             magic-mode-alist))
 
-(fset 'xml-mode 'nxml-mode)
+;; (fset 'xml-mode 'nxml-mode)
 
 ;; Use following if you would like to edit html files in nxml-mode.
 ; (fset 'html-mode 'nxml-mode)
+
 
 ;; ==============================================================================
 ;; HTML and SGML options
 ;; ------------------------------------------------------------------------------
 
-(require 'nxhtml-mode)
+(autoload 'nxhtml-mode "nxhtml-mode" "nXHTML mode." t)
+;; (require 'nxhtml-mode)
 
 (add-hook 'sgml-mode-hook
   (lambda ()
     ;; Default indentation, but let SGML mode guess, too.
-    (make-local-variable 'sgml-basic-offset)
-    (setq-default sgml-basic-offset 4)
+    (set (make-local-variable 'sgml-basic-offset) 4)
     (sgml-guess-indent)
     ))
+
 
 ;; ==============================================================================
 ;; Web mode -- https://github.com/fxbois/web-mode
 ;; ------------------------------------------------------------------------------
 
-(require 'web-mode)
+;; (require 'web-mode)
 
-;(add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
+(autoload 'web-mode "web-mode" "Web mode." t)
+;(add-to-list 'auto-mode-alist '("\\.phtml\\'" . php-mode))
 
 ;; (add-to-list 'auto-mode-alist
 ;;              (cons (concat "\\."
