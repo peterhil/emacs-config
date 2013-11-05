@@ -68,6 +68,7 @@
 
            ;; -- Languages
            "common-lisp"
+           "haskell"
            ;; "scheme"
            ;; "lush"
            "python"
