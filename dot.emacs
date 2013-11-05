@@ -77,6 +77,7 @@
            "coffee"
            "js"
            "php"
+           "d"
 
            ;; -- Markup
            ;; "org"
