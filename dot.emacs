@@ -84,7 +84,7 @@
            "html-markup" ; Keep after php.el
            "markdown"
            "wikipedia"
-           ;; "multi-web-mode"
+           "multi-web-mode"
            ;; "cake"
            "zencoding"
            ))
