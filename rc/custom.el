@@ -8,7 +8,7 @@
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
  '(aquamacs-additional-fontsets nil t)
- '(aquamacs-customization-version-id 215 t)
+ '(aquamacs-customization-version-id 216 t)
  '(aquamacs-tool-bar-user-customization nil t)
  '(better-fringes-mode t)
  '(bongo-enabled-backends (quote (mpg123 vlc mplayer speexdec)))
@@ -23,7 +23,7 @@
  '(color-theme-is-cumulative t)
  '(current-language-environment "UTF-8")
  '(debug-on-error t)
- '(default-frame-alist (quote ((right-fringe . 0) (left-fringe) (border-color . "#0f0f0f") (menu-bar-lines . 1) (tool-bar-lines . 0) (foreground-color . "#F8F8F2") (background-color . "#272822") (background-mode . dark) (cursor-color . "#73d216") (mouse-color . "#73d216"))))
+ '(default-frame-alist (quote ((font-backend ns) (fontsize . 0) (menu-bar-lines . 1) (tool-bar-lines . 0) (border-color . "#0f0f0f") (modeline . t) (foreground-color . "#F8F8F2") (background-color . "#272727") (background-mode . dark) (cursor-color . "#73d216") (mouse-color . "#73d216") (left-fringe) (right-fringe . 0))))
  '(default-input-method "finnish-keyboard")
  '(ecb-options-version "2.40")
  '(ecb-tree-stickynode-indent-string " ")
