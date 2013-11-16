@@ -38,6 +38,8 @@
  '(mweb-submode-indent-offset 4)
  '(ns-tool-bar-display-mode (quote labels) t)
  '(ns-tool-bar-size-mode (quote regular) t)
+ '(nxml-child-indent 4)
+ '(nxml-outline-child-indent 4)
  '(safe-local-variable-values (quote ((Syntax . ANSI-Common-Lisp) (syntax . ANSI-Common-Lisp))))
  '(save-place t nil (saveplace))
  '(semantic-stickyfunc-indent-string " ")
