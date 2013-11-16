@@ -42,6 +42,7 @@
  '(save-place t nil (saveplace))
  '(semantic-stickyfunc-indent-string " ")
  '(size-indication-mode t)
+ '(split-width-threshold 240)
  '(tab-always-indent t)
  '(tab-width 4)
  '(text-mode-hook (quote (turn-on-auto-fill text-mode-hook-identify)))
