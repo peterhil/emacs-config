@@ -30,7 +30,7 @@
  '(ecb-tree-stickynode-indent-string " ")
  '(emulate-mac-finnish-keyboard-mode t)
  '(erc-modules (quote (autojoin button completion fill irccontrols keep-place list log match menu move-to-prompt netsplit networks noncommands readonly ring services stamp track)))
- '(fill-column 160)
+ '(fill-column 78)
  '(fringe-mode (quote (nil . 0)) nil (fringe))
  '(global-linum-mode t)
  '(indent-tabs-mode nil)
