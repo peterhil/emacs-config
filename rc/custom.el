@@ -25,6 +25,7 @@
  '(debug-on-error t)
  '(default-frame-alist (quote ((font-backend ns) (fontsize . 0) (menu-bar-lines . 1) (tool-bar-lines . 0) (border-color . "#0f0f0f") (modeline . t) (foreground-color . "#F8F8F2") (background-color . "#272727") (background-mode . dark) (cursor-color . "#73d216") (mouse-color . "#73d216") (left-fringe) (right-fringe . 0))))
  '(default-input-method "finnish-keyboard")
+ '(dired-auto-revert-buffer (quote dired-directory-changed-p))
  '(ecb-options-version "2.40")
  '(ecb-tree-stickynode-indent-string " ")
  '(emulate-mac-finnish-keyboard-mode t)
