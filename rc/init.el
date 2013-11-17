@@ -28,12 +28,16 @@
 
            ;; -- Markup
            ;; "org"
-           "html-markup"
            "markdown"
            "wikipedia"
            ;; "multi-web-mode"
            ;; "cake"
            "zencoding"
+           "html-markup"
+
+           ;; -- Colors
+           "rainbow-mode"
+           "color-theme"
 
            ;; -- Languages
            "common-lisp"
@@ -42,13 +46,9 @@
            "python"
            "ruby"
            ;; "rebol"
+           "php"
            "coffee"
            "js"
-           "php"
-
-           ;; -- Colors
-           "rainbow-mode"
-           "color-theme"
            ))
   (configure include))
 ;; (configure "shell")
