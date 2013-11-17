@@ -1,4 +1,14 @@
-;; See http://www.emacswiki.org/SmartTabs
+;; ==============================================================================
+;; Tab completion (SmartTab & Icicles)
+;; http://www.emacswiki.org/SmartTabs
+;; ------------------------------------------------------------------------------
+
+(require 'smart-tab)
+(global-smart-tab-mode t)
+(global-set-key '[C-tab] 'smart-tab)
+
+
+
 
 ;; C like languages
 

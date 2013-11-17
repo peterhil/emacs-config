@@ -3,16 +3,21 @@
 ;; ------------------------------------------------------------------------------
 
 (require 'yaml-mode)
-(add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
+(add-to-list 'auto-mode-alist '("\\.ya\\?ml\\'" . yaml-mode))
 
 (require 'less-css-mode)
-(add-to-list 'auto-mode-alist '("\\.less$" . less-css-mode))
+(add-to-list 'auto-mode-alist '("\\.less\\'" . less-css-mode))
 
 ;; ==============================================================================
 ;; nXhtml - package (includes php-mode and LOTS of other stuff)
 ;; ------------------------------------------------------------------------------
 
-; (load "~/.emacs.d/site-lisp/nxhtml/autostart")
+;; (load "~/.emacs.d/site-lisp/nxhtml/autostart")
+
+; FIXME Workaround for bug #663737: https://bugs.launchpad.net/nxhtml/+bug/663737
+;; (if (boundp 'image-types)
+;;     nil
+;;     (defvar image-types nil))
 
 ;; ==============================================================================
 ;; nXml
@@ -25,12 +30,22 @@
 ;; (set 'nxml-path "/opt/local/share/emacs/23.3/lisp/nxml/")
 ;; (load (concat nxml-path "rng-auto.el"))
 
-(add-to-list 'auto-mode-alist
-             (cons (concat "\\." (regexp-opt '("xml" "xsd" "sch" "rng" "xslt" "svg" "rss") t) "\\'")
-                   'nxml-mode))
+(require 'nxml-mode)
+(setq auto-mode-alist
+      (append
+       '(
+         ("\\.xml\\'" . nxml-mode)
+         ("\\.xsd\\'" . nxml-mode)
+         ("\\.sch\\'" . nxml-mode)
+         ("\\.rng\\'" . nxml-mode)
+         ("\\.xslt\\'" . nxml-mode)
+         ("\\.svg\\'" . xml-mode)
+         ("\\.rss\\'" . nxml-mode)
+         )
+       auto-mode-alist))
 
 (setq magic-mode-alist
-      (cons '("<＼＼?xml " . nxml-mode)
+      (cons '("<\\?xml " . nxml-mode)
             magic-mode-alist))
 
 (fset 'xml-mode 'nxml-mode)
@@ -56,25 +71,25 @@
 ;; ------------------------------------------------------------------------------
 
 (require 'web-mode)
-(add-to-list 'auto-mode-alist
-             (cons (concat "\\."
-                           (regexp-opt
-                            '(
-                              "php[3-5]?"
-                              "phtml"
-                              "x?html?"
-                              "tpl\\.php"
-                              "jsp"
-                              "as[cp]x"
-                              "erb"
-                              "mustache"
-                              "ctp"
-                              ) t)
-                           "\\'")
-                   'web-mode))
+(add-to-list 'magic-mode-alist '("\\(?:<\\?xml\\s +[^>]*>\\)?\\s *<\\(?:!--\\(?:[^-]\\|-[^-]\\)*-->\\s *<\\)*\\(?:!DOCTYPE\\s +[^>]*>\\s *<\\s *\\(?:!--\\(?:[^-]\\|-[^-]\\)*-->\\s *\<\\)*\\)?[Hh][Tt][Mm][Ll]" . web-mode))
+
+(add-to-list 'auto-mode-alist '("\\.html\\?\\'" . web-mode))
+
+;; (setq auto-mode-alist
+;;       (append
+;;        '(
+;;          ("\\.htm\\'" . web-mode)
+;;          ("\\.html\\'" . web-mode)
+;;          ("\\.xhtml\\'" . web-mode)
+;;          ("\\.erb\\'" . web-mode)
+;;          ("\\.mustache\\'" . web-mode)
+;;          ("\\.php\\'" . web-mode)
+;;          ("\\.ctp\\'" . web-mode)
+;;          )
+;;        auto-mode-alist))
 
 ; The matching is done on the path. You can alo configure like this if your templates are stored in a subdirectory called views, html or templates.
-(add-to-list 'auto-mode-alist '("/\\(views\\|html\\|templates\\)/.*\\.php\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("/\\(views\\|html\\|templates\\)/.*\\.\\(php\\|twig\\)\\'" . web-mode))
 
 ;; Custom coding standards
 (add-hook 'web-mode-hook
