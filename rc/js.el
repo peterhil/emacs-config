@@ -2,13 +2,16 @@
 ;; Javascript
 ;; ------------------------------------------------------------------------------
 
-(fset 'prog-mode 'c-mode)
-(set (make-local-variable 'electric-indent-chars) nil)
-
 (require 'js2-mode)
 
 (autoload 'js2-mode "js2-mode" nil t)
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
+
+(add-hook 'js2-mode-hook
+          '(lambda()
+             (fset (make-local-variable 'prog-mode) 'js-mode)
+             (set (make-local-variable 'electric-indent-chars) nil)
+             ))
 
 
 ;; ==============================================================================
