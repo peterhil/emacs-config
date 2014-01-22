@@ -12,6 +12,12 @@
 (autoload 'less-css-mode "less-css-mode" "Less CSS mode." t)
 (add-to-list 'auto-mode-alist '("\\.less\\'" . less-css-mode))
 
+;; Erb CSS
+(add-to-list 'auto-mode-alist '("\\.css.erb\\'" . css-mode))
+
+(require 'slim-mode)
+(add-to-list 'auto-mode-alist '("\\.slim\\'" . slim-mode))
+
 ;; (add-hook 'less-css-mode-hook
 ;;           (lambda ()
 ;; 	    (rainbow-mode t)))
