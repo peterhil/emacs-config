@@ -2,6 +2,10 @@
 ;; Editing
 ;; ------------------------------------------------------------------------------
 
+;; Read EditorConfig files (.editorconfig) -- http://editorconfig.org/
+;; https://github.com/editorconfig/editorconfig-emacs.git
+(load "editorconfig")
+
 ; Show full pathname in minibuffer
 (setq frame-title-format
       (list (format "%s %%S: %%j " (system-name))
