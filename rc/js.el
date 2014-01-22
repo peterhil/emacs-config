@@ -20,23 +20,10 @@
                            "\\'")
                    'js2-mode))
 
-;; Custom coding standards
-(add-hook 'js-mode-hook
-          (lambda ()
-            (setq indent-tabs-mode t)
-            (setq tab-width (default-value 'tab-width))
-            ))
-
 ;; ;; JS2-mode
 
 ; (smart-tabs-advice js2-indent-line js2-basic-offset)
 
-;; Custom coding standards
-(add-hook 'js2-mode-hook
-          (lambda ()
-            (setq indent-tabs-mode t)
-            (setq tab-width (default-value 'tab-width))
-            ))
 ;; ==============================================================================
 ;; Json
 ;; ------------------------------------------------------------------------------
