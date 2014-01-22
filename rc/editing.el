@@ -2,6 +2,10 @@
 ;; Editing
 ;; ------------------------------------------------------------------------------
 
+;; Read EditorConfig files (.editorconfig) -- http://editorconfig.org/
+;; https://github.com/editorconfig/editorconfig-emacs.git
+(load "editorconfig")
+
 
 ;; ==============================================================================
 ;; Keyboard macros
