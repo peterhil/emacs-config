@@ -8,6 +8,13 @@
 
 ;; (add-hook 'python-mode-hook 'color-theme-monokai)
 
+(require 'python-mode)
+
+;; Unless other libraries depend on python.el, unloading 'python is recommended, as it seems to destroy python-mode user defined abbreviations:
+;; (when (featurep 'python) (unload-feature 'python t))
+
+(setq-default py-shell-name "ipython")
+
 ;; ==============================================================================
 ;; Pymacs
 ;; ------------------------------------------------------------------------------

@@ -9,7 +9,8 @@
 ;; SLIME
 ;; ------------------------------------------------------------------------------
 
-(add-to-list 'load-path (concat usr-prefix "/share/emacs/site-lisp/slime"))
+;; (add-to-list 'load-path (concat usr-prefix "/share/emacs/site-lisp/slime"))
+;; (add-to-list 'load-path "~/.emacs.d/site-lisp/slime") ;; Already on path
 (require 'slime-autoloads)
 (eval-after-load "slime"
   '(slime-setup '(slime-asdf slime-tramp slime-fancy)))
