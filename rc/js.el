@@ -9,7 +9,6 @@
 
 (add-hook 'js2-mode-hook
           '(lambda()
-             (fset (make-local-variable 'prog-mode) 'js-mode)
              (set (make-local-variable 'electric-indent-chars) nil)
              ))
 
