@@ -4,6 +4,7 @@
 
 (dolist (include
          '(
+           "packages"
            "locale"
            "editing"
            "keyboard-shortcuts"
@@ -24,7 +25,7 @@
            ;; "ecb"
            "auto-completion"
            "smart-tabs"
-           "yasnippet"
+           ;; "yasnippet"
            ;; "jira"
 
            ;; -- Markup
