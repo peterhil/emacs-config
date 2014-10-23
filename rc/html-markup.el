@@ -2,11 +2,27 @@
 ;; Markup
 ;; ------------------------------------------------------------------------------
 
+; YAML
 (require 'yaml-mode)
-(add-to-list 'auto-mode-alist '("\\.ya\\?ml\\'" . yaml-mode))
+(add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
+(add-to-list 'auto-mode-alist '("\\.yaml\\'" . yaml-mode))
 
+; Less CSS
 (require 'less-css-mode)
 (add-to-list 'auto-mode-alist '("\\.less\\'" . less-css-mode))
+
+; Scss/Sass
+;; (setq exec-path (cons (expand-file-name "~/.rvm/gems/ruby-2.0.0-p481/bin") exec-path))
+(setq scss-compile-at-save nil)
+(autoload 'scss-mode "scss-mode")
+(add-to-list 'auto-mode-alist '("\\.scss\\'" . scss-mode))
+
+; Jade and Stylus
+;; (add-to-list 'load-path "~/.emacs.d/site-lisp/jade-mode")
+; (require 'sws-mode)
+; (add-to-list 'auto-mode-alist '("\\.styl$" . sws-mode))
+; (require 'jade-mode)
+; (add-to-list 'auto-mode-alist '("\\.jade$" . jade-mode))
 
 ;; ==============================================================================
 ;; nXhtml - package (includes php-mode and LOTS of other stuff)
