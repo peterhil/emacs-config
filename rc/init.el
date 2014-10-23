@@ -17,6 +17,7 @@
 
            ;; -- Programming tools
            ;; "cedet"
+           "dash-at-point"
            "diff"
            "git"
            "tags"
