@@ -2,6 +2,8 @@
 ;; Markup
 ;; ------------------------------------------------------------------------------
 
+(require 'jinja2-mode)
+
 (require 'yaml-mode)
 (add-to-list 'auto-mode-alist '("\\.ya\\?ml\\'" . yaml-mode))
 
