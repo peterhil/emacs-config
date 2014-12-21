@@ -4,6 +4,7 @@
 
 (dolist (include
          '(
+           "packages"
            "locale"
            "editing"
            "keyboard-shortcuts"
@@ -17,13 +18,14 @@
 
            ;; -- Programming tools
            ;; "cedet"
+           "dash-at-point"
            "diff"
            "git"
            "tags"
            ;; "ecb"
            "auto-completion"
            "smart-tabs"
-           "yasnippet"
+           ;; "yasnippet"
            ;; "jira"
 
            ;; -- Markup
