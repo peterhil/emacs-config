@@ -27,6 +27,7 @@
            "smart-tabs"
            ;; "yasnippet"
            ;; "jira"
+           "qt"
 
            ;; -- Markup
            ;; "org"
