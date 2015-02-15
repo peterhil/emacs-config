@@ -88,8 +88,9 @@
  ;; If there is more than one, they won't work right.
  '(dired-mode-default ((t (:inherit autoface-default :height 110 :family "Monaco"))) t)
  '(html-helper-mode-default ((t (:inherit sgml-mode-default))) t)
- '(html-mode-default ((t (:inherit sgml-mode-default :height 130 :family "Andale Mono"))) t)
- '(markdown-mode-default ((t (:inherit text-mode-default :height 130 :family "Monaco"))) t)
- '(sgml-mode-default ((t (:inherit text-mode-default :height 130 :family "Andale Mono"))) t)
- '(text-mode-default ((t (:inherit autoface-default :height 130 :family "Andale Mono")))))
+ '(html-mode-default ((t (:inherit sgml-mode-default))) t)
+ '(jinja2-mode-default ((t (:inherit sgml-mode-default))) t)
+ '(markdown-mode-default ((t (:inherit text-mode-default :height 120 :family "Monaco"))) t)
+ '(sgml-mode-default ((t (:inherit text-mode-default))) t)
+ '(text-mode-default ((t (:inherit autoface-default :height 120 :family "Menlo")))))
 
