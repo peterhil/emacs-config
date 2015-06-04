@@ -21,10 +21,10 @@
 
 ; Jade and Stylus
 ;; (add-to-list 'load-path "~/.emacs.d/site-lisp/jade-mode")
-; (require 'sws-mode)
-; (add-to-list 'auto-mode-alist '("\\.styl$" . sws-mode))
-; (require 'jade-mode)
-; (add-to-list 'auto-mode-alist '("\\.jade$" . jade-mode))
+(require 'sws-mode)
+(add-to-list 'auto-mode-alist '("\\.styl\\'" . sws-mode))
+(require 'jade-mode)
+(add-to-list 'auto-mode-alist '("\\.jade\\'$" . jade-mode))
 
 ;; ==============================================================================
 ;; nXhtml - package (includes php-mode and LOTS of other stuff)
