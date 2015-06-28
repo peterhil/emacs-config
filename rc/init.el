@@ -5,9 +5,6 @@
 (dolist (include
          '(
            "packages"
-           ;; -- Colors
-           "rainbow-mode"
-           "color-theme"
 
            ;; -- Editing
            "locale"
@@ -35,6 +32,7 @@
            ;; "yasnippet"
            ;; "jira"
            "qt"
+           "projectile"
 
            ;; -- Markup
            ;; "org"
@@ -45,6 +43,10 @@
            "zencoding"
            "html-markup"
            "web"
+
+           ;; -- Colors
+           "rainbow-mode"
+           "color-theme"
 
            ;; -- Languages
            "common-lisp"
