@@ -5,16 +5,23 @@
 (dolist (include
          '(
            "packages"
+           ;; -- Colors
+           "rainbow-mode"
+           "color-theme"
+
+           ;; -- Editing
            "locale"
            "editing"
            "keyboard-shortcuts"
            "dired"
+
            "hex"
            "images"
            "audio"
            ;; "erc"
            ;; "textmate"
            "shell"
+           ;; "w3m"
 
            ;; -- Programming tools
            ;; "cedet"
@@ -37,10 +44,7 @@
            ;; "cake"
            "zencoding"
            "html-markup"
-
-           ;; -- Colors
-           "rainbow-mode"
-           "color-theme"
+           "web"
 
            ;; -- Languages
            "common-lisp"
@@ -52,6 +56,7 @@
            "php"
            "coffee"
            "js"
+           ;; "pure"
            ))
   (configure include))
-;; (configure "shell")
+;; (configure "pure")
