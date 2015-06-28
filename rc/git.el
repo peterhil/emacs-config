@@ -15,5 +15,6 @@
 (require 'git-blame)
 (require 'vc-git)
 
+(setq magit-last-seen-setup-instructions "1.4.0")
 
 (add-to-list 'vc-handled-backends 'GIT)
