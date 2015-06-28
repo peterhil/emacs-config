@@ -26,9 +26,7 @@
  '(debug-on-error t)
  '(default-frame-alist
     (quote
-     ((right-fringe . 0)
-      (left-fringe)
-      (font-backend ns)
+     ((font-backend ns)
       (fontsize . 0)
       (menu-bar-lines . 1)
       (tool-bar-lines . 0)
@@ -38,7 +36,9 @@
       (background-color . "#272822")
       (background-mode . dark)
       (cursor-color . "#73d216")
-      (mouse-color . "#73d216"))))
+      (mouse-color . "#73d216")
+      (left-fringe)
+      (right-fringe . 0))))
  '(default-input-method "finnish-keyboard")
  '(dired-auto-revert-buffer (quote dired-directory-changed-p))
  '(dired-use-ls-dired nil)
