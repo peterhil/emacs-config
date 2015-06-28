@@ -41,6 +41,7 @@
       (mouse-color . "#73d216"))))
  '(default-input-method "finnish-keyboard")
  '(dired-auto-revert-buffer (quote dired-directory-changed-p))
+ '(dired-use-ls-dired nil)
  '(ecb-options-version "2.40")
  '(ecb-tree-stickynode-indent-string " ")
  '(emulate-mac-finnish-keyboard-mode t)
