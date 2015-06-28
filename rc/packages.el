@@ -7,9 +7,9 @@
 (when (< emacs-major-version 24)
   (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
 
-(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/") t)
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
 ;(add-to-list 'package-archives '("melpa-stable" . "http://stable.melpa.org/packages/") t)
+(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/") t)
 
 (package-initialize)
 
@@ -49,6 +49,14 @@
                       clojure-mode
                       coffee-mode
                       flycheck
+                      flycheck-clojure
+                      flycheck-haskell
+                      flycheck-pyflakes
+                      flymake
+                      flymake-coffee
+                      flymake-css
+                      flymake-json
+                      flymake-php
                       js2-mode
                       markdown-mode
                       haml-mode
@@ -61,6 +69,7 @@
                       less-css-mode
                       slime
                       php-mode
+                      python-mode
                       )
   "A list of packages to ensure are installed at launch.")
 

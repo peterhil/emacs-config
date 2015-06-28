@@ -33,6 +33,8 @@
            ;; "jira"
            "qt"
            "projectile"
+           ;; "flycheck"
+           "flymake"
 
            ;; -- Markup
            ;; "org"
@@ -51,6 +53,7 @@
            ;; -- Languages
            "common-lisp"
            ;; "scheme"
+           ;; "haskell"
            ;; "lush"
            "python"
            "ruby"
