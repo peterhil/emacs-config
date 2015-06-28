@@ -13,7 +13,9 @@
 ;; (add-to-list 'load-path "~/.emacs.d/site-lisp/slime") ;; Already on path
 (require 'slime-autoloads)
 (eval-after-load "slime"
-  '(slime-setup '(slime-asdf slime-tramp slime-fancy)))
+  '(progn
+     (slime-setup '(slime-asdf slime-tramp slime-fancy))
+     (slime-require 'swank-listener-hooks)))
 
 ;; Set UTF-8 coding for swank/slime, see: https://answers.launchpad.net/sbcl/+question/74497
 (setq slime-net-coding-system 'utf-8-unix)
