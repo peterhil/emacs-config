@@ -6,6 +6,7 @@
 (add-to-list 'magic-mode-alist '("\\(?:<\\?xml\\s +[^>]*>\\)?\\s *<\\(?:!--\\(?:[^-]\\|-[^-]\\)*-->\\s *<\\)*\\(?:!DOCTYPE\\s +[^>]*>\\s *<\\s *\\(?:!--\\(?:[^-]\\|-[^-]\\)*-->\\s *\<\\)*\\)?[Hh][Tt][Mm][Ll]" . web-mode))
 
 (add-to-list 'auto-mode-alist '("\\.html\\?\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("/components/.*\\.js\\'" . web-mode))
 
 ;; (setq auto-mode-alist
 ;;       (append

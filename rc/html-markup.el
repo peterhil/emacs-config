@@ -4,22 +4,26 @@
 
 (require 'jinja2-mode)
 
-; YAML
+;; YAML
 (require 'yaml-mode)
 (add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
 (add-to-list 'auto-mode-alist '("\\.yaml\\'" . yaml-mode))
 
-; Less CSS
+;; CSS mode
+(require 'css-mode)
+(add-to-list 'auto-mode-alist '("\\.css\\'" . css-mode))
+
+;; Less CSS
 (require 'less-css-mode)
 (add-to-list 'auto-mode-alist '("\\.less\\'" . less-css-mode))
 
-; Scss/Sass
+;; Scss/Sass
 ;; (setq exec-path (cons (expand-file-name "~/.rvm/gems/ruby-2.0.0-p481/bin") exec-path))
 (setq scss-compile-at-save nil)
 (autoload 'scss-mode "scss-mode")
 (add-to-list 'auto-mode-alist '("\\.scss\\'" . scss-mode))
 
-; Jade and Stylus
+;; Jade and Stylus
 ;; (add-to-list 'load-path "~/.emacs.d/site-lisp/jade-mode")
 ; (require 'sws-mode)
 ; (add-to-list 'auto-mode-alist '("\\.styl$" . sws-mode))
