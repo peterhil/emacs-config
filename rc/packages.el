@@ -41,7 +41,7 @@
 (defvar my-packages '(
                       ace-jump-mode
                       ack-and-a-half
-                      magit
+                      ;; magit
                       move-text
                       org
                       ruby-compilation
@@ -70,6 +70,11 @@
                       slime
                       php-mode
                       python-mode
+                      jinja2-mode
+                      qml-mode
+                      ac-dabbrev
+                      anything
+                      php-completion
                       alchemist
                       )
   "A list of packages to ensure are installed at launch.")
