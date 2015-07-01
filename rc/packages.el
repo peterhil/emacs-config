@@ -76,6 +76,7 @@
                       anything
                       php-completion
                       alchemist
+                      elixir-mode
                       )
   "A list of packages to ensure are installed at launch.")
 
