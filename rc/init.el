@@ -53,7 +53,7 @@
            ;; -- Languages
            "common-lisp"
            ;; "scheme"
-           ;; "haskell"
+           "haskell"
            ;; "lush"
            "python"
            "ruby"
