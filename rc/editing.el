@@ -12,6 +12,31 @@
             '(buffer-file-name "%f" (dired-directory dired-directory "%b"))))
 
 
+(when t
+  (progn
+    (global-hl-line-mode t)
+
+    ;; Show line numbers, dynamically with spaces on either side:
+    (global-linum-mode t)
+
+    (defadvice linum-update-window (around linum-dynamic activate)
+      (let* ((w (length (number-to-string
+                         (count-lines (point-min) (point-max)))))
+             (linum-format (concat " %" (number-to-string w) "d ")))
+        ad-do-it))
+
+    ;; You may want to turn off linum for certain modes (this uses linum-off):
+    (require 'linum-off)
+
+    ;; Highlight the current line number (requires hlinum):
+    (require 'hlinum)
+    (hlinum-activate)
+
+    ;; Collapse fringes:
+    (fringe-mode -1)
+    ))
+
+
 ;; ==============================================================================
 ;; Keyboard macros
 ;; ------------------------------------------------------------------------------

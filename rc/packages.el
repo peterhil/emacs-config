@@ -58,7 +58,6 @@
                       flymake-json
                       flymake-php
                       js2-mode
-                      markdown-mode
                       haml-mode
                       paredit
                       grizzl
@@ -77,6 +76,12 @@
                       php-completion
                       alchemist
                       elixir-mode
+                      elixir-mix
+                      linum-off
+                      hlinum
+                      spacegray-theme
+                      spacemacs-theme
+                      monokai-theme
                       )
   "A list of packages to ensure are installed at launch.")
 

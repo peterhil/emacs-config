@@ -23,6 +23,9 @@
  '(color-theme-is-cumulative t)
  '(create-frame-min-width 120)
  '(current-language-environment "UTF-8")
+ '(custom-safe-themes
+   (quote
+    ("4ff23437b3166eeb7ca9fa026b2b030bba7c0dfdc1ff94df14dfb1bcaee56c78" "49ad7c8d458074db7392f8b8a49235496e9228eb2fa6d3ca3a7aa9d23454efc6" "bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" "05c3bc4eb1219953a4f182e10de1f7466d28987f48d647c01f1f0037ff35ab9a" default)))
  '(debug-on-error t)
  '(default-frame-alist
     (quote
@@ -37,8 +40,8 @@
       (background-mode . dark)
       (cursor-color . "#73d216")
       (mouse-color . "#73d216")
-      (left-fringe)
-      (right-fringe . 0))))
+      (left-fringe . -1)
+      (right-fringe . -1))))
  '(default-input-method "finnish-keyboard")
  '(dired-auto-revert-buffer (quote dired-directory-changed-p))
  '(dired-use-ls-dired nil)
@@ -50,6 +53,7 @@
     (autojoin button completion fill irccontrols keep-place list log match menu move-to-prompt netsplit networks noncommands readonly ring services stamp track)))
  '(fill-column 78)
  '(fringe-mode (quote (nil . 0)) nil (fringe))
+ '(global-hl-line-mode t)
  '(global-linum-mode t)
  '(indent-tabs-mode nil)
  '(indicate-buffer-boundaries (quote left))
@@ -58,6 +62,7 @@
  '(ns-tool-bar-size-mode (quote regular) t)
  '(nxml-child-indent 4)
  '(nxml-outline-child-indent 4)
+ '(one-buffer-one-frame-mode t nil (aquamacs-frame-setup))
  '(py-backslashed-continuation-indent 4)
  '(py-smart-indentation nil)
  '(python-guess-indent nil)
