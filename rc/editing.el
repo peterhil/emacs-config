@@ -14,7 +14,7 @@
 
 (when t
   (progn
-    (global-hl-line-mode t)
+    ;; (global-hl-line-mode t)  ; Hightlight current line
 
     ;; Show line numbers, dynamically with spaces on either side:
     (global-linum-mode t)
@@ -33,7 +33,7 @@
     (hlinum-activate)
 
     ;; Collapse fringes:
-    (fringe-mode -1)
+    ;; (fringe-mode -1)
     ))
 
 
