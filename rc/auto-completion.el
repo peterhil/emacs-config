@@ -71,12 +71,12 @@
 ;; ----------------------
 ;;
 (setq ac-sources
-              '(ac-source-abbrev
-                ac-source-dabbrev
-                ;ac-source-gtags
-                ;ac-source-yasnippet
-                ac-source-words-in-buffer))
-;;
+      '(ac-source-abbrev
+        ac-source-dabbrev
+        ;; ac-source-gtags
+        ;; ac-source-yasnippet
+        ac-source-words-in-buffer))
+
 ;; Change sources for particular mode
 ;; ----------------------------------
 ;;

@@ -39,7 +39,7 @@
 ; FIXME Workaround for bug #663737: https://bugs.launchpad.net/nxhtml/+bug/663737
 (if (boundp 'image-types)
     nil
-    (defvar image-types nil))
+  (defvar image-types nil))
 
 ;; ==============================================================================
 ;; nXml

@@ -4,8 +4,6 @@
 
 (dolist (include
          '(
-           "packages"
-
            ;; -- Editing
            "locale"
            "editing"
