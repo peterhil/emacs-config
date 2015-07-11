@@ -62,7 +62,7 @@
  '(ns-tool-bar-size-mode (quote regular) t)
  '(nxml-child-indent 4)
  '(nxml-outline-child-indent 4)
- '(one-buffer-one-frame-mode t nil (aquamacs-frame-setup))
+ '(one-buffer-one-frame-mode nil nil (aquamacs-frame-setup))
  '(py-backslashed-continuation-indent 4)
  '(py-smart-indentation nil)
  '(python-guess-indent nil)
