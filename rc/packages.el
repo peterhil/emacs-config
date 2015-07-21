@@ -82,6 +82,8 @@
                       spacegray-theme
                       spacemacs-theme
                       monokai-theme
+                      sass-mode
+                      scss-mode
                       )
   "A list of packages to ensure are installed at launch.")
 
