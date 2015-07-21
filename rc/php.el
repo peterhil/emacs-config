@@ -48,3 +48,10 @@
             (setq indent-tabs-mode nil)
             (setq tab-width (default-value 'tab-width))
             ))
+
+;; Automatic ya-snippets for Php
+(require 'php-auto-yasnippets)
+
+;; (define-key php-mode-map (kbd "C-c C-y") 'yas/create-php-snippet)
+
+;; (payas/ac-setup) ; auto-complete setup

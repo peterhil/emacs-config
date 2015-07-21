@@ -85,6 +85,7 @@
                       monokai-theme
                       sass-mode
                       scss-mode
+                      php-auto-yasnippets
                       )
   "A list of packages to ensure are installed at launch.")
 
