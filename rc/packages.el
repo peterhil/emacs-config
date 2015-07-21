@@ -57,6 +57,7 @@
                       flymake-css
                       flymake-json
                       flymake-php
+                      fuzzy-format
                       js2-mode
                       haml-mode
                       paredit
