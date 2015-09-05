@@ -17,6 +17,10 @@
 (require 'less-css-mode)
 (add-to-list 'auto-mode-alist '("\\.less\\'" . less-css-mode))
 
+;; Stylus
+(require 'stylus-mode)
+(add-to-list 'auto-mode-alist '("\\.styl\\'" . stylus-mode))
+
 ;; Scss/Sass
 ;; (setq exec-path (cons (expand-file-name "~/.rvm/gems/ruby-2.0.0-p481/bin") exec-path))
 (setq scss-compile-at-save nil)
