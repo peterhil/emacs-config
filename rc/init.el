@@ -25,14 +25,14 @@
            "git"
            "tags"
            ;; "ecb"
-           "auto-completion"
+           ;; "auto-completion"
            "smart-tabs"
            ;; "yasnippet"
            ;; "jira"
            "qt"
            "projectile"
            ;; "flycheck"
-           "flymake"
+           ;; "flymake"
 
            ;; -- Markup
            ;; "org"

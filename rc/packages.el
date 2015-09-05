@@ -41,6 +41,7 @@
 (defvar my-packages '(
                       ace-jump-mode
                       ack-and-a-half
+                      ;; auto-complete
                       ;; magit
                       move-text
                       org
@@ -49,8 +50,8 @@
                       clojure-mode
                       coffee-mode
                       flycheck
-                      flycheck-clojure
-                      flycheck-haskell
+                      ;; flycheck-clojure
+                      ;; flycheck-haskell
                       flycheck-pyflakes
                       flymake
                       flymake-coffee
