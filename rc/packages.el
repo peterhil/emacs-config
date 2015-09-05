@@ -87,6 +87,8 @@
                       sass-mode
                       scss-mode
                       stylus-mode
+                      erlang
+                      php-auto-yasnippets
                       )
   "A list of packages to ensure are installed at launch.")
 
