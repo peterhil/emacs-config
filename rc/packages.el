@@ -90,6 +90,8 @@
                       erlang
                       php-auto-yasnippets
                       editorconfig
+                      csv-mode
+                      csv-nav
                       )
   "A list of packages to ensure are installed at launch.")
 
