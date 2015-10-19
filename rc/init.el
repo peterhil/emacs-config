@@ -4,6 +4,8 @@
 
 (dolist (include
          '(
+           ;; -- Emacs lisp utility functions
+           "elisp"
            ;; -- Editing
            "locale"
            "editing"
