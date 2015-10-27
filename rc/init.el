@@ -21,6 +21,7 @@
            ;; "w3m"
 
            ;; -- Programming tools
+           "homebrew"
            ;; "cedet"
            ;; "dash-at-point"
            "diff"
