@@ -39,61 +39,65 @@
 
 ;; Auto-download missing packages
 (defvar my-packages '(
-                      ace-jump-mode
-                      ack-and-a-half
-                      ;; auto-complete
-                      ;; magit
-                      move-text
-                      org
-                      ruby-compilation
-                      smartparens
-                      clojure-mode
-                      coffee-mode
-                      flycheck
-                      ;; flycheck-clojure
-                      ;; flycheck-haskell
-                      flycheck-pyflakes
-                      flymake
-                      flymake-coffee
-                      flymake-css
-                      flymake-json
-                      flymake-php
-                      fuzzy-format
-                      js2-mode
-                      haml-mode
-                      paredit
-                      grizzl
-                      projectile
-                      rainbow-mode
-                      web-mode
-                      yaml-mode
-                      less-css-mode
-                      slime
-                      php-mode
-                      python-mode
-                      jinja2-mode
-                      qml-mode
-                      ac-dabbrev
-                      anything
-                      php-completion
-                      alchemist
-                      elixir-mode
-                      elixir-mix
-                      linum-off
-                      hlinum
-                      spacegray-theme
-                      spacemacs-theme
-                      monokai-theme
-                      sass-mode
-                      scss-mode
-                      stylus-mode
-                      erlang
-                      php-auto-yasnippets
-                      editorconfig
-                      csv-mode
-                      csv-nav
-                      )
-  "A list of packages to ensure are installed at launch.")
+                         ac-dabbrev
+                         ace-jump-mode
+                         ack
+                         ack-and-a-half
+                         ag
+                         alchemist
+                         alchemist
+                         anything
+                         auto-complete
+                         clojure-mode
+                         coffee-mode
+                         csv-mode
+                         csv-nav
+                         editorconfig
+                         elixir-mix
+                         elixir-mode
+                         erlang
+                         flycheck
+                         flycheck-clojure
+                         flycheck-haskell
+                         flycheck-pyflakes
+                         flymake
+                         flymake-coffee
+                         flymake-css
+                         flymake-json
+                         flymake-php
+                         fuzzy-format
+                         grizzl
+                         haml-mode
+                         hlinum
+                         jinja2-mode
+                         js2-mode
+                         less-css-mode
+                         linum-off
+                         monokai-theme
+                         move-text
+                         org
+                         paredit
+                         php-auto-yasnippets
+                         php-completion
+                         php-mode
+                         projectile
+                         pure
+                         python-mode
+                         qml-mode
+                         rainbow-mode
+                         ruby-compilation
+                         sass-mode
+                         scss-mode
+                         slime
+                         smartparens
+                         spacegray-theme
+                         spacemacs-theme
+                         stylus-mode
+                         w3m
+                         web-mode
+                         yaml-mode
+                         )
+    "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)
   (when (not (package-installed-p p))
