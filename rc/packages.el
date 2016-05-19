@@ -56,6 +56,7 @@
                          elixir-mix
                          elixir-mode
                          erlang
+                         feature-mode
                          flycheck
                          flycheck-clojure
                          flycheck-haskell
