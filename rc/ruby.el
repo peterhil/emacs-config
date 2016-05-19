@@ -16,3 +16,8 @@
 
 ;; (require 'haml-mode)
 ;; (add-to-list 'auto-mode-alist '("\\.hamlc?$" . haml-mode))
+
+;; Disable adding coding system magic comment
+;; http://stackoverflow.com/a/6454077
+;; TODO Update ruby-mode.el
+(setq ruby-insert-encoding-magic-comment nil)
