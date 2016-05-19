@@ -4,7 +4,9 @@
 
 ;; Read EditorConfig files (.editorconfig) -- http://editorconfig.org/
 ;; https://github.com/editorconfig/editorconfig-emacs.git
-(load "editorconfig")
+;; (load "editorconfig")
+(require 'editorconfig)
+(editorconfig-mode 1)
 
 ; Show full pathname in minibuffer
 (setq frame-title-format
