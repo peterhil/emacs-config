@@ -71,6 +71,7 @@
      ("#4E5959" . 100))))
  '(indent-tabs-mode nil)
  '(indicate-buffer-boundaries (quote left))
+ '(inhibit-startup-screen t)
  '(magit-diff-use-overlays nil)
  '(mweb-submode-indent-offset 4)
  '(ns-tool-bar-display-mode (quote labels) t)
