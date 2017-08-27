@@ -78,6 +78,7 @@
                          move-text
                          org
                          paredit
+                         parinfer
                          php-auto-yasnippets
                          php-completion
                          php-mode
