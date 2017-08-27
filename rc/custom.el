@@ -44,6 +44,7 @@
       (cursor-color . "#73d216")
       (mouse-color . "#73d216"))))
  '(default-input-method "finnish-keyboard")
+ '(desktop-save-mode t)
  '(dired-auto-revert-buffer (quote dired-directory-changed-p))
  '(dired-use-ls-dired nil)
  '(ecb-options-version "2.40")
@@ -84,6 +85,7 @@
    (quote
     ((Syntax . ANSI-Common-Lisp)
      (syntax . ANSI-Common-Lisp))))
+ '(savehist-mode t)
  '(save-place t nil (saveplace))
  '(semantic-stickyfunc-indent-string " ")
  '(show-trailing-whitespace t)
