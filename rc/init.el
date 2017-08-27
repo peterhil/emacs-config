@@ -6,6 +6,11 @@
          '(
            ;; -- Emacs lisp utility functions
            "elisp"
+
+           ;; -- Colors
+           "rainbow-mode"
+           "color-theme"
+
            ;; -- Editing
            "locale"
            "editing"
@@ -46,10 +51,6 @@
            "zencoding"
            "html-markup"
            "web"
-
-           ;; -- Colors
-           "rainbow-mode"
-           "color-theme"
 
            ;; -- Languages
            "common-lisp"
