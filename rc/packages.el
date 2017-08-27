@@ -82,7 +82,6 @@
                          php-completion
                          php-mode
                          projectile
-                         pure
                          python-mode
                          qml-mode
                          rainbow-mode
