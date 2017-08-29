@@ -86,10 +86,8 @@
    (quote
     ((Syntax . ANSI-Common-Lisp)
      (syntax . ANSI-Common-Lisp))))
- '(savehist-mode t)
  '(save-place t nil (saveplace))
  '(semantic-stickyfunc-indent-string " ")
- '(show-paren-mode t)
  '(show-trailing-whitespace t)
  '(size-indication-mode t)
  '(split-width-threshold 240)

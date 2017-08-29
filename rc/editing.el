@@ -8,8 +8,18 @@
 (require 'editorconfig)
 (editorconfig-mode 1)
 
+;; Language and text encoding
 (set-language-environment "UTF-8")
 (set-default-coding-systems 'utf-8-unix)
+
+;; Save-hist-mode
+(setq savehist-additional-variables '(kill-ring search-ring regexp-search-ring))
+(setq savehist-file "~/.emacs.d/tmp/savehist")
+(savehist-mode 1)
+
+;; Parenthesis matching
+(setq show-paren-delay 0)
+(show-paren-mode 1)
 
 ; Show full pathname in minibuffer
 (setq frame-title-format
