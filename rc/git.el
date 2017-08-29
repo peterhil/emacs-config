@@ -17,8 +17,8 @@
          )))
 
 (require 'git)
-(require 'git-blame)
-(require 'vc-git)
+; (require 'git-blame)
+; (require 'vc-git)
 
 (setq magit-last-seen-setup-instructions "1.4.0")
 
