@@ -14,7 +14,7 @@
            ;; -- Editing
            "locale"
            "editing"
-           "firacode"
+           ;; "firacode"
            "keyboard-shortcuts"
            "dired"
 

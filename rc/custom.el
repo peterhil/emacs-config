@@ -141,7 +141,6 @@
  '(jinja2-mode-default ((t (:inherit sgml-mode-default))) t)
  '(markdown-mode-default ((t (:inherit text-mode-default :height 100 :family "Monaco"))) t)
  '(sgml-mode-default ((t (:inherit text-mode-default))) t)
- '(text-mode-default ((t (:inherit default :height 100 :family "Fira Code"))))
- '(prog-mode-default ((t (:inherit default :height 100 :family "Fira Code"))))
- '(default ((t (:family "Fira Code" :foundry "CTDB" :slant normal :weight normal :height 100 :width normal)))))
-
+ '(text-mode-default ((t (:inherit default :height 100 :family "Menlo"))))
+ '(prog-mode-default ((t (:inherit text-mode-default))) t)
+ '(default ((t (:family "Menlo" :weight normal :height 100 :width normal)))))
