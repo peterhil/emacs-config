@@ -8,6 +8,9 @@
 (require 'editorconfig)
 (editorconfig-mode 1)
 
+(set-language-environment "UTF-8")
+(set-default-coding-systems 'utf-8-unix)
+
 ; Show full pathname in minibuffer
 (setq frame-title-format
       (list (format "%s %%S: %%j " (system-name))

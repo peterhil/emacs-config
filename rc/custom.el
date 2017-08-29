@@ -89,12 +89,14 @@
  '(savehist-mode t)
  '(save-place t nil (saveplace))
  '(semantic-stickyfunc-indent-string " ")
+ '(show-paren-mode t)
  '(show-trailing-whitespace t)
  '(size-indication-mode t)
  '(split-width-threshold 240)
  '(tab-always-indent t)
  '(tab-width 4)
  '(text-mode-hook (quote (turn-on-auto-fill text-mode-hook-identify)))
+ '(tool-bar-mode nil)
  '(uniquify-buffer-name-style (quote forward) nil (uniquify))
  '(vc-annotate-background nil)
  '(vc-annotate-color-map
@@ -133,11 +135,13 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(dired-mode-default ((t (:inherit autoface-default :height 110 :family "Monaco"))) t)
+ '(dired-mode-default ((t (:inherit autoface-default :height 100 :family "Monaco"))) t)
  '(html-helper-mode-default ((t (:inherit sgml-mode-default))) t)
  '(html-mode-default ((t (:inherit sgml-mode-default))) t)
  '(jinja2-mode-default ((t (:inherit sgml-mode-default))) t)
- '(markdown-mode-default ((t (:inherit text-mode-default :height 120 :family "Monaco"))) t)
+ '(markdown-mode-default ((t (:inherit text-mode-default :height 100 :family "Monaco"))) t)
  '(sgml-mode-default ((t (:inherit text-mode-default))) t)
- '(text-mode-default ((t (:inherit autoface-default :height 120 :family "Menlo")))))
+ '(text-mode-default ((t (:inherit default :height 100 :family "Fira Code"))))
+ '(prog-mode-default ((t (:inherit default :height 100 :family "Fira Code"))))
+ '(default ((t (:family "Fira Code" :foundry "CTDB" :slant normal :weight normal :height 100 :width normal)))))
 
