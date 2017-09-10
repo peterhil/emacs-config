@@ -50,4 +50,6 @@
 ;; OR when using packages:
 
 (configure "packages")
-(add-hook 'after-init-hook #'(lambda () (load (concat rc-dir "init.el"))))
+(add-hook 'after-init-hook
+	  #'(lambda ()
+	      (load (concat rc-dir "init.el"))))
