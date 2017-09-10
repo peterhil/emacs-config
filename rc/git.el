@@ -12,8 +12,8 @@
          (add-to-list 'load-path (concat usr-prefix "/usr/local/share/emacs/23.3/lisp/")))))
 
 (require 'git)
-(require 'git-blame)
-(require 'vc-git)
+; (require 'git-blame)
+; (require 'vc-git)
 
 (setq magit-last-seen-setup-instructions "1.4.0")
 
