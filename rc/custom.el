@@ -39,7 +39,7 @@
       (border-color . "#0f0f0f")
       (modeline . t)
       (foreground-color . "#F8F8F2")
-      (background-color . "#272822")
+      (background-color . "#222222")
       (background-mode . dark)
       (cursor-color . "#73d216")
       (mouse-color . "#73d216"))))
