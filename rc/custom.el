@@ -137,12 +137,13 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(dired-mode-default ((t (:inherit autoface-default :height 100 :family "Monaco"))) t)
+ '(dired-mode-default ((t (:inherit autoface-default :height 120 :family "HaskLig"))) t)
  '(html-helper-mode-default ((t (:inherit sgml-mode-default))) t)
  '(html-mode-default ((t (:inherit sgml-mode-default))) t)
  '(jinja2-mode-default ((t (:inherit sgml-mode-default))) t)
- '(markdown-mode-default ((t (:inherit text-mode-default :height 100 :family "Monaco"))) t)
- '(sgml-mode-default ((t (:inherit text-mode-default))) t)
- '(text-mode-default ((t (:inherit default :height 100 :family "Menlo"))))
- '(prog-mode-default ((t (:inherit text-mode-default))) t)
- '(default ((t (:family "Menlo" :weight normal :height 100 :width normal)))))
+ '(markdown-mode-default ((t (:inherit sgml-mode-default :height 130 :family "HaskLig"))) t)
+ '(web-mode-default ((t (:inherit sgml-mode-default))) t)
+ '(sgml-mode-default ((t (:inherit text-mode-default :height 130))) t)
+ '(text-mode-default ((t (:inherit default :height 120 :family "HaskLig"))) t)
+ '(prog-mode-default ((t (:inherit default :height 120 :family "HaskLig"))) t)
+ '(default ((t (:family "HaskLig" :weight normal :height 120 :width normal)))))
