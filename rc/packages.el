@@ -42,6 +42,7 @@
 ;; Auto-download missing packages
 (defvar my-packages '(
                       ac-dabbrev
+                      ac-python
                       ace-jump-mode
                       ack
                       ack-and-a-half
@@ -53,6 +54,7 @@
                       coffee-mode
                       csv-mode
                       csv-nav
+                      cypher-mode
                       editorconfig
                       elixir-mix
                       elixir-mode
@@ -69,19 +71,28 @@
                       flymake-css
                       flymake-json
                       flymake-php
+                      flymd
                       fuzzy-format
+                      git-commit-mode
+                      git-rebase-mode
                       grizzl
                       haml-mode
                       hlinum
+                      jade-mode
                       jinja2-mode
                       js2-mode
+                      json-mode
                       less-css-mode
                       let-alist
                       linum-off
                       ;; magit
+                      markdown-mode+
+                      md-readme
+                      mkdown
                       monokai-theme
                       move-text
                       org
+                      ;; ox-gfm
                       paredit
                       parinfer
                       php-auto-yasnippets
@@ -100,9 +111,14 @@
                       spacegray-theme
                       spacemacs-theme
                       stylus-mode
+                      ;; uuidgen
+                      ;; vmd-mode
                       w3m
                       web-mode
+                      ;; web-server
+                      ;; websocket
                       yaml-mode
+                      ;; zonokai-theme
                       )
   "A list of packages to ensure are installed at launch.")
 
