@@ -91,6 +91,10 @@
                       stylus-mode
                       erlang
                       php-auto-yasnippets
+                      let-alist
+                      s
+                      f
+                      elm-mode
                       )
   "A list of packages to ensure are installed at launch.")
 

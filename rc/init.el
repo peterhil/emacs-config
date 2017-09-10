@@ -50,6 +50,7 @@
 
            ;; -- Languages
            "common-lisp"
+           "elm"
            ;; "scheme"
            "haskell"
            ;; "lush"
