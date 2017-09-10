@@ -77,6 +77,9 @@
  '(nxml-child-indent 4)
  '(nxml-outline-child-indent 4)
  '(one-buffer-one-frame-mode nil nil (aquamacs-frame-setup))
+ '(package-selected-packages
+   (quote
+    (php-auto-yasnippets zonokai-theme yaml-mode websocket web-server web-mode w3m vmd-mode uuidgen stylus-mode spacemacs-theme spacegray-theme smartparens slime scss-mode sass-mode ruby-compilation rainbow-mode qml-mode python-mode projectile php-mode php-completion paredit ox-gfm move-text monokai-theme mkdown md-readme markdown-mode+ magit linum-off less-css-mode json-mode js2-mode jinja2-mode jazz-theme jade-mode hlinum grizzl git-rebase-mode git-commit-mode fuzzy-format flymd flymake-php flymake-json flymake-css flymake-coffee flycheck-pyflakes flycheck-haskell flycheck-clojure erlang elm-mode elixir-mix editorconfig cypher-mode color-theme-sanityinc-tomorrow coffee-mode anything alchemist ag ack-and-a-half ace-jump-mode ac-python ac-dabbrev)))
  '(py-backslashed-continuation-indent 4)
  '(py-smart-indentation nil)
  '(python-guess-indent nil)
