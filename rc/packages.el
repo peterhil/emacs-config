@@ -61,7 +61,7 @@
                       elm-mode
                       erlang
                       f
-                      feature-mode
+                      ;; feature-mode
                       flycheck
                       ;; flycheck-clojure
                       ;; flycheck-haskell
@@ -86,9 +86,9 @@
                       let-alist
                       linum-off
                       ;; magit
-                      markdown-mode+
+                      ;; markdown-mode+
                       md-readme
-                      mkdown
+                      ;; mkdown
                       monokai-theme
                       move-text
                       org
@@ -113,7 +113,7 @@
                       stylus-mode
                       ;; uuidgen
                       ;; vmd-mode
-                      w3m
+                      ;; w3m
                       web-mode
                       ;; web-server
                       ;; websocket
