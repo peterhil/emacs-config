@@ -1,2 +1,6 @@
-site-lisp
 *.elc
+*~
+.DS_Store
+.\#*
+\#*\#
+site-lisp
