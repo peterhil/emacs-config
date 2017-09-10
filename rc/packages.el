@@ -41,16 +41,25 @@
 
 ;; Auto-download missing packages
 (defvar my-packages '(
+                      ac-dabbrev
                       ace-jump-mode
+                      ack
                       ack-and-a-half
+                      ag
+                      alchemist
+                      anything
                       ;; auto-complete
-                      ;; magit
-                      move-text
-                      org
-                      ruby-compilation
-                      smartparens
                       clojure-mode
                       coffee-mode
+                      csv-mode
+                      csv-nav
+                      editorconfig
+                      elixir-mix
+                      elixir-mode
+                      elm-mode
+                      erlang
+                      f
+                      feature-mode
                       flycheck
                       ;; flycheck-clojure
                       ;; flycheck-haskell
@@ -61,40 +70,39 @@
                       flymake-json
                       flymake-php
                       fuzzy-format
-                      js2-mode
-                      haml-mode
-                      paredit
                       grizzl
-                      projectile
-                      rainbow-mode
-                      web-mode
-                      yaml-mode
-                      less-css-mode
-                      slime
-                      php-mode
-                      python-mode
-                      jinja2-mode
-                      qml-mode
-                      ac-dabbrev
-                      anything
-                      php-completion
-                      alchemist
-                      elixir-mode
-                      elixir-mix
-                      linum-off
+                      haml-mode
                       hlinum
-                      spacegray-theme
-                      spacemacs-theme
+                      jinja2-mode
+                      js2-mode
+                      less-css-mode
+                      let-alist
+                      linum-off
+                      ;; magit
                       monokai-theme
+                      move-text
+                      org
+                      paredit
+                      parinfer
+                      php-auto-yasnippets
+                      php-completion
+                      php-mode
+                      projectile
+                      python-mode
+                      qml-mode
+                      rainbow-mode
+                      ruby-compilation
+                      s
                       sass-mode
                       scss-mode
+                      slime
+                      smartparens
+                      spacegray-theme
+                      spacemacs-theme
                       stylus-mode
-                      erlang
-                      php-auto-yasnippets
-                      let-alist
-                      s
-                      f
-                      elm-mode
+                      w3m
+                      web-mode
+                      yaml-mode
                       )
   "A list of packages to ensure are installed at launch.")
 

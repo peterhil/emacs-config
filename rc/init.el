@@ -4,9 +4,17 @@
 
 (dolist (include
          '(
+           ;; -- Emacs lisp utility functions
+           "elisp"
+
+           ;; -- Colors
+           "rainbow-mode"
+           "color-theme"
+
            ;; -- Editing
            "locale"
            "editing"
+           ;; "firacode"
            "keyboard-shortcuts"
            "dired"
 
@@ -19,6 +27,7 @@
            ;; "w3m"
 
            ;; -- Programming tools
+           "homebrew"
            ;; "cedet"
            ;; "dash-at-point"
            "diff"
@@ -43,10 +52,6 @@
            "zencoding"
            "html-markup"
            "web"
-
-           ;; -- Colors
-           "rainbow-mode"
-           "color-theme"
 
            ;; -- Languages
            "common-lisp"

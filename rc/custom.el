@@ -8,7 +8,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(ansi-color-names-vector
-   ["#282627" "#F92672" "#A6E22E" "#E6DB74" "#66D9EF" "#FD5FF0" "#A1EFE4" "#F8F8F2"])
+   ["#222627" "#F92672" "#A6E22E" "#E6DB74" "#66D9EF" "#FD5FF0" "#A1EFE4" "#F8F8F2"])
  '(aquamacs-additional-fontsets nil t)
  '(aquamacs-customization-version-id 307 t)
  '(aquamacs-tool-bar-user-customization nil t)
@@ -44,6 +44,7 @@
       (cursor-color . "#73d216")
       (mouse-color . "#73d216"))))
  '(default-input-method "finnish-keyboard")
+ '(desktop-save-mode t)
  '(dired-auto-revert-buffer (quote dired-directory-changed-p))
  '(dired-use-ls-dired nil)
  '(ecb-options-version "2.40")
@@ -70,6 +71,7 @@
      ("#4E5959" . 100))))
  '(indent-tabs-mode nil)
  '(indicate-buffer-boundaries (quote left))
+ '(inhibit-startup-screen t)
  '(magit-diff-use-overlays nil)
  '(mweb-submode-indent-offset 4)
  '(ns-tool-bar-display-mode (quote labels) t)
@@ -96,6 +98,7 @@
  '(tab-always-indent t)
  '(tab-width 4)
  '(text-mode-hook (quote (turn-on-auto-fill text-mode-hook-identify)))
+ '(tool-bar-mode nil)
  '(uniquify-buffer-name-style (quote forward) nil (uniquify))
  '(vc-annotate-background nil)
  '(vc-annotate-color-map
@@ -124,7 +127,8 @@
  '(web-mode-css-indent-offset 4)
  '(web-mode-markup-indent-offset 4)
  '(weechat-color-list
-   (unspecified "#282627" "#4E5959" "#A20C41" "#F92672" "#67930F" "#A6E22E" "#968B26" "#E6DB74" "#21889B" "#66D9EF" "#A41F99" "#FD5FF0" "#349B8D" "#A1EFE4" "#F8F8F2" "#F8F8F0"))
+   (unspecified "#222627" "#4E5959" "#A20C41" "#F92672" "#67930F" "#A6E22E" "#968B26" "#E6DB74" "#21889B" "#66D9EF" "#A41F99" "#FD5FF0" "#349B8D" "#A1EFE4" "#F8F8F2" "#F8F8F0"))
+ '(x-select-enable-clipboard t)
  '(yaml-indent-offset 4))
 
 
@@ -133,11 +137,12 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(dired-mode-default ((t (:inherit autoface-default :height 110 :family "Monaco"))) t)
+ '(dired-mode-default ((t (:inherit autoface-default :height 100 :family "Monaco"))) t)
  '(html-helper-mode-default ((t (:inherit sgml-mode-default))) t)
  '(html-mode-default ((t (:inherit sgml-mode-default))) t)
  '(jinja2-mode-default ((t (:inherit sgml-mode-default))) t)
- '(markdown-mode-default ((t (:inherit text-mode-default :height 120 :family "Monaco"))) t)
+ '(markdown-mode-default ((t (:inherit text-mode-default :height 100 :family "Monaco"))) t)
  '(sgml-mode-default ((t (:inherit text-mode-default))) t)
- '(text-mode-default ((t (:inherit autoface-default :height 120 :family "Menlo")))))
-
+ '(text-mode-default ((t (:inherit default :height 100 :family "Menlo"))))
+ '(prog-mode-default ((t (:inherit text-mode-default))) t)
+ '(default ((t (:family "Menlo" :weight normal :height 100 :width normal)))))

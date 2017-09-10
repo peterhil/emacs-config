@@ -4,7 +4,22 @@
 
 ;; Read EditorConfig files (.editorconfig) -- http://editorconfig.org/
 ;; https://github.com/editorconfig/editorconfig-emacs.git
-(load "editorconfig")
+;; (load "editorconfig")
+(require 'editorconfig)
+(editorconfig-mode 1)
+
+;; Language and text encoding
+(set-language-environment "UTF-8")
+(set-default-coding-systems 'utf-8-unix)
+
+;; Save-hist-mode
+(setq savehist-additional-variables '(kill-ring search-ring regexp-search-ring))
+(setq savehist-file "~/.emacs.d/tmp/savehist")
+(savehist-mode 1)
+
+;; Parenthesis matching
+(setq show-paren-delay 0)
+(show-paren-mode 1)
 
 ; Show full pathname in minibuffer
 (setq frame-title-format
@@ -79,6 +94,20 @@
 
 (global-set-key (kbd "<f5>") 'copy-buffer-dir)
 
+
+;; Disable yas tab key
+
+;; It is crucial you first activate yasnippet's global mode.
+;; (yas/global-mode 1)
+
+;; This illustrates how to redefine yas-expand to S-TAB.
+;; (define-key yas-minor-mode-map [backtab]     'yas-expand)
+
+;; Strangely, just redefining one of the variations below won't work.
+;; All rebinds seem to be needed.
+;; (define-key yas-minor-mode-map [(tab)]        nil)
+;; (define-key yas-minor-mode-map (kbd "TAB")    nil)
+;; (define-key yas-minor-mode-map (kbd "<tab>")  nil)
 
 ;; ==============================================================================
 ;; Fuzzy format (auto select tabs or spaces for indent)
