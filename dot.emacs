@@ -5,6 +5,12 @@
 ;; Generic config
 ;; ------------------------------------------------------------------------------
 
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
 ;; Define function to shutdown emacs server instance
 ;; Can be called from shell with: emacsclient -e '(server-shutdown)'
 (defun server-shutdown ()
@@ -15,7 +21,7 @@
   )
 
 (setq usr-prefix
-      (cond ((eq system-type 'darwin) "/opt/local")
+      (cond ((eq system-type 'darwin) "/usr/local")
             ((eq system-type 'linux) "/usr")
             (t "/usr")))
 
@@ -43,4 +49,6 @@
 ;; OR when using packages:
 
 (configure "packages")
-(add-hook 'after-init-hook #'(lambda () (load (concat rc-dir "init.el"))))
+(add-hook 'after-init-hook
+	  #'(lambda ()
+	      (load (concat rc-dir "init.el"))))
