@@ -17,7 +17,7 @@
 (setq custom-file (concat rc-dir "custom.el"))
 
 ;; Basic Common Lisp in Emacs Lisp
-(require 'cl)
+(eval-when-compile (require 'cl))
 
 (defun configure (path)
   (load-file (concat rc-dir path ".el")))
