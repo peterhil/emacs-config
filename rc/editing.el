@@ -84,6 +84,9 @@
 ;; Key bindings
 ;; ------------------------------------------------------------------------------
 
+;; My bindings
+(global-set-key [(control \')] 'comment-or-uncomment-region)
+
 ;; Backspace
 
 ;; See http://www.emacswiki.org/emacs/BackspaceKey
