@@ -10,18 +10,20 @@
 (add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.jsx\\'" . web-mode))
 
-;; (setq auto-mode-alist
-;;       (append
-;;        '(
-;;          ("\\.htm\\'" . web-mode)
-;;          ("\\.html\\'" . web-mode)
-;;          ("\\.xhtml\\'" . web-mode)
-;;          ("\\.erb\\'" . web-mode)
-;;          ("\\.mustache\\'" . web-mode)
-;;          ("\\.php\\'" . web-mode)
-;;          ("\\.ctp\\'" . web-mode)
-;;          )
-;;        auto-mode-alist))
+(setq auto-mode-alist
+      (append
+       '(
+         ("\\.htm\\'" . web-mode)
+         ("\\.html\\'" . web-mode)
+         ("\\.xhtml\\'" . web-mode)
+         ("\\.erb\\'" . web-mode)
+         ("\\.mustache\\'" . web-mode)
+         ("\\.php\\'" . web-mode)
+         ("\\.ctp\\'" . web-mode)
+         ("\\.css\\'" . web-mode)
+         ("\\.vue\\'" . web-mode)
+         )
+       auto-mode-alist))
 
 ; The matching is done on the path. You can alo configure like this if your templates are stored in a subdirectory called views, html or templates.
 (add-to-list 'auto-mode-alist '("/\\(views\\|html\\|templates\\)/.*\\.\\(php\\|twig\\)\\'" . web-mode))
