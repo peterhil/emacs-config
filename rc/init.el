@@ -6,6 +6,7 @@
          '(
            ;; -- Emacs lisp utility functions
            "elisp"
+           "emacsclient"
 
            ;; -- Colors
            "rainbow-mode"
