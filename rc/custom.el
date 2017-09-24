@@ -10,7 +10,7 @@
  '(ansi-color-names-vector
    ["#222627" "#F92672" "#A6E22E" "#E6DB74" "#66D9EF" "#FD5FF0" "#A1EFE4" "#F8F8F2"])
  '(aquamacs-additional-fontsets nil t)
- '(aquamacs-customization-version-id 307 t)
+ '(aquamacs-customization-version-id 308 t)
  '(aquamacs-tool-bar-user-customization nil t)
  '(better-fringes-mode t)
  '(bongo-enabled-backends (quote (mpg123 vlc mplayer speexdec)))
@@ -28,7 +28,7 @@
  '(current-language-environment "UTF-8")
  '(custom-safe-themes
    (quote
-    ("a041a61c0387c57bb65150f002862ebcfe41135a3e3425268de24200b82d6ec9" "3629b62a41f2e5f84006ff14a2247e679745896b5eaa1d5bcfbc904a3441b0cd" "7a8651aedf79219f9e15172bd290e0d8b6c79e4e1292b38f709edb6a593ec835" "4ff23437b3166eeb7ca9fa026b2b030bba7c0dfdc1ff94df14dfb1bcaee56c78" "49ad7c8d458074db7392f8b8a49235496e9228eb2fa6d3ca3a7aa9d23454efc6" "bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" "05c3bc4eb1219953a4f182e10de1f7466d28987f48d647c01f1f0037ff35ab9a" default)))
+    ("6d71a0e7567dfdd95f2c84b8b30aa057e6146a0dae1789639b555251f5e5c933" "a041a61c0387c57bb65150f002862ebcfe41135a3e3425268de24200b82d6ec9" "3629b62a41f2e5f84006ff14a2247e679745896b5eaa1d5bcfbc904a3441b0cd" "7a8651aedf79219f9e15172bd290e0d8b6c79e4e1292b38f709edb6a593ec835" "4ff23437b3166eeb7ca9fa026b2b030bba7c0dfdc1ff94df14dfb1bcaee56c78" "49ad7c8d458074db7392f8b8a49235496e9228eb2fa6d3ca3a7aa9d23454efc6" "bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" "05c3bc4eb1219953a4f182e10de1f7466d28987f48d647c01f1f0037ff35ab9a" default)))
  '(debug-on-error t)
  '(default-frame-alist
     (quote
@@ -78,10 +78,9 @@
  '(ns-tool-bar-size-mode (quote regular) t)
  '(nxml-child-indent 4)
  '(nxml-outline-child-indent 4)
- '(one-buffer-one-frame-mode nil nil (aquamacs-frame-setup))
  '(package-selected-packages
    (quote
-    (merlin php-auto-yasnippets zonokai-theme yaml-mode websocket web-server web-mode w3m vmd-mode uuidgen stylus-mode spacemacs-theme spacegray-theme smartparens slime scss-mode sass-mode ruby-compilation rainbow-mode qml-mode python-mode projectile php-mode php-completion paredit ox-gfm move-text monokai-theme mkdown md-readme markdown-mode+ magit linum-off less-css-mode json-mode js2-mode jinja2-mode jazz-theme jade-mode hlinum grizzl git-rebase-mode git-commit-mode fuzzy-format flymd flymake-php flymake-json flymake-css flymake-coffee flycheck-pyflakes flycheck-haskell flycheck-clojure erlang elm-mode elixir-mix editorconfig cypher-mode color-theme-sanityinc-tomorrow coffee-mode anything alchemist ag ack-and-a-half ace-jump-mode ac-python ac-dabbrev)))
+    (use-package php-auto-yasnippets zonokai-theme yaml-mode web-mode w3m vmd-mode uuidgen stylus-mode spacegray-theme smartparens slime scss-mode sass-mode ruby-compilation rainbow-mode qml-mode python-mode projectile php-mode php-completion paredit move-text monokai-theme mkdown md-readme markdown-mode+ magit linum-off less-css-mode json-mode js2-mode jinja2-mode jazz-theme jade-mode hlinum grizzl git-rebase-mode git-commit-mode fuzzy-format flymd flymake-php flymake-json flymake-css flymake-coffee flycheck-pyflakes flycheck-haskell flycheck-clojure erlang elm-mode elixir-mix editorconfig cypher-mode color-theme-sanityinc-tomorrow coffee-mode anything alchemist ag ack-and-a-half ace-jump-mode ac-python ac-dabbrev)))
  '(py-backslashed-continuation-indent 4)
  '(py-smart-indentation nil)
  '(python-guess-indent nil)
@@ -128,7 +127,6 @@
  '(web-mode-markup-indent-offset 4)
  '(weechat-color-list
    (unspecified "#222627" "#4E5959" "#A20C41" "#F92672" "#67930F" "#A6E22E" "#968B26" "#E6DB74" "#21889B" "#66D9EF" "#A41F99" "#FD5FF0" "#349B8D" "#A1EFE4" "#F8F8F2" "#F8F8F0"))
- '(x-select-enable-clipboard t)
  '(yaml-indent-offset 4))
 
 
