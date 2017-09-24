@@ -26,7 +26,7 @@
       (list (format "%s %%S: %%j " (system-name))
             '(buffer-file-name "%f" (dired-directory dired-directory "%b"))))
 
-
+;; Line numbers etc.
 (when t
   (progn
     ;; (global-hl-line-mode t)  ; Hightlight current line
@@ -50,6 +50,17 @@
     ;; Collapse fringes:
     ;; (fringe-mode -1)
     ))
+
+
+;; Automatically offer to create parent directories
+;; http://iqbalansari.me/blog/2014/12/07/automatically-create-parent-directories-on-visiting-a-new-file-in-emacs/
+(defun my-create-non-existent-directory ()
+  (let ((parent-directory (file-name-directory buffer-file-name)))
+    (when (and (not (file-exists-p parent-directory))
+               (y-or-n-p (format "Directory `%s' does not exist! Create it?" parent-directory)))
+      (make-directory parent-directory t))))
+
+(add-to-list 'find-file-not-found-functions #'my-create-non-existent-directory)
 
 
 ;; ==============================================================================
