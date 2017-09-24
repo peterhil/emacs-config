@@ -53,6 +53,9 @@
            "html-markup"
            "web"
 
+           ;; -- Ocaml
+           "opam-user-setup"
+
            ;; -- Languages
            "common-lisp"
            "elm"
@@ -60,6 +63,7 @@
            "haskell"
            ;; "lush"
            "python"
+           "reasonml"
            "ruby"
            ;; "rebol"
            "php"
