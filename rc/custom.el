@@ -62,7 +62,6 @@
  '(indicate-buffer-boundaries (quote left))
  '(inhibit-startup-screen t)
  '(magit-diff-use-overlays nil)
- '(mweb-submode-indent-offset 4)
  '(ns-tool-bar-display-mode (quote labels) t)
  '(ns-tool-bar-size-mode (quote regular) t)
  '(package-selected-packages
