@@ -22,12 +22,6 @@
           package-alist)))
 
 
-;; Auto-download archive if missing
-(when (not package-archive-contents)
-  (package-refresh-contents))
-
-
-;; Auto-download missing packages
 (defvar my-packages '(
                       ac-dabbrev
                       ace-jump-mode
@@ -107,10 +101,8 @@
                       )
   "A list of packages to ensure are installed at launch.")
 
-(dolist (p my-packages)
-  (when (not (package-installed-p p))
-    (package-install p)))
 
-;; (package-install 'pure)
-
-(provide 'packages)
+(defun my-install-package-list ()
+  (dolist (p my-packages)
+    (when (not (package-installed-p p))
+      (package-install p))))
