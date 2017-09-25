@@ -32,6 +32,7 @@
 ;; Use-package is a macro to lazily initialize, require and configure packages
 ;; https://github.com/jwiegley/use-package
 
+(add-to-list 'load-path "~/.emacs.d/site-lisp/use-package")
 (require 'use-package)
 
 
