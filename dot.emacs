@@ -1,7 +1,38 @@
 ;; -*- coding: utf-8; mode: emacs-lisp -*-
 ;; Emacs customization file by Peter Hillerström
 
+
+;; ==============================================================================
+;; Packages
+;; ------------------------------------------------------------------------------
+
+(require 'package)
+
+;; Set up Elpa repositories
+
+;; Gnu Emacs 25 on Mac OS X seems to crash on HTTPS connection?
+(let* ((no-ssl (and (memq system-type '(windows-nt ms-dos))
+                    (not (gnutls-available-p))))
+       (url (concat (if no-ssl "http" "https") "://melpa.org/packages/")))
+  (add-to-list 'package-archives (cons "melpa" url) t))
+
+(when (< emacs-major-version 24)
+  ;; For important compatibility libraries like cl-lib
+  (add-to-list 'package-archives '("gnu" . "https://elpa.gnu.org/packages/")))
+
 (package-initialize)
+
+(unless package-archive-contents
+  (package-refresh-contents))
+
+;; New on Emacs 25 - install packages based on package-selected-packages list:
+;; http://endlessparentheses.com/new-in-package-el-in-emacs-25-1-user-selected-packages.html
+;; (package-install-selected-packages)
+
+;; Use-package is a macro to lazily initialize, require and configure packages
+;; https://github.com/jwiegley/use-package
+
+(require 'use-package)
 
 
 ;; ==============================================================================
@@ -23,44 +54,6 @@
 
 (defun configure (path)
   (load-file (concat rc-dir path ".el")))
-
-
-;; ==============================================================================
-;; Packages
-;; ------------------------------------------------------------------------------
-
-;; Elpa repositories
-
-;; (require 'package)
-
-(when (< emacs-major-version 24)
-  (add-to-list 'package-archives '("gnu" . "https://elpa.gnu.org/packages/")))
-
-(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
-;(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
-
-(unless package-archive-contents
-  (package-refresh-contents))
-
-;; New on Emacs 25 - install packages based on package-selected-packages list:
-;; http://endlessparentheses.com/new-in-package-el-in-emacs-25-1-user-selected-packages.html
-(package-install-selected-packages)
-
-
-;; ==============================================================================
-;; Lazy load packages with use-package
-;; ------------------------------------------------------------------------------
-
-;; Ensure a package is installed
-(defun ensure-package-installed (package)
-  (unless (package-installed-p package)
-    (progn (message "Installing package: %s" package)
-	   (package-refresh-contents)
-	   (package-install package))))
-
-;; Use-package is a macro to lazily initialize, require and configure packages
-;; https://github.com/jwiegley/use-package
-(ensure-package-installed 'use-package)
 
 
 ;; ==============================================================================
