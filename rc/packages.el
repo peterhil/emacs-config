@@ -1,18 +1,6 @@
 ;; ==============================================================================
-;; Elpa packages
+;; My packages
 ;; ------------------------------------------------------------------------------
-
-(require 'package)
-
-(when (< emacs-major-version 24)
-  (add-to-list 'package-archives '("gnu" . "https://elpa.gnu.org/packages/")))
-
-(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
-;(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
-(add-to-list 'package-archives '("marmalade" . "https://marmalade-repo.org/packages/") t)
-
-(package-initialize)
-
 
 (defun package-update-load-path ()
   "Update the load path for newly installed packages."

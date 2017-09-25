@@ -3,6 +3,7 @@
 
 (package-initialize)
 
+
 ;; ==============================================================================
 ;; Generic config
 ;; ------------------------------------------------------------------------------
@@ -22,6 +23,30 @@
 
 (defun configure (path)
   (load-file (concat rc-dir path ".el")))
+
+
+;; ==============================================================================
+;; Packages
+;; ------------------------------------------------------------------------------
+
+;; Elpa repositories
+
+;; (require 'package)
+
+(when (< emacs-major-version 24)
+  (add-to-list 'package-archives '("gnu" . "https://elpa.gnu.org/packages/")))
+
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+;(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+(add-to-list 'package-archives '("marmalade" . "https://marmalade-repo.org/packages/") t)
+
+(unless package-archive-contents
+  (package-refresh-contents))
+
+;; New on Emacs 25 - install packages based on package-selected-packages list:
+;; http://endlessparentheses.com/new-in-package-el-in-emacs-25-1-user-selected-packages.html
+(package-install-selected-packages)
+
 
 ;; ==============================================================================
 ;; Site lisp
