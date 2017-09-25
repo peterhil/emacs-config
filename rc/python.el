@@ -15,6 +15,11 @@
 
 (setq-default py-shell-name "ipython")
 
+(setq py-backslashed-continuation-indent 4)
+(setq py-smart-indentation nil)
+(setq python-guess-indent nil)
+
+
 ;; ==============================================================================
 ;; Pymacs
 ;; ------------------------------------------------------------------------------
