@@ -1,11 +1,11 @@
 ;; ==============================================================================
 ;; Audio
-;; Outline-magic
 ;; ------------------------------------------------------------------------------
 
 
 ;; ==============================================================================
 ;; EMMS - Emacs multimedia system
+;; ------------------------------------------------------------------------------
 
 ;; Simple config
 ;; (require 'emms-setup)
@@ -25,15 +25,13 @@
 			 emms-player-mplayer)
       emms-source-list '((emms-directory-tree "~/Music/")))
 
+
 ;; ==============================================================================
 ;; Bongo
+;; ------------------------------------------------------------------------------
 
 (autoload 'bongo "bongo"
   "Start Bongo by switching to a Bongo buffer." t)
-;; (add-hook 'outline-minor-mode-hook
-;;           (lambda ()
-;;             (require 'outline-magic)
-;;             (define-key outline-minor-mode-map [(f2)] 'outline-cycle)))
 
 (defun bongo-add-dired-files ()
   "Add marked files to Bongo library"
@@ -49,3 +47,20 @@
       ;; one Bongo buffer?
       (set-buffer bongo-default-library-buffer-name)
       (mapc 'bongo-insert-file files))))
+
+(setq bongo-enabled-backends (quote (mpg123 vlc mplayer speexdec)))
+(setq bongo-mplayer-extra-arguments (quote ("-fs")))
+(setq bongo-mplayer-interactive t)
+(setq bongo-mplayer-program-name "mplayer")
+(setq bongo-vlc-interactive nil)
+(setq bongo-vlc-program-name "vlc")
+
+
+;; ==============================================================================
+;; Outline-magic
+;; ------------------------------------------------------------------------------
+
+;; (add-hook 'outline-minor-mode-hook
+;;           (lambda ()
+;;             (require 'outline-magic)
+;;             (define-key outline-minor-mode-map [(f2)] 'outline-cycle)))
