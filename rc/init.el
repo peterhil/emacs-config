@@ -18,6 +18,7 @@
            ;; "firacode"
            "keyboard-shortcuts"
            "dired"
+           "anything"
 
            "hex"
            "images"
