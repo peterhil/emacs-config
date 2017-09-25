@@ -30,7 +30,6 @@
 ;; Auto-download missing packages
 (defvar my-packages '(
                       ac-dabbrev
-                      ac-python
                       ace-jump-mode
                       ack
                       ack-and-a-half
@@ -61,8 +60,6 @@
                       flymake-php
                       flymd
                       fuzzy-format
-                      git-commit-mode
-                      git-rebase-mode
                       grizzl
                       haml-mode
                       hlinum
