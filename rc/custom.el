@@ -41,8 +41,6 @@
  '(desktop-save-mode t)
  '(dired-auto-revert-buffer (quote dired-directory-changed-p))
  '(dired-use-ls-dired nil)
- '(ecb-options-version "2.40")
- '(ecb-tree-stickynode-indent-string " ")
  '(emulate-mac-finnish-keyboard-mode t)
  '(erc-modules
    (quote
