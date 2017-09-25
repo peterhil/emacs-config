@@ -16,7 +16,7 @@
  '(c-echo-syntactic-information-p t)
  '(c-special-indent-hook (quote (ignore)))
  '(c-tab-always-indent (quote other))
- '(color-theme-is-cumulative t)
+ '(color-theme-is-cumulative nil)
  '(compilation-message-face (quote default))
  '(create-frame-min-width 120)
  '(current-language-environment "UTF-8")
