@@ -4,6 +4,27 @@
 
 (require 'erc)
 
+(setq erc-modules
+      '(autojoin
+        button
+        completion
+        fill
+        irccontrols
+        keep-place
+        list
+        log
+        match
+        menu
+        move-to-prompt
+        netsplit
+        networks
+        noncommands
+        readonly
+        ring
+        services
+        stamp
+        track))
+
 ;; ------------------------------------------------------------------------------
 ;; Highlight nicknames extension
 

@@ -42,9 +42,6 @@
  '(dired-auto-revert-buffer (quote dired-directory-changed-p))
  '(dired-use-ls-dired nil)
  '(emulate-mac-finnish-keyboard-mode t)
- '(erc-modules
-   (quote
-    (autojoin button completion fill irccontrols keep-place list log match menu move-to-prompt netsplit networks noncommands readonly ring services stamp track)))
  '(fci-rule-color "#4E5959")
  '(fill-column 78)
  '(fringe-mode (quote (nil . 0)) nil (fringe))
