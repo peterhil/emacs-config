@@ -49,6 +49,22 @@
 
 
 ;; ==============================================================================
+;; Lazy load packages with use-package
+;; ------------------------------------------------------------------------------
+
+;; Ensure a package is installed
+(defun ensure-package-installed (package)
+  (unless (package-installed-p package)
+    (progn (message "Installing package: %s" package)
+	   (package-refresh-contents)
+	   (package-install package))))
+
+;; Use-package is a macro to lazily initialize, require and configure packages
+;; https://github.com/jwiegley/use-package
+(ensure-package-installed 'use-package)
+
+
+;; ==============================================================================
 ;; Site lisp
 ;; ------------------------------------------------------------------------------
 
