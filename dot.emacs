@@ -15,6 +15,7 @@
 (setq rc-dir "~/.emacs.d/rc/")
 
 (setq custom-file (concat rc-dir "custom.el"))
+(load custom-file 'no-error)
 
 ;; Basic Common Lisp in Emacs Lisp
 (eval-when-compile (require 'cl))
