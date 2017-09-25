@@ -39,7 +39,7 @@
       (cursor-color . "#73d216")
       (mouse-color . "#73d216"))))
  '(default-input-method "finnish-keyboard")
- '(desktop-save-mode t)
+ '(desktop-save-mode nil)
  '(dired-auto-revert-buffer (quote dired-directory-changed-p))
  '(dired-use-ls-dired nil)
  '(emulate-mac-finnish-keyboard-mode t)
