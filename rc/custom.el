@@ -61,7 +61,6 @@
  '(indent-tabs-mode nil)
  '(indicate-buffer-boundaries (quote left))
  '(inhibit-startup-screen t)
- '(magit-diff-use-overlays nil)
  '(ns-tool-bar-display-mode (quote labels) t)
  '(ns-tool-bar-size-mode (quote regular) t)
  '(package-selected-packages
