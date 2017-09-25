@@ -74,7 +74,7 @@
       (cons '("<\\?xml " . nxml-mode)
             magic-mode-alist))
 
-(cl-fset 'xml-mode 'nxml-mode)
+(fset 'xml-mode 'nxml-mode)
 
 (setq nxml-child-indent 4)
 (setq nxml-outline-child-indent 4)
