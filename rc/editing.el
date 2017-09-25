@@ -51,7 +51,6 @@
     ;; (fringe-mode -1)
     ))
 
-
 ;; Automatically offer to create parent directories
 ;; http://iqbalansari.me/blog/2014/12/07/automatically-create-parent-directories-on-visiting-a-new-file-in-emacs/
 (defun my-create-non-existent-directory ()
@@ -61,6 +60,10 @@
       (make-directory parent-directory t))))
 
 (add-to-list 'find-file-not-found-functions #'my-create-non-existent-directory)
+
+;; Enable syncing clipboard and yanking only on Linux
+(when (eq system-type 'linux)
+  (setq x-select-enable-clipboard t))
 
 
 ;; ==============================================================================
