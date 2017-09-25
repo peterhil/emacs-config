@@ -74,7 +74,11 @@
       (cons '("<\\?xml " . nxml-mode)
             magic-mode-alist))
 
-(fset 'xml-mode 'nxml-mode)
+(cl-fset 'xml-mode 'nxml-mode)
+
+(setq nxml-child-indent 4)
+(setq nxml-outline-child-indent 4)
+
 
 ;; Use following if you would like to edit html files in nxml-mode.
 ; (fset 'html-mode 'nxml-mode)
