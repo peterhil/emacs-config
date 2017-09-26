@@ -51,7 +51,7 @@
            "wikipedia"
            ;; "multi-web-mode"
            "zencoding"
-           "html-markup"
+           "style"
            "nxhtml"
            "web"
 
