@@ -50,7 +50,6 @@
            "markdown"
            "wikipedia"
            ;; "multi-web-mode"
-           ;; "cake"
            "zencoding"
            "html-markup"
            "web"
