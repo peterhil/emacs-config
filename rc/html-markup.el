@@ -3,13 +3,17 @@
 ;; ------------------------------------------------------------------------------
 
 (require 'jinja2-mode)
+(my-assign-extensions
+ 'jinja2-mode
+ '("\\.jinja\\'"
+   ;; Do matching on the path and extension
+   "/templates/.*\\.html\\'"))
 
 ;; YAML
 (require 'yaml-mode)
-(add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
-(add-to-list 'auto-mode-alist '("\\.yaml\\'" . yaml-mode))
+(add-to-list 'auto-mode-alist '("\\.yaml\\?\\'" . yaml-mode))
 
-;; CSS mode
+;; CSS modes
 (require 'css-mode)
 (add-to-list 'auto-mode-alist '("\\.css\\'" . css-mode))
 
@@ -21,18 +25,20 @@
 (require 'stylus-mode)
 (add-to-list 'auto-mode-alist '("\\.styl\\'" . stylus-mode))
 
-;; Scss/Sass
-;; (setq exec-path (cons (expand-file-name "~/.rvm/gems/ruby-2.0.0-p481/bin") exec-path))
-(setq scss-compile-at-save nil)
+;; SASS and SCSS
 (autoload 'scss-mode "scss-mode")
+(add-to-list 'auto-mode-alist '("\\.sass\\'" . sass-mode))
 (add-to-list 'auto-mode-alist '("\\.scss\\'" . scss-mode))
 
-;; Jade and Stylus
-;; (add-to-list 'load-path "~/.emacs.d/site-lisp/jade-mode")
-; (require 'sws-mode)
-; (add-to-list 'auto-mode-alist '("\\.styl$" . sws-mode))
-; (require 'jade-mode)
-; (add-to-list 'auto-mode-alist '("\\.jade$" . jade-mode))
+(setq scss-compile-at-save nil)
+
+;; Stylus
+(require 'sws-mode)
+(add-to-list 'auto-mode-alist '("\\.styl\\'" . sws-mode))
+
+;; Jade
+(require 'jade-mode)
+(add-to-list 'auto-mode-alist '("\\.jade\\'" . jade-mode))
 
 ;; ==============================================================================
 ;; nXhtml - package (includes php-mode and LOTS of other stuff)
