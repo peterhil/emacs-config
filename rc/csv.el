@@ -5,6 +5,7 @@
 (require 'csv-mode)
 (require 'csv-nav)
 
-(add-to-list 'auto-mode-alist '("\\.csv$" . csv-nav-mode))
-(add-to-list 'auto-mode-alist '("\\.tsv$" . csv-nav-mode))
-
+(my-auto-load-extensions
+ 'csv-nav-mode
+ '("csv"
+   "tsv"))

@@ -10,5 +10,4 @@
 
 (add-hook 'qml-mode-hook
           '(lambda()
-             (set (make-local-variable 'electric-indent-chars) nil)
-             ))
+             (set (make-local-variable 'electric-indent-chars) nil)))

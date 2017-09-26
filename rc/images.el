@@ -10,19 +10,20 @@
 (add-hook 'image-mode-hook 'eimp-mode)
 
 ;; Inkmacs -- experimental Emacs Inscape bridge
-
 ;; (require 'inkmacs)
 
-;; Image mode settings from:
-;; http://code.google.com/p/dea/source/browse/trunk/my-lisps/image-mode-settings.el
-;; Time-stamp: <2010-11-30 10:01:05 Tuesday by taoshanwen>
-
 (auto-image-file-mode 1)
-(add-to-list 'auto-mode-alist '("\\.\\(jpeg\\|jpg\\|JPG\\)$" . image-mode))
-(add-to-list 'auto-mode-alist '("\\.\\(tiff\\|tif\\|TIF\\)$" . image-mode))
-(add-to-list 'auto-mode-alist '("\\.\\(png\\|PNG\\)$" . image-mode))
-(add-to-list 'auto-mode-alist '("\\.\\(gif\\|GIF\\)$" . image-mode))
-(add-to-list 'auto-mode-alist '("\\.\\(bmp\\|BMP\\)$" . image-mode))
+
+(my-auto-mode-extensions
+ 'image-mode
+ '(
+   "bmp"
+   "gif"
+   "ico"
+   "jpe\\?g"
+   "png"
+   "tiff\\?"
+   ))
 
 ;; (define-key 'image-mode-map (kbd "\\'") 'switch-to-other-buffer) ; <- Does not work?! Was eal-define-key
 

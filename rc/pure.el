@@ -1,4 +1,6 @@
+;; ==============================================================================
 ;; Pure language
+;; ------------------------------------------------------------------------------
 
 ;; HideShow support
 ;; (require 'hideshow)
@@ -8,7 +10,7 @@
 ;; (require 'w3m-load)
 
 (require 'pure-mode)
-(add-to-list 'auto-mode-alist '("\\.pure\\(rc\\)?$" . pure-mode))
+(add-to-list 'auto-mode-alist '("\\.pure\\(rc\\)?\\'" . pure-mode))
 
 (add-hook 'pure-mode-hook 'turn-on-font-lock)
 (add-hook 'pure-eval-mode-hook 'turn-on-font-lock)

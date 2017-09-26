@@ -2,17 +2,12 @@
 ;; Python-mode
 ;; ------------------------------------------------------------------------------
 
-(autoload 'python-mode "python-mode" "Python Mode." t)
-(add-to-list 'auto-mode-alist '("\\.py\\'" . python-mode))
-;; (add-to-list 'interpreter-mode-alist '("python" . python-mode))
-
-;; (add-hook 'python-mode-hook 'color-theme-monokai)
-
 (require 'python-mode)
 
-;; Unless other libraries depend on python.el, unloading 'python is recommended, as it seems to destroy python-mode user defined abbreviations:
-;; (when (featurep 'python) (unload-feature 'python t))
+(autoload 'python-mode "python-mode" "Python Mode." t)
+(add-to-list 'auto-mode-alist '("\\.py\\'" . python-mode))
 
+;; (add-to-list 'interpreter-mode-alist '("python" . python-mode))
 (setq-default py-shell-name "ipython")
 
 (setq py-backslashed-continuation-indent 4)

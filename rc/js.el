@@ -3,14 +3,15 @@
 ;; ------------------------------------------------------------------------------
 
 (require 'js2-mode)
-
 (autoload 'js2-mode "js2-mode" nil t)
-(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
+
+(my-auto-mode-extensions
+ 'js2-mode
+ '("js"))
 
 (add-hook 'js2-mode-hook
           '(lambda()
-             (set (make-local-variable 'electric-indent-chars) nil)
-             ))
+             (set (make-local-variable 'electric-indent-chars) nil)))
 
 
 ;; ==============================================================================
@@ -20,10 +21,10 @@
 (eval-after-load "js2-refactor-autoloads"
   '(progn
      (if (require 'js2-refactor nil t)
-	 (progn
-	   ;; (js2-refactor 1)
-	   (js2r-add-keybindings-with-prefix "C-c C-j")
-	   )
+         (progn
+           ;; (js2-refactor 1)
+           (js2r-add-keybindings-with-prefix "C-c C-j")
+           )
        (warn "js2-refactor is not found."))))
 
 ;; Refactorings
