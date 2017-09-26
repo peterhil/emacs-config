@@ -52,6 +52,7 @@
            ;; "multi-web-mode"
            "zencoding"
            "html-markup"
+           "nxhtml"
            "web"
 
            ;; -- Ocaml
