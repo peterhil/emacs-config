@@ -6,25 +6,24 @@
 
 (add-to-list 'magic-mode-alist '("\\(?:<\\?xml\\s +[^>]*>\\)?\\s *<\\(?:!--\\(?:[^-]\\|-[^-]\\)*-->\\s *<\\)*\\(?:!DOCTYPE\\s +[^>]*>\\s *<\\s *\\(?:!--\\(?:[^-]\\|-[^-]\\)*-->\\s *\<\\)*\\)?[Hh][Tt][Mm][Ll]" . web-mode))
 
-(my-assign-extensions
+(my-auto-mode-regexps
  'web-mode
  '("/\\(views\\|html\\|templates\\)/.*\\.\\(php\\|twig\\)\\'" ; Matching can be done on the path
    "/components/.*\\.js\\'"))
 
-(my-assign-extensions
+(my-auto-mode-extensions
  'web-mode
- (my-extension-regexp-list
-  '(
-    "css"
-    "ctp"
-    "erb"
-    "html\\?"
-    "jsx"
-    "mustache"
-    "php"
-    "vue"
-    "xhtml"
-    )))
+ '(
+   "css"
+   "ctp"
+   "erb"
+   "html\\?"
+   "jsx"
+   "mustache"
+   "php"
+   "vue"
+   "xhtml"
+   ))
 
 ;; Custom coding standards
 (add-hook 'web-mode-hook

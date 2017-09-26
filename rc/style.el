@@ -3,7 +3,7 @@
 ;; ------------------------------------------------------------------------------
 
 (require 'jinja2-mode)
-(my-assign-extensions
+(my-auto-mode-regexps
  'jinja2-mode
  '("\\.jinja\\'"
    ;; Do matching on the path and extension
