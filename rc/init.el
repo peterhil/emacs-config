@@ -4,7 +4,7 @@
 
 (dolist (include
          '(
-           ;; -- Emacs lisp utility functions
+           ;; -- Emacs lisp utility functions, make sure this is loaded first!
            "elisp"
            "emacsclient"
 
