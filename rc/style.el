@@ -11,7 +11,7 @@
 
 ;; YAML
 (require 'yaml-mode)
-(add-to-list 'auto-mode-alist '("\\.yaml\\?\\'" . yaml-mode))
+(add-to-list 'auto-mode-alist '("\\.ya\\?ml\\'" . yaml-mode))
 
 ;; CSS modes
 (require 'css-mode)
