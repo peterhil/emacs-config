@@ -64,7 +64,6 @@
  '(inhibit-startup-screen t)
  '(ns-tool-bar-display-mode (quote labels) t)
  '(ns-tool-bar-size-mode (quote regular) t)
- '(one-buffer-one-frame-mode (quote default) nil nil)
  '(package-selected-packages
    (quote
     (eslint-fix exec-path-from-shell elm-mode csv-nav php-auto-yasnippets zonokai-theme yaml-mode web-mode w3m vmd-mode uuidgen stylus-mode spacegray-theme smartparens slime scss-mode sass-mode ruby-compilation rainbow-mode qml-mode python-mode projectile php-mode php-completion paredit move-text monokai-theme mkdown md-readme markdown-mode+ magit linum-off less-css-mode json-mode js2-mode jinja2-mode jazz-theme jade-mode hlinum grizzl fuzzy-format flymd flymake-php flymake-json flymake-css flymake-coffee flycheck-pyflakes flycheck-haskell flycheck-clojure erlang elixir-mix editorconfig cypher-mode color-theme-sanityinc-tomorrow coffee-mode anything alchemist ag ack-and-a-half ace-jump-mode ac-dabbrev)))
