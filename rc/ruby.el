@@ -4,7 +4,7 @@
 
 (require 'ruby-mode)
 
-(my-auto-load-regexps
+(my-auto-mode-regexps
  'ruby-mode
  '("\\.rb\\'"
    "^Capfile$"))
