@@ -41,22 +41,22 @@
 
 ;; Auto-download missing packages
 (defvar my-packages '(
-                      ac-dabbrev
-                      ac-python
+                      ;; ac-dabbrev
+                      ;; ac-python
                       ace-jump-mode
                       ack
-                      ack-and-a-half
+                      ;; ack-and-a-half
                       ag
                       alchemist
-                      anything
+                      ;; anything
                       ;; auto-complete
                       clojure-mode
                       coffee-mode
                       csv-mode
-                      csv-nav
+                      ;; csv-nav
                       cypher-mode
                       editorconfig
-                      elixir-mix
+                      ;; elixir-mix
                       elixir-mode
                       elm-mode
                       erlang
@@ -72,9 +72,9 @@
                       flymake-json
                       flymake-php
                       flymd
-                      fuzzy-format
-                      git-commit-mode
-                      git-rebase-mode
+                      ;; fuzzy-format
+                      ;; git-commit-mode
+                      ;; git-rebase-mode
                       grizzl
                       haml-mode
                       hlinum
@@ -96,7 +96,7 @@
                       paredit
                       parinfer
                       php-auto-yasnippets
-                      php-completion
+                      ;; php-completion
                       php-mode
                       projectile
                       python-mode
