@@ -30,7 +30,7 @@
                       ag
                       alchemist
                       anything
-                      ;; auto-complete
+                      auto-complete
                       clojure-mode
                       coffee-mode
                       csv-mode
