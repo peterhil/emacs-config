@@ -5,6 +5,9 @@
 (require 'js2-mode)
 (autoload 'js2-mode "js2-mode" nil t)
 
+;; https://stackoverflow.com/questions/35162106/how-to-disable-js2-mode-syntax-checking-globally-in-spacemacs
+(setq js2-strict-missing-semi-warning nil)
+
 (my-auto-mode-extensions
  'js2-mode
  '("js"))
