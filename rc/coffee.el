@@ -4,7 +4,7 @@
 
 (require 'coffee-mode)
 
-(my-auto-load-regexps
+(my-auto-mode-regexps
  'coffee-mode
  '("\\.coffee\\'"
    "^Cakefile$"))
