@@ -21,6 +21,7 @@
    "jsx"
    "mustache"
    "php"
+   "tag"
    "vue"
    "xhtml"
    ))

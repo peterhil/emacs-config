@@ -98,6 +98,10 @@
                       ;; websocket
                       yaml-mode
                       ;; zonokai-theme
+                      caml
+                      tuareg
+                      utop
+                      merlin
                       )
   "A list of packages to ensure are installed at launch.")
 

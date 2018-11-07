@@ -57,6 +57,7 @@
 
            ;; -- Ocaml
            "opam-user-setup"
+           "ocaml"
 
            ;; -- Languages
            "common-lisp"
