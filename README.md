@@ -16,8 +16,8 @@ Clone the source:
 
 Make symlinks:
 
-    ln -s ~/src/emacs-config/dot.emacs ~/.emacs
-    ln -s ~/src/emacs-config/rc ~/.emacs.d/rc
+    ln -sf $PWD/dot.emacs ~/.emacs
+    ln -sf $PWD/rc ~/.emacs.d/rc
 
 ## Usage
 
