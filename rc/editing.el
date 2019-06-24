@@ -98,15 +98,15 @@
 ;; Key bindings
 ;; ------------------------------------------------------------------------------
 
-;; Backspace
+(define-key global-map (kbd "C-'") 'comment-or-uncomment-region)
+(define-key global-map (kbd "C-M-'") 'uncomment-region)
 
+;; Backspace
 ;; See http://www.emacswiki.org/emacs/BackspaceKey
 (global-set-key [(control h)] 'delete-backward-char)
 
 ;; Help
 (global-set-key [(hyper h)] 'help)
-
-(global-set-key (kbd "<f5>") 'copy-buffer-dir)
 
 
 ;; Disable yas tab key
