@@ -14,6 +14,9 @@
 (setq py-smart-indentation nil)
 (setq python-guess-indent nil)
 
+;; Disable eldoc -- https://emacs.stackexchange.com/questions/31414/how-to-globally-disable-eldoc
+(global-eldoc-mode -1)
+
 
 ;; ==============================================================================
 ;; Pymacs
