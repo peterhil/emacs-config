@@ -41,9 +41,8 @@
            "smart-tabs"
            ;; "yasnippet"
            ;; "jira"
-           "qt"
-           "projectile"
-           ;; "flycheck"
+           ;; "qt"
+           ;; "projectile"
            ;; "flymake"
 
            ;; -- Markup
@@ -53,16 +52,16 @@
            ;; "multi-web-mode"
            "zencoding"
            "style"
-           "nxhtml"
+           ;; "nxhtml"
            "web"
 
            ;; -- Ocaml
-           "opam-user-setup"
+           ;; "opam-user-setup"
            ;; "ocaml"
 
            ;; -- Languages
            "common-lisp"
-           "elm"
+           ;; "elm"
            ;; "scheme"
            "haskell"
            ;; "lush"
@@ -70,7 +69,7 @@
            ;; "reasonml"
            "ruby"
            ;; "rebol"
-           "php"
+           ;; "php"
            "coffee"
            "js"
            ;; "pure"
