@@ -1,17 +1,40 @@
 # Emacs config files
 
-Here is my Emacs configuration files.
+Here are my Emacs configuration files.
 
 ## Installation
 
-    cd ~/src
-    git clone git://github.com/peterhil/emacs-config.git
-    ln -s ~/src/emacs-config/dot.emacs ~/.emacs
-    ln -s ~/src/emacs-config/rc ~/.emacs.d/rc
-    mkdir -p ~/.emacs.d/site-lisp
-    mkdir ~/.emacs.d/tmp
-    touch ~/.emacs.d/tmp/savehist
+Move aside your existing .emacs file (or just remove it):
 
-You may want to first comment out every include (using semicolons) in the Mode-specific configs,  
-before you have installed the ones you'll use. Quite many of them can be found on Github.  
-And the rest can be found on [Emacs Wiki](http://www.emacswiki.org/).
+    mv ~/.emacs ~/.emacs-old
+
+Clone the source:
+
+    cd ~/src  # Replace with wherever you want to clone
+    git clone git://github.com/peterhil/emacs-config.git
+
+Make symlinks:
+
+    ln -sf $PWD/dot.emacs ~/.emacs
+    ln -sf $PWD/rc ~/.emacs.d/rc
+
+## Usage
+
+This configuration uses [use-package][] in order to lazily initialize, load and configure packages. I am just starting to lazy load packages with [use-package][], so check:
+
+- configuration includes in `rc/init.el`
+- package includes in `rc/packages.el`
+
+And comment out the ones you do not need.
+
+### Packages
+
+Under the `rc` directory you can find configurations for various packages. See `*Messages*` buffer after startup to see which ones you may be missing.
+
+### Manually installing Emacs code
+
+Subdirectories under `~/.emacs.d/site-lisp` are automatically added to the `load-path`.
+
+Add the script `update-git-repos.sh` in your path and use it from `~/.emacs.d/site-lisp` directory to automatically update any Git repositories there.
+
+[use-package]: https://github.com/jwiegley/use-package

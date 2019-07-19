@@ -16,3 +16,8 @@
 
 (add-to-list 'flycheck-disabled-checkers 'python-flake8)
 (add-to-list 'flycheck-disabled-checkers 'python-pylint)
+
+;; Fix PATH variable ; TODO Move elsewhere
+;; http://www.flycheck.org/en/latest/
+(require 'exec-path-from-shell)
+(exec-path-from-shell-initialize)

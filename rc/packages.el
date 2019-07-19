@@ -1,17 +1,10 @@
 ;; ==============================================================================
-;; Elpa packages
+;; My packages
 ;; ------------------------------------------------------------------------------
 
-(require 'package)
-
-(when (< emacs-major-version 24)
-  (add-to-list 'package-archives '("gnu" . "https://elpa.gnu.org/packages/")))
-
-(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
-;; (add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
-;; (add-to-list 'package-archives '("marmalade" . "https://marmalade-repo.org/packages/") t)
-
-(package-initialize)
+;; Add paths to your load path (for Homebrew or apt installed packages)
+(let ((default-directory "/usr/local/share/emacs/site-lisp/"))
+  (normal-top-level-add-subdirs-to-load-path))
 
 
 (defun package-update-load-path ()
@@ -34,22 +27,16 @@
           package-alist)))
 
 
-;; Auto-download archive if missing
-(when (not package-archive-contents)
-  (package-refresh-contents))
-
-
-;; Auto-download missing packages
 (defvar my-packages '(
-                      ;; ac-dabbrev
+                      ac-dabbrev
                       ;; ac-python
                       ace-jump-mode
                       ack
                       ;; ack-and-a-half
                       ag
                       alchemist
-                      ;; anything
-                      ;; auto-complete
+                      anything
+                      auto-complete
                       clojure-mode
                       coffee-mode
                       csv-mode
@@ -72,7 +59,7 @@
                       flymake-json
                       flymake-php
                       flymd
-                      ;; fuzzy-format
+                      fuzzy-format
                       ;; git-commit-mode
                       ;; git-rebase-mode
                       grizzl
@@ -119,13 +106,16 @@
                       ;; websocket
                       yaml-mode
                       ;; zonokai-theme
+                      caml
+                      tuareg
+                      utop
+                      merlin
+                      visual-regexp
                       )
   "A list of packages to ensure are installed at launch.")
 
-(dolist (p my-packages)
-  (when (not (package-installed-p p))
-    (package-install p)))
 
-;; (package-install 'pure)
-
-(provide 'packages)
+(defun my-install-package-list ()
+  (dolist (p my-packages)
+    (when (not (package-installed-p p))
+      (package-install p))))

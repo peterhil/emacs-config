@@ -1,24 +1,44 @@
 ;; -*- coding: utf-8; mode: emacs-lisp -*-
 ;; Emacs customization file by Peter Hillerström
 
+
+;; ==============================================================================
+;; Packages
+;; ------------------------------------------------------------------------------
+
+(require 'package)
+
+;; Set up Elpa repositories
+
+;; Gnu Emacs 25 on Mac OS X seems to crash on HTTPS connection?
+(let* ((no-ssl (and (memq system-type '(windows-nt ms-dos))
+                    (not (gnutls-available-p))))
+       (url (concat (if no-ssl "http" "https") "://melpa.org/packages/")))
+  (add-to-list 'package-archives (cons "melpa" url) t))
+
+(when (< emacs-major-version 24)
+  ;; For important compatibility libraries like cl-lib
+  (add-to-list 'package-archives '("gnu" . "https://elpa.gnu.org/packages/")))
+
+(package-initialize)
+
+(unless package-archive-contents
+  (package-refresh-contents))
+
+;; New on Emacs 25 - install packages based on package-selected-packages list:
+;; http://endlessparentheses.com/new-in-package-el-in-emacs-25-1-user-selected-packages.html
+;; (package-install-selected-packages)
+
+;; Use-package is a macro to lazily initialize, require and configure packages
+;; https://github.com/jwiegley/use-package
+
+(add-to-list 'load-path "~/.emacs.d/site-lisp/use-package")
+(require 'use-package)
+
+
 ;; ==============================================================================
 ;; Generic config
 ;; ------------------------------------------------------------------------------
-
-;; Added by Package.el.  This must come before configurations of
-;; installed packages.  Don't delete this line.  If you don't want it,
-;; just comment it out by adding a semicolon to the start of the line.
-;; You may delete these explanatory comments.
-(package-initialize)
-
-;; Define function to shutdown emacs server instance
-;; Can be called from shell with: emacsclient -e '(server-shutdown)'
-(defun server-shutdown ()
-  "Save buffers, Quit, and Shutdown (kill) server"
-  (interactive)
-  (save-some-buffers)
-  (kill-emacs)
-  )
 
 (setq usr-prefix
       (cond ((eq system-type 'darwin) "/usr/local")
@@ -28,12 +48,14 @@
 (setq rc-dir "~/.emacs.d/rc/")
 
 (setq custom-file (concat rc-dir "custom.el"))
+(load custom-file 'no-error)
 
 ;; Basic Common Lisp in Emacs Lisp
-(require 'cl)
+(eval-when-compile (require 'cl))
 
 (defun configure (path)
   (load-file (concat rc-dir path ".el")))
+
 
 ;; ==============================================================================
 ;; Site lisp

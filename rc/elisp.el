@@ -1,13 +1,24 @@
 ;; ==============================================================================
-;; Emacs Lisp utility functions for startup
+;; Lisp utility functions for startup
 ;; ------------------------------------------------------------------------------
 
-;; Check if a commands path matches a string using the shell command which
-(defun command-which-matches (cmd match-str)
-     (shell-command (concat "which" " " cmd))
-     (if (string-match match-str
-                       (with-current-buffer (get-buffer "*Shell Command Output*")
-                         (buffer-string))
-                       )
-         t
-       nil))
+(require 'cl)
+
+(defun my-extension-regexp (extension)
+  (cl-concatenate 'string "\\." extension "\\'"))
+
+(defun my-extension-regexps (extension-list)
+  (mapcar 'my-extension-regexp
+          extension-list))
+
+(defun my-auto-mode-regexps (mode extension-list)
+  (mapcar
+   (lambda (extension)
+     (add-to-list 'auto-mode-alist
+                  (cons extension mode)))
+   extension-list))
+
+(defun my-auto-mode-extensions (mode extension-list)
+  (my-auto-mode-regexps
+   mode
+   (my-extension-regexps extension-list)))

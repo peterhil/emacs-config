@@ -5,9 +5,13 @@
 
 (require 'smart-tab)
 (global-smart-tab-mode t)
-(global-set-key '[C-tab] 'smart-tab)
+;; (global-set-key '[C-tab] 'smart-tab)
 
 
+;; Standard Emacs autocomplete with dabbrev:
+;; Alternatively use hippie-expand with (M-x hip RET):
+;; https://www.emacswiki.org/emacs/TabCompletion#SmartTab
+(global-set-key '[backtab] 'dabbrev-expand)
 
 
 ;; C like languages

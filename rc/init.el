@@ -4,8 +4,9 @@
 
 (dolist (include
          '(
-           ;; -- Emacs lisp utility functions
+           ;; -- Emacs lisp utility functions, make sure this is loaded first!
            "elisp"
+           "emacsclient"
 
            ;; -- Colors
            "rainbow-mode"
@@ -14,59 +15,62 @@
            ;; -- Editing
            "locale"
            "editing"
+           "regexp"
            ;; "firacode"
            "keyboard-shortcuts"
            "dired"
+           ;; "anything"
 
            "hex"
            "images"
-           "audio"
+           ;; "audio"
            ;; "erc"
            ;; "textmate"
            "shell"
            ;; "w3m"
 
            ;; -- Programming tools
-           "homebrew"
            ;; "cedet"
            ;; "dash-at-point"
            "diff"
            "git"
+           ;; "magit"
            "tags"
            ;; "ecb"
            ;; "auto-completion"
            "smart-tabs"
            ;; "yasnippet"
            ;; "jira"
-           "qt"
-           "projectile"
-           ;; "flycheck"
-           ;; "flymake"
+           ;; "qt"
+           ;; "projectile"
+           ;; "flycheck
+           "flymake"
 
            ;; -- Markup
            ;; "org"
            "markdown"
            "wikipedia"
            ;; "multi-web-mode"
-           ;; "cake"
            "zencoding"
-           "html-markup"
+           "style"
+           ;; "nxhtml"
            "web"
 
            ;; -- Ocaml
-           "opam-user-setup"
+           ;; "opam-user-setup"
+           ;; "ocaml"
 
            ;; -- Languages
            "common-lisp"
-           "elm"
-           ;; "scheme"
+           ;; "elm"
+           "scheme"
            "haskell"
            ;; "lush"
            "python"
-           "reasonml"
+           ;; "reasonml"
            "ruby"
            ;; "rebol"
-           "php"
+           ;; "php"
            "coffee"
            "js"
            ;; "pure"

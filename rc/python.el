@@ -2,18 +2,21 @@
 ;; Python-mode
 ;; ------------------------------------------------------------------------------
 
-(autoload 'python-mode "python-mode" "Python Mode." t)
-(add-to-list 'auto-mode-alist '("\\.py\\'" . python-mode))
-;; (add-to-list 'interpreter-mode-alist '("python" . python-mode))
-
-;; (add-hook 'python-mode-hook 'color-theme-monokai)
-
 (require 'python-mode)
 
-;; Unless other libraries depend on python.el, unloading 'python is recommended, as it seems to destroy python-mode user defined abbreviations:
-;; (when (featurep 'python) (unload-feature 'python t))
+(autoload 'python-mode "python-mode" "Python Mode." t)
+(add-to-list 'auto-mode-alist '("\\.py\\'" . python-mode))
 
+;; (add-to-list 'interpreter-mode-alist '("python" . python-mode))
 (setq-default py-shell-name "ipython")
+
+(setq py-backslashed-continuation-indent 4)
+(setq py-smart-indentation t)
+(setq python-guess-indent t)
+
+;; Disable eldoc -- https://emacs.stackexchange.com/questions/31414/how-to-globally-disable-eldoc
+(global-eldoc-mode -1)
+
 
 ;; ==============================================================================
 ;; Pymacs
@@ -22,7 +25,7 @@
 ;; Resolves a conflict with Pymacs that comes with python-mode.el
 ;; (add-hook 'python-mode-hook '(lambda () (setf py-load-pymacs-p nil)))
 
-(require 'pymacs)
+;; (require 'pymacs)
 ;; (autoload ’pymacs-apply "pymacs")
 ;; (autoload ’pymacs-call "pymacs")
 ;; (autoload ’pymacs-eval "pymacs" nil t)
@@ -67,6 +70,4 @@
 
 ;; Execute ``load-ropemacs`` (or use ``C-x p l``) whenever you want
 ;; to use ropemacs.
-
 (global-set-key "\C-xpl" 'load-ropemacs)
-

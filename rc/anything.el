@@ -2,5 +2,7 @@
 ;; Anything - a "spotlight" for Emacs
 ;; ------------------------------------------------------------------------------
 
-(require 'anything)
-(require 'anything-config) ; or 'anything-startup for richer set of features
+(use-package "anything")
+(use-package "anything-config"
+  :commands (anything)
+  :bind ("C-x a n" . anything-mini))

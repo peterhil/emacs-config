@@ -2,15 +2,22 @@
 ;; Javascript
 ;; ------------------------------------------------------------------------------
 
-(require 'js2-mode)
+;; (require 'javascript-mode)
+(autoload 'javascript-mode "javascript-mode" nil t)
 
-(autoload 'js2-mode "js2-mode" nil t)
-(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
+;; https://stackoverflow.com/questions/35162106/how-to-disable-js2-mode-syntax-checking-globally-in-spacemacs
+(setq js2-strict-missing-semi-warning nil)
 
-(add-hook 'js2-mode-hook
+(my-auto-mode-extensions
+ 'javascript-mode
+ '(
+   "js"
+   "ts"
+   ))
+
+(add-hook 'javascript-mode-hook
           '(lambda()
-             (set (make-local-variable 'electric-indent-chars) nil)
-             ))
+             (set (make-local-variable 'electric-indent-chars) nil)))
 
 
 ;; ==============================================================================
@@ -20,10 +27,10 @@
 (eval-after-load "js2-refactor-autoloads"
   '(progn
      (if (require 'js2-refactor nil t)
-	 (progn
-	   ;; (js2-refactor 1)
-	   (js2r-add-keybindings-with-prefix "C-c C-j")
-	   )
+         (progn
+           ;; (js2-refactor 1)
+           (js2r-add-keybindings-with-prefix "C-c C-j")
+           )
        (warn "js2-refactor is not found."))))
 
 ;; Refactorings

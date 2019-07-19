@@ -51,7 +51,6 @@
     ;; (fringe-mode -1)
     ))
 
-
 ;; Automatically offer to create parent directories
 ;; http://iqbalansari.me/blog/2014/12/07/automatically-create-parent-directories-on-visiting-a-new-file-in-emacs/
 (defun my-create-non-existent-directory ()
@@ -61,6 +60,10 @@
       (make-directory parent-directory t))))
 
 (add-to-list 'find-file-not-found-functions #'my-create-non-existent-directory)
+
+;; Enable syncing clipboard and yanking only on Linux
+(when (eq system-type 'linux)
+  (setq x-select-enable-clipboard t))
 
 
 ;; ==============================================================================
@@ -96,17 +99,15 @@
 ;; ------------------------------------------------------------------------------
 
 ;; My bindings
-(global-set-key [(control \')] 'comment-or-uncomment-region)
+(define-key global-map (kbd "C-'") 'comment-or-uncomment-region)
+(define-key global-map (kbd "C-M-'") 'uncomment-region)
 
 ;; Backspace
-
 ;; See http://www.emacswiki.org/emacs/BackspaceKey
 (global-set-key [(control h)] 'delete-backward-char)
 
 ;; Help
 (global-set-key [(hyper h)] 'help)
-
-(global-set-key (kbd "<f5>") 'copy-buffer-dir)
 
 
 ;; Disable yas tab key

@@ -1,11 +1,5 @@
 ;; ==============================================================================
-;; Csv files
+;; Programming tools
 ;; ------------------------------------------------------------------------------
 
-(require 'csv-mode)
-(require 'csv-nav)
-
-(my-auto-mode-extensions
- 'csv-nav-mode
- '("csv"
-   "tsv"))
+(require 'quickrun)
