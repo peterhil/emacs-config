@@ -43,7 +43,8 @@
            ;; "jira"
            ;; "qt"
            ;; "projectile"
-           ;; "flymake"
+           ;; "flycheck
+           "flymake"
 
            ;; -- Markup
            ;; "org"
