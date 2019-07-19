@@ -58,7 +58,7 @@
 
            ;; -- Ocaml
            "opam-user-setup"
-           "ocaml"
+           ;; "ocaml"
 
            ;; -- Languages
            "common-lisp"
@@ -67,7 +67,7 @@
            "haskell"
            ;; "lush"
            "python"
-           "reasonml"
+           ;; "reasonml"
            "ruby"
            ;; "rebol"
            "php"
