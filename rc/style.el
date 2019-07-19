@@ -26,9 +26,10 @@
 (add-to-list 'auto-mode-alist '("\\.styl\\'" . stylus-mode))
 
 ;; SASS and SCSS
-(autoload 'scss-mode "scss-mode")
-(add-to-list 'auto-mode-alist '("\\.sass\\'" . sass-mode))
-(add-to-list 'auto-mode-alist '("\\.scss\\'" . scss-mode))
+; (autoload 'scss-mode "scss-mode")
+(require 'scss-mode)
+(add-to-list 'auto-mode-alist '("\\.sass$" . sass-mode))
+(add-to-list 'auto-mode-alist '("\\.scss$" . scss-mode))
 
 (setq scss-compile-at-save nil)
 
