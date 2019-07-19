@@ -102,6 +102,7 @@
                       tuareg
                       utop
                       merlin
+                      visual-regexp
                       )
   "A list of packages to ensure are installed at launch.")
 
