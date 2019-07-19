@@ -19,11 +19,11 @@
            ;; "firacode"
            "keyboard-shortcuts"
            "dired"
-           "anything"
+           ;; "anything"
 
            "hex"
            "images"
-           "audio"
+           ;; "audio"
            ;; "erc"
            ;; "textmate"
            "shell"
