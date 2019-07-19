@@ -2,6 +2,11 @@
 ;; My packages
 ;; ------------------------------------------------------------------------------
 
+;; Add paths to your load path (for Homebrew or apt installed packages)
+(let ((default-directory "/usr/local/share/emacs/site-lisp/"))
+  (normal-top-level-add-subdirs-to-load-path))
+
+
 (defun package-update-load-path ()
   "Update the load path for newly installed packages."
   (interactive)
