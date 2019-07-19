@@ -62,7 +62,7 @@
            ;; -- Languages
            "common-lisp"
            ;; "elm"
-           ;; "scheme"
+           "scheme"
            "haskell"
            ;; "lush"
            "python"
