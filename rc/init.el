@@ -65,6 +65,7 @@
            ;; "elm"
            "scheme"
            "haskell"
+           "lua"
            ;; "lush"
            "python"
            ;; "reasonml"

@@ -69,6 +69,7 @@
                       jinja2-mode
                       js2-mode
                       json-mode
+                      lua-mode
                       less-css-mode
                       let-alist
                       linum-off
