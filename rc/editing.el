@@ -7,6 +7,8 @@
 ;; (load "editorconfig")
 (require 'editorconfig)
 (editorconfig-mode 1)
+;; ignore indent_size on lisp modes
+(setq editorconfig-lisp-use-default-indent t)
 
 ;; Language and text encoding
 (set-language-environment "UTF-8")
