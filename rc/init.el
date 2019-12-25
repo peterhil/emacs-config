@@ -45,6 +45,7 @@
            ;; "projectile"
            ;; "flycheck
            "flymake"
+           "flymake-d"
 
            ;; -- Markup
            ;; "org"

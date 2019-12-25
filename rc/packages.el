@@ -42,6 +42,7 @@
                       csv-mode
                       ;; csv-nav
                       cypher-mode
+                      d-mode
                       editorconfig
                       ;; elixir-mix
                       elixir-mode
