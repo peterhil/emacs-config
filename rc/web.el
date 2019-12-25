@@ -21,6 +21,7 @@
    "jsx"
    "mustache"
    "php"
+   "svelte"
    "tag"
    "vue"
    "xhtml"
