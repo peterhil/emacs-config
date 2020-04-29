@@ -42,3 +42,6 @@
  (lambda ()
    (define-key dired-mode-map (kbd "^")  ; was dired-up-directory
      (lambda () (interactive) (find-alternate-file "..")))))
+
+;; Disable newbie warning about reusing the buffer for alternate file
+(put 'dired-find-alternate-file 'disabled t)
