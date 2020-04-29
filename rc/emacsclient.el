@@ -6,3 +6,5 @@
   (save-some-buffers)
   (kill-emacs)
   )
+
+(server-start)
