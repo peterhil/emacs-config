@@ -1,5 +1,14 @@
 ;; -*- coding: utf-8; mode: emacs-lisp -*-
 ;; Emacs customization file by Peter Hillerström
+;; ____________________________________________________________________________
+;; Aquamacs custom-file warning:
+;; Warning: After loading this .emacs file, Aquamacs will also load
+;; customizations from `custom-file' (customizations.el). Any settings there
+;; will override those made here.
+;; Consider moving your startup settings to the Preferences.el file, which
+;; is loaded after `custom-file':
+;; ~/Library/Preferences/Aquamacs Emacs/Preferences
+;; _____________________________________________________________________________
 
 
 ;; ==============================================================================
