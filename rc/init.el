@@ -74,6 +74,9 @@
            "coffee"
            "js"
            ;; "pure"
+
+           ;; -- Misc
+           "extra-fun"
            ))
   (configure include))
 ;; (configure "pure")
