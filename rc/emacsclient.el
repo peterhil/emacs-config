@@ -7,4 +7,5 @@
   (kill-emacs)
   )
 
-(server-start)
+;; To start the emacs server, call:
+;; (server-start)
