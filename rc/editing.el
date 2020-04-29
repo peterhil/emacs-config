@@ -7,6 +7,8 @@
 ;; (load "editorconfig")
 (require 'editorconfig)
 (editorconfig-mode 1)
+;; ignore indent_size on lisp modes
+(setq editorconfig-lisp-use-default-indent t)
 
 ;; Language and text encoding
 (set-language-environment "UTF-8")
@@ -98,6 +100,7 @@
 ;; Key bindings
 ;; ------------------------------------------------------------------------------
 
+;; My bindings
 (define-key global-map (kbd "C-'") 'comment-or-uncomment-region)
 (define-key global-map (kbd "C-M-'") 'uncomment-region)
 
@@ -127,9 +130,9 @@
 ;; Fuzzy format (auto select tabs or spaces for indent)
 ;; ------------------------------------------------------------------------------
 
-(require 'fuzzy-format)
-(setq fuzzy-format-default-indent-tabs-mode nil)
-(global-fuzzy-format-mode t)
+;; (require 'fuzzy-format)
+;; (setq fuzzy-format-default-indent-tabs-mode nil)
+;; (global-fuzzy-format-mode t)
 
 ;; ==============================================================================
 ;; Whitespace

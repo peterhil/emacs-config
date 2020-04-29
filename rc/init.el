@@ -45,6 +45,7 @@
            ;; "projectile"
            ;; "flycheck
            "flymake"
+           "flymake-d"
 
            ;; -- Markup
            ;; "org"
@@ -65,6 +66,7 @@
            ;; "elm"
            "scheme"
            "haskell"
+           "lua"
            ;; "lush"
            "python"
            ;; "reasonml"

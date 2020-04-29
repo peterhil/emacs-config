@@ -29,9 +29,10 @@
 
 (defvar my-packages '(
                       ac-dabbrev
+                      ;; ac-python
                       ace-jump-mode
                       ack
-                      ack-and-a-half
+                      ;; ack-and-a-half
                       ag
                       alchemist
                       anything
@@ -39,10 +40,11 @@
                       clojure-mode
                       coffee-mode
                       csv-mode
-                      csv-nav
+                      ;; csv-nav
                       cypher-mode
+                      d-mode
                       editorconfig
-                      elixir-mix
+                      ;; elixir-mix
                       elixir-mode
                       elm-mode
                       erlang
@@ -63,6 +65,8 @@
                       flymake-php
                       flymd
                       fuzzy-format
+                      ;; git-commit-mode
+                      ;; git-rebase-mode
                       grizzl
                       haml-mode
                       hlinum
@@ -70,6 +74,7 @@
                       jinja2-mode
                       js2-mode
                       json-mode
+                      lua-mode
                       less-css-mode
                       let-alist
                       linum-off
@@ -84,7 +89,7 @@
                       paredit
                       parinfer
                       php-auto-yasnippets
-                      php-completion
+                      ;; php-completion
                       php-mode
                       projectile
                       python-mode

@@ -7,7 +7,7 @@
 (require 'rainbow-mode)
 (autoload 'rainbow-mode "rainbow-mode.el" "Minor mode for editing HTML colors" t)
 
-(my-auto-mode-extensions
+(my-auto-minor-mode-extensions
  'rainbow-mode
  '("css"
    "html"
@@ -15,3 +15,5 @@
    "sass"
    "scss"
    "styl"))
+
+(add-to-list 'auto-minor-mode-alist '("-theme\\.el\\'" . rainbow-mode))

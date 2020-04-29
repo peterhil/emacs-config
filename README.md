@@ -13,7 +13,6 @@ Clone the source:
     cd ~/src  # Replace with wherever you want to clone
     git clone git://github.com/peterhil/emacs-config.git
 
-
 Make symlinks:
 
     ln -sf $PWD/dot.emacs ~/.emacs

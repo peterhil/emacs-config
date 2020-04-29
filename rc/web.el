@@ -22,6 +22,7 @@
    "marko"
    "mustache"
    "php"
+   "svelte"
    "tag"
    "vue"
    "xhtml"

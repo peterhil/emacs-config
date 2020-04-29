@@ -11,14 +11,23 @@
   (mapcar 'my-extension-regexp
           extension-list))
 
-(defun my-auto-mode-regexps (mode extension-list)
+(cl-defun my-auto-mode-regexps (mode extension-list &optional (alist 'auto-mode-alist))
   (mapcar
    (lambda (extension)
-     (add-to-list 'auto-mode-alist
+     (add-to-list alist
                   (cons extension mode)))
    extension-list))
 
 (defun my-auto-mode-extensions (mode extension-list)
   (my-auto-mode-regexps
-   mode
-   (my-extension-regexps extension-list)))
+    mode
+    (my-extension-regexps extension-list)
+    'auto-mode-alist))
+
+;; Auto minor mode
+
+(defun my-auto-minor-mode-extensions (mode extension-list)
+  (my-auto-mode-regexps
+    mode
+    (my-extension-regexps extension-list)
+    'auto-minor-mode-alist))
