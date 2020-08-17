@@ -2,7 +2,7 @@
 ;; Lisp utility functions for startup
 ;; ------------------------------------------------------------------------------
 
-(require 'cl)
+(require 'cl-lib)
 
 (defun my-extension-regexp (extension)
   (cl-concatenate 'string "\\." extension "\\'"))

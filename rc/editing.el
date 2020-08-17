@@ -162,7 +162,7 @@
 ;; Tabs and indentation from http://www.emacswiki.org/emacs/DaveBenjamin
 ;; ------------------------------------------------------------------------------
 
-(require 'cl)
+(require 'cl-lib)
 
 (defun make-tab-stop-list (width max)
   "Build a tab stop list for a given tab width and maximum line width"

@@ -4,7 +4,7 @@
 
 ;; Emacs code browser
 ;;(add-to-list 'load-path "~/.emacs.d/site-lisp/ecb")
-(require 'cl)
+(require 'cl-lib)
 (require 'ecb)
 (setq-default ecb-tip-of-the-day t)
 
