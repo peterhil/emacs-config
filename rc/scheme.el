@@ -11,8 +11,10 @@
 (autoload 'quack "quack.el"
   "Minor mode for editing long lines." t)
 
-                                        ;(setq scheme-program-name "gsc -:d-") ; Gambit
-(setq scheme-program-name "csi -:d-") ; Chicken
+;; (setq scheme-program-name "gsc -:d-") ; Gambit
+;; (setq scheme-program-name "csi -:d-") ; Chicken
+;; (setq scheme-program-name "gosh -i") ; Gauche
+(setq scheme-program-name "larceny") ; Larceny
 
 ;;==============================================================================
 ;;  Gambit Scheme

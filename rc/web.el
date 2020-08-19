@@ -19,6 +19,7 @@
    "erb"
    "html\\?"
    "jsx"
+   "marko"
    "mustache"
    "php"
    "svelte"

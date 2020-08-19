@@ -6,3 +6,6 @@
   (save-some-buffers)
   (kill-emacs)
   )
+
+;; To start the emacs server, call:
+;; (server-start)

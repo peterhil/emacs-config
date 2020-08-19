@@ -56,7 +56,11 @@
                       elm-mode
                       erlang
                       f
+                      faust-mode
+                      faustine
                       ;; feature-mode
+                      fill-column-indicator
+                      fireplace
                       flycheck
                       ;; flycheck-clojure
                       ;; flycheck-haskell
