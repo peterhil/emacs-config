@@ -52,7 +52,7 @@
            "markdown"
            "wikipedia"
            ;; "multi-web-mode"
-           "zencoding"
+           ;; "zencoding"
            "style"
            ;; "nxhtml"
            "web"
