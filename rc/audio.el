@@ -20,8 +20,8 @@
 (require 'emms-player-simple)
 (require 'emms-source-file)
 (require 'emms-source-playlist)
-(setq emms-player-list '(emms-player-mpg321 
-			 emms-player-ogg123 
+(setq emms-player-list '(emms-player-mpg321
+			 emms-player-ogg123
 			 emms-player-mplayer)
       emms-source-list '((emms-directory-tree "~/Music/")))
 
@@ -54,13 +54,3 @@
 (setq bongo-mplayer-program-name "mplayer")
 (setq bongo-vlc-interactive nil)
 (setq bongo-vlc-program-name "vlc")
-
-
-;; ==============================================================================
-;; Outline-magic
-;; ------------------------------------------------------------------------------
-
-;; (add-hook 'outline-minor-mode-hook
-;;           (lambda ()
-;;             (require 'outline-magic)
-;;             (define-key outline-minor-mode-map [(f2)] 'outline-cycle)))
