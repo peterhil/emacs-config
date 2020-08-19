@@ -2,8 +2,15 @@
 ;; My packages
 ;; ------------------------------------------------------------------------------
 
+
+(defvar *system-site-lisp*
+  (cond
+    ((eq system-type "darwin") "/usr/local/share/emacs/site-lisp/")
+    (t "/usr/share/emacs/site-lisp/")))
+
+
 ;; Add paths to your load path (for Homebrew or apt installed packages)
-(let ((default-directory "/usr/local/share/emacs/site-lisp/"))
+(let ((default-directory *system-site-lisp*))
   (normal-top-level-add-subdirs-to-load-path))
 
 
