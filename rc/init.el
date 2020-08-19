@@ -79,6 +79,7 @@
 
            ;; -- Misc
            "extra-fun"
+           "fortune"
            ))
   (configure include))
 ;; (configure "pure")
