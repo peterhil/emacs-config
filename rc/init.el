@@ -34,7 +34,7 @@
            ;; "dash-at-point"
            "diff"
            "git"
-           ;; "magit"
+           "magit"
            "tags"
            ;; "ecb"
            ;; "auto-completion"
