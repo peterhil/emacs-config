@@ -16,7 +16,6 @@
            "locale"
            "editing"
            "regexp"
-           ;; "firacode"
            "keyboard-shortcuts"
            "dired"
            "anything"
