@@ -10,10 +10,6 @@
 ;; ignore indent_size on lisp modes
 (setq editorconfig-lisp-use-default-indent t)
 
-;; Language and text encoding
-(set-language-environment "UTF-8")
-(set-default-coding-systems 'utf-8-unix)
-
 ;; Save-hist-mode
 (setq savehist-additional-variables '(kill-ring search-ring regexp-search-ring))
 (setq savehist-file "~/.emacs.d/tmp/savehist")
