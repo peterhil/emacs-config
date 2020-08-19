@@ -60,7 +60,7 @@
 (load custom-file 'no-error)
 
 ;; Basic Common Lisp in Emacs Lisp
-(eval-when-compile (require 'cl))
+(eval-when-compile (require 'cl-lib))
 
 (defun configure (path)
   (load-file (concat rc-dir path ".el")))
