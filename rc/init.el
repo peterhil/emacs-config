@@ -39,7 +39,6 @@
            ;; "auto-completion"
            "smart-tabs"
            ;; "yasnippet"
-           ;; "jira"
            ;; "qt"
            ;; "projectile"
            ;; "flycheck
