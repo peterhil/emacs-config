@@ -39,7 +39,7 @@
   '(default-input-method "finnish-keyboard")
   '(desktop-save-mode nil)
   '(dired-auto-revert-buffer 'dired-directory-changed-p)
-  '(dired-use-ls-dired nil)
+  '(dired-use-ls-dired t)
   '(emulate-mac-finnish-keyboard-mode t)
   '(fci-rule-color "#4E5959")
   '(fill-column 78)
