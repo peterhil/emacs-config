@@ -35,7 +35,6 @@
            "git"
            "magit"
            "tags"
-           ;; "ecb"
            ;; "auto-completion"
            "smart-tabs"
            ;; "yasnippet"
