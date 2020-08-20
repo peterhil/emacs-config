@@ -3,15 +3,15 @@
 ;; ------------------------------------------------------------------------------
 
 (eval-when-compile (require 'cl-lib))
-;; (require 'cl-lib)
 
 ;; ==============================================================================
 ;; SLIME
 ;; ------------------------------------------------------------------------------
 
-;; (add-to-list 'load-path (concat usr-prefix "/share/emacs/site-lisp/slime"))
-;; (add-to-list 'load-path "~/.emacs.d/site-lisp/slime") ;; Already on path
+;; (add-to-list 'load-path (concat my-system-site-lisp "slime"))
+;; (add-to-list 'load-path (concat user-emacs-directory "site-lisp/slime") ;; Already on path
 (require 'slime-autoloads)
+
 (eval-after-load "slime"
   '(progn
      (slime-setup '(slime-asdf slime-tramp slime-fancy))
