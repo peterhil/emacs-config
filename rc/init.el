@@ -16,7 +16,6 @@
            "locale"
            "editing"
            "regexp"
-           "keyboard-shortcuts"
            "dired"
            "anything"
 
