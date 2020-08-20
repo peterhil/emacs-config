@@ -12,7 +12,7 @@
 
 ;; Save-hist-mode
 (setq savehist-additional-variables '(kill-ring search-ring regexp-search-ring))
-(setq savehist-file "~/.emacs.d/tmp/savehist")
+(setq savehist-file (concat user-emacs-directory "cache/savehist"))
 (savehist-mode 1)
 
 ;; Parenthesis matching

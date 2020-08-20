@@ -2,7 +2,7 @@
 ;; nXhtml - package (includes php-mode and LOTS of other stuff)
 ;; ------------------------------------------------------------------------------
 
-;; (load "~/.emacs.d/site-lisp/nxhtml/autostart")
+;; (load (concat user-emacs-directory "site-lisp/nxhtml/autostart"))
 
 ; FIXME Workaround for bug #663737: https://bugs.launchpad.net/nxhtml/+bug/663737
 (if (boundp 'image-types)

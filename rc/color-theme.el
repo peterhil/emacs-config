@@ -11,11 +11,11 @@
 ;; (load-theme 'monokai-peterhil t)
 
 (progn
-  (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/monokai-steel-emacs")
+  (add-to-list 'custom-theme-load-path (concat user-emacs-directory "themes/monokai-steel-emacs"))
   (load-theme 'monokai t))
 
 ;; (progn
-;;   (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/color-theme-mgl")
+;;   (add-to-list 'custom-theme-load-path (concat user-emacs-directory "themes/color-theme-mgl"))
 ;;   (load-theme 'mgl-dark t))
 
 ;; (load-theme 'spacegray t)
