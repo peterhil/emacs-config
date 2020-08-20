@@ -8,3 +8,5 @@
   ;; (setq magit-auto-revert-mode nil)
   ;; (setq magit-diff-use-overlays nil)
   )
+
+(global-set-key (kbd "C-x g") 'magit-status)
