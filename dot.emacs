@@ -17,17 +17,16 @@
 
 (require 'package)
 
-;; Set up Elpa repositories
+;; Set up Elpa package repositories
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 
-;; Gnu Emacs 25 on Mac OS X seems to crash on HTTPS connection?
-(let* ((no-ssl (and (memq system-type '(windows-nt ms-dos))
-                    (not (gnutls-available-p))))
-       (url (concat (if no-ssl "http" "https") "://melpa.org/packages/")))
-  (add-to-list 'package-archives (cons "melpa" url) t))
+;; Comment/uncomment this line to enable MELPA Stable if desired.  See `package-archive-priorities`
+;; and `package-pinned-packages`. Most users will not need or want to do this.
+;; (add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 
 (when (< emacs-major-version 24)
   ;; For important compatibility libraries like cl-lib
-  (add-to-list 'package-archives '("gnu" . "https://elpa.gnu.org/packages/")))
+  (add-to-list 'package-archives '("gnu" . "https://elpa.gnu.org/packages/") t))
 
 (package-initialize)
 
