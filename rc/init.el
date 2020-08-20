@@ -23,7 +23,6 @@
            "images"
            ;; "audio"
            ;; "erc"
-           ;; "textmate"
            "shell"
            ;; "w3m"
 
