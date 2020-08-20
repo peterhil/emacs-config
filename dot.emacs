@@ -40,7 +40,7 @@
 ;; Use-package is a macro to lazily initialize, require and configure packages
 ;; https://github.com/jwiegley/use-package
 
-(add-to-list 'load-path "~/.emacs.d/site-lisp/use-package")
+(add-to-list 'load-path (concat user-emacs-directory "site-lisp/use-package"))
 (require 'use-package)
 
 
@@ -53,7 +53,7 @@
             ((eq system-type 'linux) "/usr")
             (t "/usr")))
 
-(setq rc-dir "~/.emacs.d/rc/")
+(setq rc-dir (concat user-emacs-directory "rc/"))
 
 (setq custom-file (concat rc-dir "custom.el"))
 (load custom-file 'no-error)
@@ -71,7 +71,7 @@
 
 ;; Location for external packages, include subdirs
 ;; When adding modes, put them under their own directory in site-lisp
-(let ((default-directory "~/.emacs.d/site-lisp/"))
+(let ((default-directory (concat user-emacs-directory "site-lisp")))
   (normal-top-level-add-subdirs-to-load-path))
 
 ;; (configure "init")
