@@ -8,8 +8,6 @@
 ;;     (load-theme 'monokai t)
 ;;   (load-theme 'jazz t))
 
-;; (load-theme 'monokai-peterhil t)
-
 (progn
   (add-to-list 'custom-theme-load-path (concat user-emacs-directory "themes/monokai-steel-emacs"))
   (load-theme 'monokai t))
