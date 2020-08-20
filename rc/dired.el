@@ -44,4 +44,4 @@
      (lambda () (interactive) (find-alternate-file "..")))))
 
 ;; Disable newbie warning about reusing the buffer for alternate file
-(put 'dired-find-alternate-file 'disabled t)
+(put 'dired-find-alternate-file 'disabled nil)
