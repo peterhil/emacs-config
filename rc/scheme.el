@@ -7,7 +7,7 @@
 (require 'scheme-complete)
 
 ;; Quack mode
-                                        ;(require 'quack)
+;; (require 'quack)
 (autoload 'quack "quack.el"
   "Minor mode for editing long lines." t)
 
