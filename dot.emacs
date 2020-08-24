@@ -53,6 +53,7 @@
             ((eq system-type 'linux) "/usr")
             (t "/usr")))
 
+(setq user-emacs-directory "~/.emacs.d/")  ; Prevent Aquamacs using a different location
 (setq rc-dir (concat user-emacs-directory "rc/"))
 
 (setq custom-file (concat rc-dir "custom.el"))
