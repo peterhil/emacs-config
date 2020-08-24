@@ -44,26 +44,28 @@
                       alchemist
                       anything
                       auto-complete
+                      auto-minor-mode
+                      caml
                       clojure-mode
                       coffee-mode
                       csv-mode
-                      ;; csv-nav
+                      csv-nav
                       cypher-mode
-                      d-mode
+                      ;; d-mode
                       editorconfig
-                      ;; elixir-mix
+                      elixir-mix
                       elixir-mode
                       elm-mode
                       erlang
                       f
                       faust-mode
                       faustine
-                      ;; feature-mode
+                      feature-mode
                       fill-column-indicator
                       fireplace
                       flycheck
-                      ;; flycheck-clojure
-                      ;; flycheck-haskell
+                      flycheck-clojure
+                      flycheck-haskell
                       flycheck-pyflakes
                       flymake
                       flymake-coffee
@@ -71,6 +73,7 @@
                       flymake-json
                       flymake-php
                       flymd
+                      fortune-cookie
                       fuzzy-format
                       ;; git-commit-mode
                       ;; git-rebase-mode
@@ -85,10 +88,11 @@
                       less-css-mode
                       let-alist
                       linum-off
-                      ;; magit
-                      ;; markdown-mode+
+                      magit
+                      markdown-mode+
                       md-readme
-                      ;; mkdown
+                      merlin
+                      mkdown
                       monokai-theme
                       move-text
                       org
@@ -96,7 +100,7 @@
                       paredit
                       parinfer
                       php-auto-yasnippets
-                      ;; php-completion
+                      php-completion
                       php-mode
                       projectile
                       python-mode
@@ -108,22 +112,21 @@
                       scss-mode
                       slime
                       smartparens
-                      spacegray-theme
-                      spacemacs-theme
+                      ;; spacegray-theme
+                      ;; spacemacs-theme
                       stylus-mode
+                      tuareg
+                      use-package
+                      utop
                       ;; uuidgen
+                      visual-regexp
                       ;; vmd-mode
-                      ;; w3m
+                      w3m
                       web-mode
                       ;; web-server
                       ;; websocket
                       yaml-mode
                       ;; zonokai-theme
-                      caml
-                      tuareg
-                      utop
-                      merlin
-                      visual-regexp
                       )
   "A list of packages to ensure are installed at launch.")
 
