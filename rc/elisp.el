@@ -4,6 +4,10 @@
 
 (require 'cl-lib)
 
+(defun my-ensure-package-installed (pkg)
+  (unless (package-installed-p pkg)
+    (package-install pkg)))
+
 (defun my-extension-regexp (extension)
   (cl-concatenate 'string "\\." extension "\\'"))
 
