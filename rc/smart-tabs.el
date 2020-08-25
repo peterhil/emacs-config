@@ -46,18 +46,16 @@
 
 
 (use-package "smart-tab"
-  ;; :load-path "site-lisp/smart-tab"
+  :load-path "site-lisp/smart-tab"
   :config
   (global-smart-tab-mode t)
-  (global-set-key [(tab)] 'smart-tab)
+  ;; (setq smart-tab-debug t)
 
   ;; Standard Emacs autocomplete with dabbrev:
   ;; Alternatively use hippie-expand with (M-x hip RET):
   ;; https://www.emacswiki.org/emacs/TabCompletion#SmartTab
   ;; (global-set-key [(backtab)] 'dabbrev-expand)
   (global-set-key [(backtab)] 'hippie-expand)
-
-  (setq smart-tab-debug nil)
 
   ;; C like languages
   ;;
