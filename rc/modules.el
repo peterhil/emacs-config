@@ -63,6 +63,8 @@
            "lua"
            ;; "lush"
            "python"
+           "elpy"
+           ;; "ropemacs"
            ;; "reasonml"
            "ruby"
            ;; "rebol"
