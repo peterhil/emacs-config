@@ -2,5 +2,4 @@
 ;; Git support
 ;; -----------------------------------------------------------------------------
 
-(use-package "vc-git")
-(use-package "vc-annotate")
+(use-package "git-commit")
