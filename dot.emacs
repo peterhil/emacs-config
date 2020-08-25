@@ -32,16 +32,6 @@
   (load-file (concat rc-dir path ".el")))
 
 
-;; ==============================================================================
-;; Site lisp
-;; ------------------------------------------------------------------------------
-
-;; Location for external packages, include subdirs
-;; When adding modes, put them under their own directory in site-lisp
-(let ((default-directory (concat user-emacs-directory "site-lisp")))
-  (normal-top-level-add-subdirs-to-load-path))
-
-
 (configure "init")
 (configure "packages")
 (add-hook 'after-init-hook
