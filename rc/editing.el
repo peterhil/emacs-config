@@ -17,6 +17,10 @@
 ;; Editing
 ;; ------------------------------------------------------------------------------
 
+;; Disable eldoc globally:
+;; https://emacs.stackexchange.com/questions/31414/how-to-globally-disable-eldoc
+(global-eldoc-mode -1)
+
 ;; Save-hist-mode
 (setq savehist-additional-variables '(kill-ring search-ring regexp-search-ring))
 (setq savehist-file (concat user-emacs-directory "cache/savehist"))

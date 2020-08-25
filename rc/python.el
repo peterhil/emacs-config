@@ -2,20 +2,14 @@
 ;; Python-mode
 ;; ------------------------------------------------------------------------------
 
-(require 'python-mode)
-
-(autoload 'python-mode "python-mode" "Python Mode." t)
-(add-to-list 'auto-mode-alist '("\\.py\\'" . python-mode))
-
-;; (add-to-list 'interpreter-mode-alist '("python" . python-mode))
-(setq-default py-shell-name "ipython")
-
-(setq py-backslashed-continuation-indent 4)
-(setq py-smart-indentation t)
-(setq python-guess-indent t)
-
-;; Disable eldoc -- https://emacs.stackexchange.com/questions/31414/how-to-globally-disable-eldoc
-(global-eldoc-mode -1)
+(use-package "python-mode"
+  :mode "\\.py\\'"
+  :interpreter "python"
+  :config
+  (setq-default py-shell-name "ipython")
+  (setq py-backslashed-continuation-indent 4)
+  (setq py-smart-indentation t)
+  (setq python-guess-indent t))
 
 
 ;; ==============================================================================
@@ -25,7 +19,8 @@
 ;; Resolves a conflict with Pymacs that comes with python-mode.el
 ;; (add-hook 'python-mode-hook '(lambda () (setf py-load-pymacs-p nil)))
 
-;; (require 'pymacs)
+;; (use-package "pymacs"
+;;   :load-path "site-lisp/pymacs")
 ;; (autoload ’pymacs-apply "pymacs")
 ;; (autoload ’pymacs-call "pymacs")
 ;; (autoload ’pymacs-eval "pymacs" nil t)
@@ -40,8 +35,6 @@
 ;; ==============================================================================
 ;; Ropemacs
 ;; ------------------------------------------------------------------------------
-
-;; (require 'pymacs)
 
 (defun ropemacs-disable-shortcuts ()
   ;; Ropemacs may redefine some standard Emacs and your custom key
@@ -63,7 +56,8 @@
   "Load pymacs and ropemacs"
   (interactive)
   (ropemacs-disable-shortcuts)
-  (require 'pymacs)
+  (use-package "pymacs"
+    :load-path "site-lisp/pymacs")
   (pymacs-load "ropemacs" "rope-")
   ;; Automatically save project python buffers before refactorings
   (setq-default ropemacs-confirm-saving 'nil))
