@@ -6,11 +6,14 @@
 (defadvice align (around smart-tabs activate)
   (let ((indent-tabs-mode indent-tabs-mode)) ad-do-it))
 
+
 (defadvice align-regexp (around smart-tabs activate)
   (let ((indent-tabs-mode indent-tabs-mode)) ad-do-it))
 
+
 (defadvice indent-relative (around smart-tabs activate)
   (let ((indent-tabs-mode indent-tabs-mode)) ad-do-it))
+
 
 (defadvice indent-according-to-mode (around smart-tabs activate)
   (let ((indent-tabs-mode indent-tabs-mode))
@@ -19,6 +22,7 @@
                 indent-relative-maybe))
         (setq indent-tabs-mode indent-tabs-mode))
     ad-do-it))
+
 
 (defmacro smart-tabs-advice (function offset)
   `(progn
@@ -40,19 +44,23 @@
         (t
          ad-do-it)))))
 
+
 (use-package "smart-tab"
-  :load-path "site-lisp/smart-tab"
+  ;; :load-path "site-lisp/smart-tab"
   :config
   (global-smart-tab-mode t)
-  ;; (global-set-key '[C-tab] 'smart-tab)
+  (global-set-key [(tab)] 'smart-tab)
 
   ;; Standard Emacs autocomplete with dabbrev:
   ;; Alternatively use hippie-expand with (M-x hip RET):
   ;; https://www.emacswiki.org/emacs/TabCompletion#SmartTab
-  (global-set-key '[backtab] 'dabbrev-expand)
+  ;; (global-set-key [(backtab)] 'dabbrev-expand)
+  (global-set-key [(backtab)] 'hippie-expand)
+
+  (setq smart-tab-debug nil)
 
   ;; C like languages
-
+  ;;
   (make-local-variable 'tab-width)
   (setq tab-width (or (default-value 'tab-width) 4))
   (setq cua-auto-tabify-rectangles nil)
@@ -60,6 +68,6 @@
   (smart-tabs-advice c-indent-region c-basic-offset)
 
   ;; JS2-mode
-
+  ;;
   (smart-tabs-advice js2-indent-line js2-basic-offset)
   )
