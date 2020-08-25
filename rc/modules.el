@@ -71,6 +71,8 @@
            ;; "php"
            "coffee"
            "js"
+           "json"
+           "js2-refactor"
            ;; "pure"
 
            ;; -- Misc
