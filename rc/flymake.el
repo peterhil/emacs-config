@@ -2,15 +2,19 @@
 ;; Flymake mode
 ;; ------------------------------------------------------------------------------
 
-(require 'flymake-coffee)
-(add-hook 'coffee-mode-hook 'flymake-coffee-load)
+(use-package "flymake-coffee"
+  :hook (coffee-mode . flymake-coffee-load)
+  :requires 'coffee)
 
-(require 'flymake-css)
-(add-hook 'css-mode-hook 'flymake-css-load)
+(use-package "flymake-css"
+  :hook (css-mode . flymake-css-load))
 
-(require 'flymake-json)
-(add-hook 'json-mode 'flymake-json-load)
-;; (add-hook 'js-mode-hook 'flymake-json-maybe-load)
+(use-package "flymake-json"
+  :hook
+  ((json-mode . flymake-json-load)
+    (js-mode . flymake-json-maybe-load))
+  :requires 'jsonlint)
 
-(require 'flymake-php)
-(add-hook 'php-mode-hook 'flymake-php-load)
+(use-package "flymake-php"
+  :hook (php-mode . flymake-php-load)
+  :requires 'php)
