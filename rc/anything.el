@@ -2,7 +2,16 @@
 ;; Anything - a "spotlight" for Emacs
 ;; ------------------------------------------------------------------------------
 
-(use-package "anything")
+(use-package "anything"
+  :commands anything
+  :ensure t
+  )
+
 (use-package "anything-config"
-  :commands (anything)
-  :bind ("C-x a n" . anything-mini))
+  :after (anything)
+  :bind ("C-x a n" . anything-mini)
+  :commands anything
+  :ensure nil
+  :load-path "site-lisp/anything-config"
+  :requires anything
+  )
