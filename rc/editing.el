@@ -114,7 +114,7 @@
 
 ;; Backspace
 ;; See http://www.emacswiki.org/emacs/BackspaceKey
-(global-set-key [(control h)] 'delete-backward-char)
+;; (global-set-key [(control h)] 'delete-backward-char)
 
 ;; Help
 (global-set-key [(hyper h)] 'help)
