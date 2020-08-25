@@ -2,19 +2,18 @@
 ;;  Scheme
 ;; ------------------------------------------------------------------------------
 
-(require 'scheme)
-(load "scheme-complete.el")
-(require 'scheme-complete)
+(use-package "scheme")
+(use-package "scheme-complete")
 
 ;; Quack mode
-;; (require 'quack)
-(autoload 'quack "quack.el"
-  "Minor mode for editing long lines." t)
+;; (use-package "quack")
+(autoload 'quack "quack.el" "Minor mode for editing long lines." t)
 
 ;; (setq scheme-program-name "gsc -:d-") ; Gambit
 ;; (setq scheme-program-name "csi -:d-") ; Chicken
 ;; (setq scheme-program-name "gosh -i") ; Gauche
 (setq scheme-program-name "larceny") ; Larceny
+
 
 ;;==============================================================================
 ;;  Gambit Scheme
@@ -27,12 +26,12 @@
   (add-hook 'inferior-scheme-mode-hook (function gambit-inferior-mode))
   (add-hook 'scheme-mode-hook (function gambit-mode))
 
-  (require 'gambit)
-  (load "gambit.el"))
+  (use-package "gambit"))
+
 
 ;; ==============================================================================
 ;;  Chicken Scheme
 ;; ------------------------------------------------------------------------------
 
-(load "hen.el")
-(require 'hen)
+(use-package "hen"
+  :load-path "site-lisp/hen")
