@@ -7,12 +7,7 @@
   (progn
     (setq web-mode-code-indent-offset 4)
     (setq web-mode-css-indent-offset 4)
-    (setq web-mode-markup-indent-offset 2)
-    (my-auto-mode-regexps
-      'web-mode
-      '(
-         "/\\(views\\|html\\|templates\\)/.*\\.\\(php\\|twig\\)\\'" ; Matching can be done on the path
-         "/components/.*\\.js\\'")))
+    (setq web-mode-markup-indent-offset 2))
   :magic
   (
     "<\\!DOCTYPE"
@@ -26,8 +21,7 @@
     "css"
     "ctp"
     "erb"
-    "htm"
-    "html"
+    "html?"
     "jsx"
     "marko"
     "mustache"
@@ -36,5 +30,8 @@
     "tag"
     "vue"
     "xhtml"
+    ;; Matching can be done on the path
+    "/\\(views\\|html\\|templates\\)/.*\\.\\(php\\|twig\\)\\'"
+    "/components/.*\\.js\\'"
     )
   )
