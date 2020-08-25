@@ -2,10 +2,9 @@
 ;; Csv files
 ;; ------------------------------------------------------------------------------
 
-(require 'csv-mode)
-(require 'csv-nav)
+(use-package "csv-mode"
+  :mode
+  ("\\.csv\\'"
+   "\\.tsv\\'"))
 
-(my-auto-mode-extensions
- 'csv-nav-mode
- '("csv"
-   "tsv"))
+(use-package "csv-nav")
