@@ -1,14 +1,22 @@
 ;; ==============================================================================
-;; Editing
+;; Editorconfig
 ;; ------------------------------------------------------------------------------
 
-;; Read EditorConfig files (.editorconfig) -- http://editorconfig.org/
-;; https://github.com/editorconfig/editorconfig-emacs.git
-;; (load "editorconfig")
-(require 'editorconfig)
-(editorconfig-mode 1)
-;; ignore indent_size on lisp modes
-(setq editorconfig-lisp-use-default-indent t)
+(use-package "editorconfig"
+  ;; Read EditorConfig files (.editorconfig) -- http://editorconfig.org/
+  ;; https://github.com/editorconfig/editorconfig-emacs.git
+  :requires editorconfig
+  :config
+  (progn
+    (editorconfig-mode 1)
+    ;; ignore indent_size on lisp modes
+    (setq editorconfig-lisp-use-default-indent t)
+  ))
+
+
+;; ==============================================================================
+;; Editing
+;; ------------------------------------------------------------------------------
 
 ;; Save-hist-mode
 (setq savehist-additional-variables '(kill-ring search-ring regexp-search-ring))
@@ -19,35 +27,36 @@
 (setq show-paren-delay 0)
 (show-paren-mode 1)
 
-; Show full pathname in minibuffer
+;; Show full pathname in minibuffer
 (setq frame-title-format
       (list (format "%s %%S: %%j " (system-name))
             '(buffer-file-name "%f" (dired-directory dired-directory "%b"))))
 
 ;; Line numbers etc.
-(when t
-  (progn
-    ;; (global-hl-line-mode t)  ; Hightlight current line
 
-    ;; Show line numbers, dynamically with spaces on either side:
-    (global-linum-mode t)
+;; (global-hl-line-mode t)  ; Hightlight current line
 
-    (defadvice linum-update-window (around linum-dynamic activate)
-      (let* ((w (length (number-to-string
-                         (count-lines (point-min) (point-max)))))
-             (linum-format (concat " %" (number-to-string w) "d ")))
-        ad-do-it))
+;; Show line numbers, dynamically with spaces on either side:
+(global-linum-mode 1)
 
-    ;; You may want to turn off linum for certain modes (this uses linum-off):
-    (require 'linum-off)
+(defadvice linum-update-window (around linum-dynamic activate)
+  (let* ((w (length (number-to-string
+                     (count-lines (point-min) (point-max)))))
+         (linum-format (concat " %" (number-to-string w) "d ")))
+    ad-do-it))
 
-    ;; Highlight the current line number (requires hlinum):
-    (require 'hlinum)
-    (hlinum-activate)
+;; You may want to turn off linum for certain modes (this uses linum-off):
+(use-package "linum-off")
 
-    ;; Collapse fringes:
-    ;; (fringe-mode -1)
-    ))
+;; Highlight the current line number (requires hlinum):
+(use-package "hlinum"
+  :config
+  (hlinum-activate))
+
+
+;; Collapse fringes:
+(fringe-mode -1)
+
 
 ;; Automatically offer to create parent directories
 ;; http://iqbalansari.me/blog/2014/12/07/automatically-create-parent-directories-on-visiting-a-new-file-in-emacs/
@@ -126,15 +135,16 @@
 ;; Fuzzy format (auto select tabs or spaces for indent)
 ;; ------------------------------------------------------------------------------
 
-;; (require 'fuzzy-format)
-;; (setq fuzzy-format-default-indent-tabs-mode nil)
-;; (global-fuzzy-format-mode t)
+;; (use-package "fuzzy-format"
+;;   :config
+;;   (setq fuzzy-format-default-indent-tabs-mode nil)
+;;   (global-fuzzy-format-mode t))
 
 ;; ==============================================================================
 ;; Whitespace
 ;; ------------------------------------------------------------------------------
 
-;; (require 'whitespace)
+;; (use-package "whitespace")
 
 ;; Or autoload at least one of the commands:
 ;; `whitespace-mode'
@@ -200,18 +210,15 @@
 ;; Undo/redo extensions
 ;; ------------------------------------------------------------------------------
 
-;(require 'redo+)
+;(use-package "redo+")
 
-(require 'undo-tree)
-(global-undo-tree-mode)
-(global-set-key (kbd "H-x u") 'global-undo-tree-mode)
-
-(define-key function-key-map (kbd "H-z") 'undo)
-(define-key function-key-map (kbd "H-Z") 'redo)
+(use-package "undo-tree"
+  :config
+  (global-undo-tree-mode)
+  (global-set-key (kbd "H-x u") 'global-undo-tree-mode)
+  (define-key function-key-map (kbd "H-z") 'undo)
+  (define-key function-key-map (kbd "H-Z") 'redo))
 
 
 (autoload 'longlines-mode "longlines.el"
   "Minor mode for editing long lines." t)
-
-;; Display line numbers in margin (fringe). Emacs 23 only.
-(global-linum-mode 1) ; always show line numbers
