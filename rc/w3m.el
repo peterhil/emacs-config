@@ -1,4 +1,6 @@
+;; =============================================================================
 ;; W3M web browser
+;; -----------------------------------------------------------------------------
 
 (setq browse-url-browser-function 'w3m-browse-url)
 (autoload 'w3m-browse-url "w3m" "Ask a WWW browser to show a URL." t)
@@ -17,6 +19,8 @@
 ;; W3M settings
 (setq w3m-use-cookies t)
 
-(require 'w3m-search)
-(add-to-list 'w3m-search-engine-alist
-             '("emacs-wiki" "http://www.emacswiki.org/cgi-bin/wiki.pl?search=%s"))
+(use-package "w3m-search"
+  :config
+  (add-to-list
+   'w3m-search-engine-alist
+   '("emacs-wiki" "http://www.emacswiki.org/cgi-bin/wiki.pl?search=%s")))
