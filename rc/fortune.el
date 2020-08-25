@@ -3,9 +3,11 @@
 ;; https://github.com/andschwa/fortune-cookie
 ;; -----------------------------------------------------------------------------
 
-;; (setq inhibit-startup-message t)
+;; inhibit startup message
+(setq inhibit-startup-message t)
 
-(use-package fortune-cookie
+(use-package "fortune-cookie"
+  :commands fortune
   :config
-  ;; (setq fortune-cookie-cowsay-args  "-f tux -s")
+  ;; (setq fortune-cookie-cowsay-args  "-f blowfish")
   (fortune-cookie-mode))
