@@ -11,7 +11,7 @@
      ["#222627" "#F92672" "#A6E22E" "#E6DB74" "#66D9EF" "#FD5FF0" "#A1EFE4" "#F8F8F2"])
   '(anything-command-map-prefix-key "C-x a")
   '(aquamacs-additional-fontsets nil t)
-  '(aquamacs-customization-version-id 308 t)
+  '(aquamacs-customization-version-id 312 t)
   '(aquamacs-tool-bar-user-customization nil t)
   '(better-fringes-mode t)
   '(c-echo-syntactic-information-p t)
@@ -29,11 +29,11 @@
         (fontsize . 0)
         (menu-bar-lines . 1)
         (tool-bar-lines . 0)
-        (border-color . "#0f0f0f")
         (modeline . t)
         (foreground-color . "#F8F8F2")
         (background-color . "#222222")
         (background-mode . dark)
+        (border-color . "#0f0f0f")
         (cursor-color . "#73d216")
         (mouse-color . "#73d216")))
   '(default-input-method "finnish-keyboard")
@@ -62,8 +62,9 @@
   '(inhibit-startup-screen t)
   '(ns-tool-bar-display-mode 'labels t)
   '(ns-tool-bar-size-mode 'regular t)
+  '(one-buffer-one-frame-mode nil)
   '(package-selected-packages
-     '(zeal-at-point use-package-ensure-system-package fortune-cookie form-feed magit-delta fireplace use-package d-mode auto-minor-mode picolisp-mode lua-mode flymake-jslint visual-regexp auto-complete caml tuareg feature-mode vue-html-mode vue-mode typescript-mode xref-js2 zencoding-mode eslint-fix exec-path-from-shell elm-mode csv-nav php-auto-yasnippets zonokai-theme yaml-mode web-mode w3m vmd-mode uuidgen stylus-mode spacegray-theme smartparens slime scss-mode sass-mode ruby-compilation rainbow-mode qml-mode python-mode projectile php-mode php-completion paredit move-text monokai-theme mkdown md-readme markdown-mode+ linum-off less-css-mode json-mode jinja2-mode jazz-theme jade-mode hlinum grizzl fuzzy-format flymd flymake-php flymake-json flymake-css flymake-coffee flycheck-pyflakes flycheck-haskell flycheck-clojure erlang elixir-mix editorconfig cypher-mode color-theme-sanityinc-tomorrow coffee-mode anything alchemist ag ack-and-a-half ace-jump-mode ac-dabbrev))
+     '(zeal-at-point use-package-ensure-system-package utop merlin fill-column-indicator faustine faust-mode fortune-cookie form-feed magit-delta fireplace use-package d-mode auto-minor-mode picolisp-mode lua-mode flymake-jslint visual-regexp auto-complete caml tuareg feature-mode vue-html-mode vue-mode typescript-mode xref-js2 zencoding-mode eslint-fix exec-path-from-shell elm-mode csv-nav php-auto-yasnippets zonokai-theme yaml-mode web-mode w3m vmd-mode uuidgen stylus-mode spacegray-theme smartparens slime scss-mode sass-mode ruby-compilation rainbow-mode qml-mode python-mode projectile php-mode php-completion paredit move-text monokai-theme mkdown md-readme markdown-mode+ linum-off less-css-mode json-mode jinja2-mode jazz-theme jade-mode hlinum grizzl fuzzy-format flymd flymake-php flymake-json flymake-css flymake-coffee flycheck-pyflakes flycheck-haskell flycheck-clojure erlang elixir-mix editorconfig cypher-mode color-theme-sanityinc-tomorrow coffee-mode anything alchemist ag ack-and-a-half ace-jump-mode ac-dabbrev))
   '(safe-local-variable-values
      '((eval when
          (fboundp 'aggressive-indent-mode)
