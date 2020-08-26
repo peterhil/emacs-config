@@ -32,3 +32,6 @@
 
 ;; Help
 (global-set-key [(hyper h)] 'help)
+
+;; Eldoc mode
+(define-key global-map (kbd "C-h e") 'eldoc-mode)
