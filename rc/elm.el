@@ -1,1 +1,1 @@
-(require 'elm-mode)
+(use-package elm-mode)
