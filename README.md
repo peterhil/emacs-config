@@ -22,7 +22,7 @@ Make symlinks:
 
 This configuration uses [use-package][] in order to lazily initialize, load and configure packages. I am just starting to lazy load packages with [use-package][], so check:
 
-- configuration includes in `rc/init.el`
+- configuration includes in `rc/modules.el`
 - package includes in `rc/packages.el`
 
 And comment out the ones you do not need.
