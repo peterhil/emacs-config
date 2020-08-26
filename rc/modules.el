@@ -15,6 +15,7 @@
            ;; -- Editing
            "locale"
            "editing"
+           "undo-redo"
            "expand-region"
            "regexp"
            "dired"
