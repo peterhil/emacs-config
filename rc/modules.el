@@ -23,7 +23,7 @@
            "hex"
            "images"
            ;; "audio"
-           ;; "erc"
+           "erc"
            "shell"
            ;; "w3m"
 
