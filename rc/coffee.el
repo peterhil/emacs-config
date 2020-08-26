@@ -2,15 +2,11 @@
 ;; Coffee-script
 ;; ------------------------------------------------------------------------------
 
-(require 'coffee-mode)
-
-(my-auto-mode-regexps
- 'coffee-mode
- '("\\.coffee\\'"
-   "^Cakefile$"))
-
-(defun coffee-custom ()
+(use-package "coffee-mode"
+  :mode
+  (
+    "\\.coffee\\'"
+    "^Cakefile$"
+    )
+  :config
   (set (make-local-variable 'tab-width) 2))
-
-(add-hook 'coffee-mode-hook
-          'coffee-custom)
