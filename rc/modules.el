@@ -77,6 +77,7 @@
            "rust"
            ;; "rebol"
            ;; "php"
+           ;; "eldoc-php"
            ;; "coffee"
            "js"
            "json"
