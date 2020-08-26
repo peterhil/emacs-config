@@ -24,6 +24,6 @@
   (local-set-key (kbd "C-c C-p") 'flymake-goto-prev-error))
 
 (use-package "d-mode"
-  :hook (d-mode . 'flymake-d-load))
+  :hook (d-mode . flymake-d-load))
 
 (provide 'flymake-d)
