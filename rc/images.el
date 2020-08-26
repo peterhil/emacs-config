@@ -4,15 +4,15 @@
 
 ;; Emacs Image Manipulation mode (uses ImageMagick)
 ;; http://www.emacswiki.org/emacs/EmacsImageManipulation
-
-;; Switch the minor mode on for all image-mode buffers with:
+;; Switch the minor mode on for all image-mode buffers with 'M-x eimp':
+;;
 (autoload 'eimp-mode "eimp" "Emacs Image Manipulation Package." t)
 (add-hook 'image-mode-hook 'eimp-mode)
 
-;; Inkmacs -- experimental Emacs Inscape bridge
-;; (require 'inkmacs)
 
-(auto-image-file-mode 1)
+;; Inkmacs -- experimental Emacs Inkscape bridge
+;; (use-package inkmacs)
+
 
 (my-auto-mode-extensions
  'image-mode
@@ -25,11 +25,15 @@
    "tiff\\?"
    ))
 
+(auto-image-file-mode 1)
+
 ;; (define-key 'image-mode-map (kbd "\\'") 'switch-to-other-buffer) ; <- Does not work?! Was eal-define-key
+
 
 (defun image-mode-settings ()
   "Settings for `image-mode'."
-  (require 'ppm-gen)
+  (use-package ppm-gen
+    :load-path "site-lisp/ppm-gen")
 
   (defadvice image-type (around image-type-bmp first (source &optional type data-p) activate)
     (setq ad-return-value
@@ -51,7 +55,9 @@
 				  (create-image ppm-data 'pbm t)))
 		(t ad-do-it)))))
 
+
 (eval-after-load "image-mode"
   `(image-mode-settings))
+
 
 (provide 'image-mode-settings)
