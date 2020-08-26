@@ -25,6 +25,8 @@
            "regexp"
            "dired"
            "anything"
+           "elmacro"
+           "macros"
 
            "hex"
            "images"
