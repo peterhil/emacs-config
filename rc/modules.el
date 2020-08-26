@@ -68,6 +68,7 @@
            ;; "ropemacs"
            ;; "reasonml"
            "ruby"
+           "rust"
            ;; "rebol"
            ;; "php"
            ;; "coffee"
