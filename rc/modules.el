@@ -71,7 +71,7 @@
            "ruby"
            ;; "rebol"
            ;; "php"
-           "coffee"
+           ;; "coffee"
            "js"
            "json"
            "js2-refactor"
