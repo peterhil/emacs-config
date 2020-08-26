@@ -2,11 +2,12 @@
 ;; Javascript
 ;; ------------------------------------------------------------------------------
 
-;; (require 'javascript-mode)
-;; (autoload 'javascript-mode "javascript-mode" nil t)
+(autoload 'javascript-mode "javascript-mode" nil t)
+
 
 (defun my-disable-electric-indent ()
   (set (make-local-variable 'electric-indent-chars) nil))
+
 
 (use-package "js2-mode"
   :mode
