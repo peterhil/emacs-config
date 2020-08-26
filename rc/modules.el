@@ -28,7 +28,6 @@
            ;; "w3m"
 
            ;; -- Programming tools
-           ;; "dash-at-point"
            "diff"
            "git"
            "magit"
@@ -82,5 +81,9 @@
            "fortune"
            ))
   (configure include))
+
+(if (eq system-type "darwin")
+  (configure "dash-at-point")
+  (configure "zeal-at-point"))
 
 ;; (configure "pure")
