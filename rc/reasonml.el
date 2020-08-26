@@ -2,6 +2,15 @@
 ;; Reason ML - https://github.com/reasonml-editor/reason-mode
 ;; ------------------------------------------------------------------------------
 
+(use-package merlin)
+(use-package reason-mode
+  :hook (reason-mode . (lambda ()
+                         (add-hook 'before-save-hook 'refmt-before-save)
+                         (merlin-mode)))
+  :config
+  (setq merlin-ac-setup t))
+
+
 (defun shell-cmd (cmd)
   "Returns the stdout output of a shell command or nil if the command returned
    an error"
@@ -22,21 +31,3 @@
 
   (when refmt-bin
     (setq refmt-command refmt-bin)))
-
-
-;; Require Readon and Merlin
-(require 'reason-mode)
-(require 'merlin)
-(add-hook 'reason-mode-hook (lambda ()
-                              (add-hook 'before-save-hook 'refmt-before-save)
-                              (merlin-mode)))
-
-(setq merlin-ac-setup t)
-
-;; If you have iedit mode set up:
-;; (require 'merlin-iedit)
-;; (defun evil-custom-merlin-iedit ()
-;;   (interactive)
-;;   (if iedit-mode (iedit-mode)
-;;     (merlin-iedit-occurrences)))
-;; (define-key merlin-mode-map (kbd "C-c C-e") 'evil-custom-merlin-iedit)

@@ -66,7 +66,7 @@
            "python"
            "elpy"
            ;; "ropemacs"
-           ;; "reasonml"
+           "reasonml"
            "ruby"
            "rust"
            ;; "rebol"
