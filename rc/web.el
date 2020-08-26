@@ -12,9 +12,7 @@
   (
     "<\\!DOCTYPE"
     "<\\!doctype"
-    "<\\?xml"
     "<html"
-    "<svg"
     )
   :mode
   (

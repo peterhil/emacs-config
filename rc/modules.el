@@ -49,6 +49,7 @@
            ;; "zencoding"
            "style"
            ;; "nxhtml"
+           "nxml"
            "web"
 
            ;; -- Ocaml
@@ -80,4 +81,5 @@
            "fortune"
            ))
   (configure include))
+
 ;; (configure "pure")
