@@ -7,9 +7,10 @@
   :hook
   (
     (c-mode . (lambda () (setq zeal-at-point-docset '("c"))))
+    ((css-mode less-css-mode sass-mode scss-mode stylus.mode) . (lambda () (setq zeal-at-point-docset '("css"))))
     (c++-mode . (lambda () (setq zeal-at-point-docset '("cpp"))))
     (emacs-lisp-mode . (lambda () (setq zeal-at-point-docset '("elisp" "lisp"))))
-    (shell-script-mode . (lambda () (setq zeal-at-point-docset '("bash"))))
+    (web-mode . (lambda () (setq zeal-at-point-docset '("html"))))
     ((javascript-mode js2-mode) . (lambda ()
                   (setq zeal-at-point-docset
                     '(
@@ -20,8 +21,11 @@
                        "webpack"
                        "zepto"
                        ))))
-    ;; (ocaml-mode . (lambda () (setq zeal-at-point-docset '("ocaml"))))
+    (haskell-mode . (lambda () (setq zeal-at-point-docset '("haskell"))))
+    (lua-mode . (lambda () (setq zeal-at-point-docset '("lua"))))
+    (tuareg-mode . (lambda () (setq zeal-at-point-docset '("ocaml"))))
     (python-mode . (lambda () (setq zeal-at-point-docset '("python" "django"))))
-    (ruby-mode .  (lambda () (setq zeal-at-point-docset '("ruby" "rails"))))
+    (ruby-mode .  (lambda () (setq zeal-at-point-docset '("ruby" "rails" "haml"))))
     ;; (rust-mode . (lambda () (setq zeal-at-point-docset '("rust"))))
+    (shell-script-mode . (lambda () (setq zeal-at-point-docset '("bash"))))
     ))
