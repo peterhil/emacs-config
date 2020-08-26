@@ -2,4 +2,4 @@
 ;; Programming tools
 ;; ------------------------------------------------------------------------------
 
-(require 'quickrun)
+(use-package quickrun)
