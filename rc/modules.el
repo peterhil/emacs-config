@@ -53,8 +53,8 @@
            "web"
 
            ;; -- Ocaml
-           ;; "opam-user-setup"
-           ;; "ocaml"
+           "opam-user-setup"
+           "ocaml"
 
            ;; -- Languages
            "common-lisp"
