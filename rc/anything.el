@@ -3,15 +3,11 @@
 ;; ------------------------------------------------------------------------------
 
 (use-package "anything"
-  :commands anything
-  :ensure t
-  )
+  :commands 'anything)
 
 (use-package "anything-config"
+  :load-path "site-lisp/anything-config"
+  :ensure nil
   :after (anything)
   :bind ("C-x a n" . anything-mini)
-  :commands anything
-  :ensure nil
-  :load-path "site-lisp/anything-config"
-  :requires anything
-  )
+  :commands 'anything-config)
