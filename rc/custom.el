@@ -42,11 +42,7 @@
   '(dired-use-ls-dired t)
   '(emulate-mac-finnish-keyboard-mode t)
   '(fci-rule-color "#4E5959")
-  '(fill-column 78)
   '(font-use-system-font t)
-  '(fringe-mode '(nil . 0) nil (fringe))
-  '(global-hl-line-mode t)
-  '(global-linum-mode t)
   '(highlight-changes-colors ("#FD5FF0" "#AE81FF"))
   '(highlight-tail-colors
      '(("#4E5959" . 0)

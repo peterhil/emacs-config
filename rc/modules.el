@@ -2,7 +2,7 @@
 ;; Mode-specific configs
 ;; ------------------------------------------------------------------------------
 
-(dolist (include
+(dolist(include
          '(
            ;; -- Emacs lisp utility functions, make sure this is loaded first!
            "elisp"
@@ -15,6 +15,11 @@
            ;; -- Editing
            "locale"
            "editing"
+           "editorconfig"
+           "fuzzy-format"
+           "key-bindings"
+           "tabs"
+           "whitespace"
            "undo-redo"
            "expand-region"
            "regexp"
