@@ -2,16 +2,14 @@
 ;; JS2-refactor
 ;; ------------------------------------------------------------------------------
 
-(eval-after-load "js2-refactor-autoloads"
-  '(progn
-     (if (require 'js2-refactor nil t)
-         (progn
-           ;; (js2-refactor 1)
-           (js2r-add-keybindings-with-prefix "C-c C-j")
-           )
-       (warn "js2-refactor is not found."))))
+(use-package "js2-refactor"
+  :defer t
+  :hook (js2-mode . js2-refactor-mode)
+  :config
+  (js2r-add-keybindings-with-prefix "C-c C-j"))
 
 ;; Refactorings
+;; https://github.com/magnars/js2-refactor.el#refactorings
 
 ;; ef is extract-function: Extracts the marked expressions out into a new named function.
 ;; em is extract-method: Extracts the marked expressions out into a new named method in an object literal.
