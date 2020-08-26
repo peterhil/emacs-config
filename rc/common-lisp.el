@@ -10,6 +10,7 @@
 
 ;; (add-to-list 'load-path (concat my-system-site-lisp "slime"))
 ;; (add-to-list 'load-path (concat user-emacs-directory "site-lisp/slime") ;; Already on path
+(add-to-list 'load-path ("~/quicklisp/dists/quicklisp/software/slime-v2.24/"))
 (require 'slime-autoloads)
 
 (eval-after-load "slime"
@@ -29,6 +30,8 @@
         (ccl64 (,(concat usr-prefix "/bin/ccl64")))
         (ecl   (,(concat usr-prefix "/bin/ecl")) :coding-system iso-latin-1-unix)))
 
+(setq inferior-lisp-program (concat usr-prefix "/bin/sbcl"))
+
 (add-hook 'lisp-mode-hook
           (lambda ()
             (cond ((not (featurep 'slime))
@@ -36,5 +39,5 @@
                    (normal-mode)))))
 
 ; Local CLHS
-(setq common-lisp-hyperspec-root
-      (concat usr-prefix "/share/doc/lisp/HyperSpec-7-0/HyperSpec/"))
+;; (setq common-lisp-hyperspec-root
+;;       (concat usr-prefix "/share/doc/lisp/HyperSpec-7-0/HyperSpec/"))
