@@ -37,7 +37,7 @@
            "smart-tabs"
            ;; "yasnippet"
            ;; "qt"
-           ;; "projectile"
+           "projectile"
            ;; "flycheck
            "flymake"
            "flymake-d"
