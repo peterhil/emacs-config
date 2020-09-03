@@ -34,7 +34,7 @@
 (opam-update-env nil)
 
 
-(setq opam-share
+(defvar opam-share
   (let ((reply (opam-shell-command-to-string "opam config var share")))
     (when reply (substring reply 0 -1))))
 
@@ -90,9 +90,9 @@
 
   ;; So you can do it on a mac, where `C-<up>` and `C-<down>` are used
   ;; by spaces.
-  (define-key merlin-mode-map
+  (define-key 'merlin-mode-map
     (kbd "C-c <up>") 'merlin-type-enclosing-go-up)
-  (define-key merlin-mode-map
+  (define-key 'merlin-mode-map
     (kbd "C-c <down>") 'merlin-type-enclosing-go-down)
   (set-face-background 'merlin-type-face "skyblue"))
 
@@ -103,7 +103,7 @@
   (add-hook 'tuareg-mode-hook 'utop-minor-mode))
 
 
-(setq opam-tools
+(defvar opam-tools
   '(("tuareg" . opam-setup-tuareg)
     ("ocp-indent" . opam-setup-ocp-indent)
     ("ocp-index" . opam-setup-ocp-index)
