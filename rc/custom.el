@@ -15,6 +15,7 @@
   '(c-special-indent-hook '(ignore))
   '(c-tab-always-indent 'other)
   '(color-theme-is-cumulative nil)
+  '(column-number-mode t)
   '(compilation-message-face 'default)
   '(create-frame-min-width 120)
   '(current-language-environment "UTF-8")
