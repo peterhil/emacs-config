@@ -32,7 +32,7 @@
            "images"
            ;; "audio"
            "erc"
-           "shell"
+           ;; "shell"
            ;; "w3m"
 
            ;; -- Programming tools
