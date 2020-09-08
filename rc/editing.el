@@ -4,7 +4,7 @@
 
 (column-number-mode 1)
 (setq fill-column 78)
-(fringe-mode -1)
+;; (fringe-mode -1)
 
 ;; Disable eldoc globally:
 ;; https://emacs.stackexchange.com/questions/31414/how-to-globally-disable-eldoc
