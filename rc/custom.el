@@ -22,18 +22,6 @@
   '(custom-safe-themes
      '("3629b62a41f2e5f84006ff14a2247e679745896b5eaa1d5bcfbc904a3441b0cd" default))
   '(debug-on-error t)
-  '(default-frame-alist
-     '((font-backend ns)
-        (fontsize . 0)
-        (menu-bar-lines . 1)
-        (tool-bar-lines . 0)
-        (modeline . t)
-        (foreground-color . "#F8F8F2")
-        (background-color . "#222222")
-        (background-mode . dark)
-        (border-color . "#0f0f0f")
-        (cursor-color . "#73d216")
-        (mouse-color . "#73d216")))
   '(default-input-method "finnish-keyboard")
   '(desktop-save-mode nil)
   '(dired-auto-revert-buffer 'dired-directory-changed-p)
