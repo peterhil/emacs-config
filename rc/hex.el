@@ -3,7 +3,7 @@
 ;; ------------------------------------------------------------------------------
 
 ;; Better alternative to the builtin hexl-mode
-(use-package nhexl-mode)
+;; (use-package nhexl-mode)
 
 
 (use-package hexview-mode
