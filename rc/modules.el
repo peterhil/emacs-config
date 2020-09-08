@@ -82,7 +82,6 @@
            ;; "eldoc-php"
            ;; "coffee"
            "js"
-           "json"
            "js2-refactor"
            ;; "pure"
 
