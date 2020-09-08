@@ -8,6 +8,6 @@
 
 (use-package "fortune-cookie"
   :commands fortune
-  :config
+  :init
   ;; (setq fortune-cookie-cowsay-args  "-f blowfish")
   (fortune-cookie-mode))
