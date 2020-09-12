@@ -83,6 +83,7 @@
            ;; "coffee"
            "js"
            "js2-refactor"
+           "svelte"
            ;; "pure"
 
            ;; -- Misc
