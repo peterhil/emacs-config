@@ -25,7 +25,6 @@
   '(default-input-method "finnish-keyboard")
   '(desktop-save-mode nil)
   '(dired-auto-revert-buffer 'dired-directory-changed-p)
-  '(dired-use-ls-dired nil)
   '(emulate-mac-finnish-keyboard-mode t)
   '(fci-rule-color "#4E5959")
   '(font-use-system-font t)
