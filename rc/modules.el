@@ -20,7 +20,7 @@
            "key-bindings"
            "tabs"
            "whitespace"
-           ;; "undo-redo"
+           "undo-redo"
            "expand-region"
            "regexp"
            "dired"
