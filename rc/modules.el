@@ -20,7 +20,7 @@
            "key-bindings"
            "tabs"
            "whitespace"
-           ;; "undo-redo"
+           "undo-redo"
            "expand-region"
            "regexp"
            "dired"
@@ -83,6 +83,7 @@
            ;; "coffee"
            "js"
            "js2-refactor"
+           "svelte"
            ;; "pure"
 
            ;; -- Misc

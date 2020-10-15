@@ -5,9 +5,9 @@
 ;; Ensure that environment variables inside Emacs look the same as in the user's shell
 ;; https://github.com/purcell/exec-path-from-shell
 (use-package exec-path-from-shell
+  :if (memq window-system '(mac ns))
   :init
-  (when (memq window-system '(mac ns x))
-    (exec-path-from-shell-initialize)))
+  (exec-path-from-shell-initialize))
 
 
 ;; Open dark-themed shell
