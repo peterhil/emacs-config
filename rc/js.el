@@ -12,8 +12,8 @@
 (use-package "js2-mode"
   :mode
   (
-    "\\.js\\'"
-    "\\.ts\\'"
+    ;; "\\.js\\'"
+    ;; "\\.ts\\'"
     )
   ;; :hook (js2-mode . 'my-disable-electric-indent)
   :config
