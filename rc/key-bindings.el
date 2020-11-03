@@ -22,6 +22,13 @@
 ;; Key bindings
 ;; ------------------------------------------------------------------------------
 
+;; Left option as meta, right as option
+;; https://www.emacswiki.org/emacs/EmacsForMacOS#toc31
+(when (eq system-type 'darwin) ;; mac specific settings
+  (setq mac-option-modifier 'meta)
+  (setq mac-right-option-modifier nil)
+  )
+
 ;; My bindings
 (define-key global-map (kbd "C-'") 'comment-or-uncomment-region)
 (define-key global-map (kbd "C-M-'") 'uncomment-region)
