@@ -115,6 +115,7 @@
                       ;; web-server
                       ;; websocket
                       yaml-mode
+                      zig-mode
                       ;; zonokai-theme
                       )
   "A list of packages to ensure are installed at launch.")
