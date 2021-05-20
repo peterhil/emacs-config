@@ -6,6 +6,7 @@
 ;; (use-package nhexl-mode)
 
 
+;; HexView
 ;; https://github.com/walterdejong/hexview
 (use-package hexview-mode
   :load-path "site-lisp/hexview-mode")
