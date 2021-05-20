@@ -9,7 +9,7 @@
 ;;   (load-theme 'jazz t))
 
 (progn
-  (add-to-list 'custom-theme-load-path (concat user-emacs-directory "themes/monokai-steel-emacs"))
+  (add-to-list 'custom-theme-load-path (concat user-emacs-directory "themes/monokai-emacs"))
   (load-theme 'monokai t))
 
 ;; (progn

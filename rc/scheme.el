@@ -33,5 +33,8 @@
 ;;  Chicken Scheme
 ;; ------------------------------------------------------------------------------
 
-(use-package "hen"
-  :load-path "site-lisp/hen")
+;; (use-package "hen"
+;;   :load-path "site-lisp/hen")
+
+;; Requires chicken scheme (csi) to be installed
+;; (use-package "geiser")

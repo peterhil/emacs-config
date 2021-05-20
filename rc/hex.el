@@ -6,9 +6,10 @@
 ;; (use-package nhexl-mode)
 
 
+;; https://github.com/walterdejong/hexview
 (use-package hexview-mode
   :load-path "site-lisp/hexview-mode")
 
 
-(use-package binview
-  :load-path "site-lisp/binview")
+;; (use-package binview
+;;   :load-path "site-lisp/binview")

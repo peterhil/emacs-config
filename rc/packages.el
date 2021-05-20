@@ -31,7 +31,7 @@
                       ;; ack-and-a-half
                       ag
                       alchemist
-                      anything
+                      ;; anything
                       auto-complete
                       auto-minor-mode
                       caml
@@ -63,7 +63,7 @@
                       flymake-php
                       flymd
                       fortune-cookie
-                      fuzzy-format
+                      ;; fuzzy-format
                       ;; git-commit-mode
                       ;; git-rebase-mode
                       grizzl

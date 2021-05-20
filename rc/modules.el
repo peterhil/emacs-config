@@ -16,7 +16,7 @@
            "locale"
            "editing"
            "editorconfig"
-           "fuzzy-format"
+           ;; "fuzzy-format"
            "key-bindings"
            "tabs"
            "whitespace"
@@ -24,7 +24,7 @@
            "expand-region"
            "regexp"
            "dired"
-           "anything"
+           ;; "anything"
            "elmacro"
            "macros"
 
@@ -88,7 +88,7 @@
 
            ;; -- Misc
            "extra-fun"
-           "fortune"
+           ;; "fortune"
            ))
   (configure include))
 
