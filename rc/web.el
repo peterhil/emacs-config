@@ -31,3 +31,6 @@
     "/components/.*\\.js\\'"
     )
   )
+
+(require 'web-mode-edit-element)
+(add-hook 'web-mode-hook 'web-mode-edit-element-minor-mode)
