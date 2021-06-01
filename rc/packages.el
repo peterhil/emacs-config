@@ -87,6 +87,8 @@
                       org
                       ;; ox-gfm
                       paredit
+                      paredit-everywhere
+                      paredit-menu
                       parinfer
                       php-auto-yasnippets
                       php-completion

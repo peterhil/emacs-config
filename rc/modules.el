@@ -44,6 +44,7 @@
            "smart-tabs"
            ;; "yasnippet"
            ;; "qt"
+           "paredit"
            "projectile"
            ;; "flycheck
            "flymake"
