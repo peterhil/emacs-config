@@ -57,6 +57,7 @@
            ;; "multi-web-mode"
            ;; "zencoding"
            "style"
+           "tagedit"
            ;; "nxhtml"
            "nxml"
            "web"

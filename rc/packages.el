@@ -106,6 +106,7 @@
                       ;; spacegray-theme
                       ;; spacemacs-theme
                       stylus-mode
+                      tagedit
                       tuareg
                       use-package
                       utop
