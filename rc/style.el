@@ -5,14 +5,15 @@
 ;; Jinja2
 (use-package "jinja2-mode"
   :mode
-  (
-    "\\.jinja\\'"
-    ;; Do matching on the path and extension
-    "/templates/.*\\.html\\'"
-    )
-  )
+  ("\\.jinja\\'"
+   ;; Do matching on the path and extension
+   "/templates/.*\\.html\\'"))
 
+;; ==============================================================================
 ;; CSS modes
+;; ------------------------------------------------------------------------------
+
+;; Css
 (use-package "css-mode" :mode "\\.css\\'")
 
 ;; Jade
@@ -34,5 +35,5 @@
 ;; Stylus
 (use-package "stylus-mode" :mode "\\.styl\\'")
 
-;; YAML
+;; Yaml
 (use-package "yaml-mode" :mode "\\.ya?ml\\'")
