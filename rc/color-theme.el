@@ -23,14 +23,14 @@
   (setq
    ;; foreground and background
    monokai-foreground     "#F8F8F2"
-   monokai-background     "#272822"
+   monokai-background     "#222627"
    ;; highlights and comments
-   monokai-comments       "#75715E"
+   monokai-comments       "#71756E"
    monokai-emphasis       "#F8F8F0"
-   monokai-highlight      "#49483E"
-   monokai-highlight-alt  "#3E3D31"
-   monokai-highlight-line "#3C3D37"
-   monokai-line-number    "#8F908A"
+   monokai-highlight      "#364142"
+   monokai-highlight-alt  "#313D3E"
+   monokai-highlight-line "#4E5959"
+   monokai-line-number    "#71756E"
    ;; colours
    monokai-blue           "#66D9EF"
    monokai-cyan           "#A1EFE4"
