@@ -54,3 +54,28 @@
 
 ;; Yaml
 (use-package yaml-mode :mode "\\.ya?ml\\'")
+
+
+;; ==============================================================================
+;; CSS utilities
+;; ------------------------------------------------------------------------------
+
+;; CSS sort - https://github.com/jcs-elpa/com-css-sort
+(use-package com-css-sort
+  :commands
+  (com-css-sort
+   com-css-sort-attributes-block
+   com-css-sort-attributes-document)
+  :config
+  (progn
+    ;; default: 'type-sort
+    ;; (setq com-css-sort-sort-type 'alphabetic-sort)
+    ))
+
+;; css-eldoc
+(use-package css-eldoc
+  :commands turn-on-css-eldoc
+  ;; add a hook if you want always to see the selector options in the minibuffer
+  :config
+  (add-hook 'css-mode-hook 'turn-on-css-eldoc)
+  (add-hook 'scss-mode-hook 'turn-on-css-eldoc))
