@@ -24,7 +24,7 @@
 
 
 (defvar my-packages '(
-                      ac-dabbrev
+                      ;; ac-dabbrev
                       ;; ac-python
                       ace-jump-mode
                       ack
