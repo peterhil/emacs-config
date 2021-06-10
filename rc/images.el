@@ -32,8 +32,10 @@
 
 (defun image-mode-settings ()
   "Settings for `image-mode'."
-  (use-package ppm-gen
-    :load-path "site-lisp/ppm-gen")
+
+  ;; https://www.emacswiki.org/emacs/ppm-gen.el
+  ;; (use-package ppm-gen
+  ;;   :load-path "site-lisp/ppm-gen")
 
   (defadvice image-type (around image-type-bmp first (source &optional type data-p) activate)
     (setq ad-return-value

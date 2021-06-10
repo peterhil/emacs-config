@@ -16,7 +16,7 @@
            "locale"
            "editing"
            "editorconfig"
-           "fuzzy-format"
+           ;; "fuzzy-format"
            "key-bindings"
            "tabs"
            "whitespace"
@@ -24,7 +24,7 @@
            "expand-region"
            "regexp"
            "dired"
-           "anything"
+           ;; "anything"
            "elmacro"
            "macros"
 
@@ -44,6 +44,7 @@
            "smart-tabs"
            ;; "yasnippet"
            ;; "qt"
+           "paredit"
            "projectile"
            ;; "flycheck
            "flymake"
@@ -56,6 +57,7 @@
            ;; "multi-web-mode"
            ;; "zencoding"
            "style"
+           "tagedit"
            ;; "nxhtml"
            "nxml"
            "web"
@@ -88,7 +90,7 @@
 
            ;; -- Misc
            "extra-fun"
-           "fortune"
+           ;; "fortune"
            ))
   (configure include))
 

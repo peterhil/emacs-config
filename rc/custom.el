@@ -20,7 +20,7 @@
  '(create-frame-min-width 120)
  '(current-language-environment "UTF-8")
  '(custom-safe-themes
-   '("3629b62a41f2e5f84006ff14a2247e679745896b5eaa1d5bcfbc904a3441b0cd" default))
+   '("d9646b131c4aa37f01f909fbdd5a9099389518eb68f25277ed19ba99adeb7279" default))
  '(debug-on-error t)
  '(default-input-method "finnish-keyboard")
  '(desktop-save-mode nil)
@@ -41,11 +41,14 @@
  '(indent-tabs-mode nil)
  '(indicate-buffer-boundaries 'left)
  '(inhibit-startup-screen t)
+ '(magit-diff-use-overlays nil)
  '(ns-tool-bar-display-mode 'labels t)
  '(ns-tool-bar-size-mode 'regular t)
  '(one-buffer-one-frame-mode nil)
  '(package-selected-packages
-   '(2048-game ztree lsp-julia lsp-mode zig-mode svelte-mode elmacro nhexl-mode quickrun reason-mode rust-mode expand-region markdown-mode nxml-mode elpy edit-server csv-mode undo-tree hen scheme-complete zeal-at-point use-package-ensure-system-package utop merlin fill-column-indicator faustine faust-mode fortune-cookie form-feed magit-delta fireplace use-package d-mode auto-minor-mode picolisp-mode lua-mode flymake-jslint visual-regexp auto-complete caml tuareg feature-mode vue-html-mode vue-mode typescript-mode xref-js2 zencoding-mode eslint-fix exec-path-from-shell elm-mode csv-nav php-auto-yasnippets zonokai-theme yaml-mode web-mode w3m vmd-mode uuidgen stylus-mode spacegray-theme smartparens slime scss-mode sass-mode ruby-compilation rainbow-mode qml-mode python-mode projectile php-mode php-completion paredit move-text monokai-theme mkdown md-readme markdown-mode+ linum-off less-css-mode json-mode jinja2-mode jazz-theme jade-mode hlinum grizzl fuzzy-format flymd flymake-php flymake-json flymake-css flymake-coffee flycheck-pyflakes flycheck-haskell flycheck-clojure erlang elixir-mix editorconfig cypher-mode color-theme-sanityinc-tomorrow coffee-mode anything alchemist ag ack-and-a-half ace-jump-mode ac-dabbrev))
+   '(2048-game ztree lsp-julia css-eldoc com-css-sort elpher gemini-mode tagedit paredit paredit-everywhere paredit-menu pomodoro lsp-mode web-mode-edit-element zig-mode nix-mode geiser-chicken js2-mode haml-mode magit git-commit fuzzy js2-refactor svelte-mode elmacro nhexl-mode quickrun reason-mode rust-mode expand-region markdown-mode nxml-mode elpy edit-server csv-mode undo-tree hen scheme-complete zeal-at-point use-package-ensure-system-package utop merlin fill-column-indicator faustine faust-mode fortune-cookie form-feed magit-delta fireplace use-package d-mode auto-minor-mode picolisp-mode lua-mode flymake-jslint visual-regexp auto-complete caml tuareg feature-mode vue-html-mode vue-mode typescript-mode xref-js2 zencoding-mode eslint-fix exec-path-from-shell elm-mode csv-nav php-auto-yasnippets zonokai-theme yaml-mode web-mode w3m vmd-mode uuidgen stylus-mode spacegray-theme smartparens slime scss-mode sass-mode ruby-compilation rainbow-mode qml-mode python-mode projectile php-mode php-completion move-text monokai-theme mkdown md-readme markdown-mode+ linum-off less-css-mode json-mode jinja2-mode jazz-theme jade-mode hlinum grizzl fuzzy-format flymd flymake-php flymake-json flymake-css flymake-coffee flycheck-pyflakes flycheck-haskell flycheck-clojure erlang elixir-mix editorconfig cypher-mode color-theme-sanityinc-tomorrow coffee-mode anything alchemist ag ack-and-a-half ace-jump-mode ac-dabbrev))
+ '(pos-tip-background-color "#FFFACE")
+ '(pos-tip-foreground-color "#272822")
  '(safe-local-variable-values
    '((encoding . utf-8)
      (Syntax . ANSI-Common-Lisp)

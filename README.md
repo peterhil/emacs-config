@@ -13,10 +13,33 @@ Clone the source:
     cd ~/src  # Replace with wherever you want to clone
     git clone git://github.com/peterhil/emacs-config.git
 
-Make symlinks:
+Make symlinks and site-lisp directory:
 
     ln -sf $PWD/dot.emacs ~/.emacs
     ln -sf $PWD/rc ~/.emacs.d/rc
+    mkdir ~/.emacs.d/site-lisp
+
+Install necessary packages into site-lisp directory:
+
+    cd ~/.emacs.d/site-lisp
+    git clone https://github.com/jwiegley/use-package.git
+
+Install some packages into site-lisp:
+
+    cd ~/.emacs.d/site-lisp
+
+    # Hexview
+    mkdir hexview && cd hexview
+    curl -O https://www.emacswiki.org/emacs/download/hexview-mode.el
+    cd -
+
+    # ERC hightlight nicknames
+    mkdir erc-highlight-nicknames && cd erc-highlight-nicknames
+    curl -O https://www.emacswiki.org/emacs/download/erc-highlight-nicknames.el
+    cd -
+
+    # Smart tab
+    git clone https://github.com/genehack/smart-tab.git
 
 ## Usage
 

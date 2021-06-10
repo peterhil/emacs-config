@@ -24,14 +24,14 @@
 
 
 (defvar my-packages '(
-                      ac-dabbrev
+                      ;; ac-dabbrev
                       ;; ac-python
                       ace-jump-mode
                       ack
                       ;; ack-and-a-half
                       ag
                       alchemist
-                      anything
+                      ;; anything
                       auto-complete
                       auto-minor-mode
                       caml
@@ -63,7 +63,7 @@
                       flymake-php
                       flymd
                       fortune-cookie
-                      fuzzy-format
+                      ;; fuzzy-format
                       ;; git-commit-mode
                       ;; git-rebase-mode
                       grizzl
@@ -87,6 +87,8 @@
                       org
                       ;; ox-gfm
                       paredit
+                      paredit-everywhere
+                      paredit-menu
                       parinfer
                       php-auto-yasnippets
                       php-completion
@@ -104,6 +106,7 @@
                       ;; spacegray-theme
                       ;; spacemacs-theme
                       stylus-mode
+                      tagedit
                       tuareg
                       use-package
                       utop
@@ -115,6 +118,7 @@
                       ;; web-server
                       ;; websocket
                       yaml-mode
+                      zig-mode
                       ;; zonokai-theme
                       )
   "A list of packages to ensure are installed at launch.")
