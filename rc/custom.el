@@ -21,7 +21,7 @@
  '(current-language-environment "UTF-8")
  '(custom-safe-themes
    '("3629b62a41f2e5f84006ff14a2247e679745896b5eaa1d5bcfbc904a3441b0cd" default))
- '(debug-on-error nil)
+ '(debug-on-error t)
  '(default-input-method "finnish-keyboard")
  '(desktop-save-mode nil)
  '(dired-auto-revert-buffer 'dired-directory-changed-p)
