@@ -47,6 +47,7 @@
         ;; "sass"
         )
   (setq scss-compile-at-save nil) ;; Compile buffer at save
+  :hook ((scss-mode-hook . 'paredit-mode))
   )
 
 ;; Stylus
