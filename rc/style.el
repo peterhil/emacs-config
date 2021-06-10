@@ -68,9 +68,13 @@
    com-css-sort-attributes-document)
   :config
   (progn
-    ;; default: 'type-sort
-    ;; (setq com-css-sort-sort-type 'alphabetic-sort)
-    ))
+    ;; (setq com-css-sort-sort-type 'alphabetic-sort) ; default: 'type-sort
+
+    ;; Sort attributes inside block
+    (define-key css-mode-map (kbd "C-k s") #'com-css-sort-attributes-block)
+
+    ;; Sort attributes through the whole document
+    (define-key css-mode-map (kbd "C-k d") #'com-css-sort-attributes-document)))
 
 ;; css-eldoc
 (use-package css-eldoc
