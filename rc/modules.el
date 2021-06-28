@@ -49,6 +49,7 @@
            ;; "flycheck
            "flymake"
            "flymake-d"
+           "lsp"
 
            ;; -- Markup
            ;; "org"
@@ -87,6 +88,7 @@
            "js2-refactor"
            "svelte"
            ;; "pure"
+           "zig"
 
            ;; -- Misc
            "extra-fun"
