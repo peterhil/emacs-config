@@ -3,7 +3,7 @@
   :init
   (progn
     ;; https://github.com/magnars/tagedit#experimental-tag-editing
-    (tagedit-add-experimental-features)
+    ;; (tagedit-add-experimental-features)
 
     ;; Hook to HTML mode
     (eval-after-load 'sgml-mode

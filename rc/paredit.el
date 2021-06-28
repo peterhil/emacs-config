@@ -15,9 +15,9 @@
   :init (paredit-mode t)
   )
 
-(use-package "paredit-everywhere"
-  :ensure t
-  :init (add-hook 'prog-mode-hook 'paredit-everywhere-mode))
+;; (use-package "paredit-everywhere"
+;;   :ensure t
+;;   :init (add-hook 'prog-mode-hook 'paredit-everywhere-mode))
 
 (use-package "paredit-menu"
   :ensure t)
