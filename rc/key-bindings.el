@@ -33,6 +33,9 @@
 (define-key global-map (kbd "C-'") 'comment-or-uncomment-region)
 (define-key global-map (kbd "C-M-'") 'uncomment-region)
 
+(define-key global-map (kbd "s-<") 'next-window-any-frame)
+(define-key global-map (kbd "s->") 'previous-window-any-frame)
+
 ;; Backspace
 ;; See http://www.emacswiki.org/emacs/BackspaceKey
 ;; (global-set-key [(control h)] 'delete-backward-char)
