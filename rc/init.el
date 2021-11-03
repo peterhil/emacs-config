@@ -11,7 +11,7 @@
 ;; ------------------------------------------------------------------------------
 
 (setq my-system-site-lisp
-  (concat usr-prefix "/share/emacs/site-lisp/"))
+      (concat usr-prefix "/share/emacs/site-lisp/"))
 
 
 ;; Add system site-lisp paths to your load path (for Homebrew or apt installed packages)
@@ -61,15 +61,15 @@
 ;; (add-to-list 'load-path (concat user-emacs-directory "site-lisp/use-package"))
 (require 'use-package)
 (setq
-  ;; Make use-package always install missing packages with use-package-always-ensure
-  ;; https://github.com/jwiegley/use-package#installing-use-package
-  ;; Note! Incompatible with `straight-use-package-by-default`!
-  use-package-always-ensure t
+ ;; Make use-package always install missing packages with use-package-always-ensure
+ ;; https://github.com/jwiegley/use-package#installing-use-package
+ ;; Note! Incompatible with `straight-use-package-by-default`!
+ use-package-always-ensure t
 
-  ;; Pinning versions by giving default value for :pin in each use-package:
-  ;; use-package-always-pin "melpa"
+ ;; Pinning versions by giving default value for :pin in each use-package:
+ ;; use-package-always-pin "melpa"
 
-  ;; Debugging use-package
-  use-package-verbose 'errors
-  ;; use-package-expand-minimally t
-  )
+ ;; Debugging use-package
+ use-package-verbose 'errors
+ ;; use-package-expand-minimally t
+ )
