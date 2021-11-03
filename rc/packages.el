@@ -27,49 +27,49 @@
                       ;; ac-dabbrev
                       ;; ac-python
                       ace-jump-mode
-                      ack
+                      ;; ack
                       ;; ack-and-a-half
                       ag
-                      alchemist
+                      ;; alchemist
                       ;; anything
                       auto-complete
                       auto-minor-mode
-                      caml
+                      ;; caml
                       clojure-mode
-                      coffee-mode
+                      ;; coffee-mode
                       csv-mode
                       csv-nav
-                      cypher-mode
+                      ;; cypher-mode
                       ;; d-mode
                       editorconfig
-                      elixir-mix
-                      elixir-mode
-                      elm-mode
-                      erlang
+                      ;; elixir-mix
+                      ;; elixir-mode
+                      ;; elm-mode
+                      ;; erlang
                       f
-                      faust-mode
-                      faustine
-                      feature-mode
+                      ;; faust-mode
+                      ;; faustine
+                      ;; feature-mode
                       fill-column-indicator
-                      fireplace
+                      ;; fireplace
                       flycheck
                       flycheck-clojure
-                      flycheck-haskell
+                      ;; flycheck-haskell
                       flycheck-pyflakes
                       flymake
-                      flymake-coffee
+                      ;; flymake-coffee
                       flymake-css
                       flymake-json
-                      flymake-php
-                      flymd
+                      ;; flymake-php
+                      ;; flymd
                       fortune-cookie
                       ;; fuzzy-format
                       ;; git-commit-mode
                       ;; git-rebase-mode
-                      grizzl
-                      haml-mode
+                      ;; grizzl
+                      ;; haml-mode
                       hlinum
-                      jade-mode
+                      ;; jade-mode
                       jinja2-mode
                       js2-mode
                       json-mode
@@ -80,7 +80,7 @@
                       magit
                       markdown-mode+
                       md-readme
-                      merlin
+                      ;; merlin
                       mkdown
                       monokai-theme
                       move-text
@@ -93,11 +93,11 @@
                       php-auto-yasnippets
                       php-completion
                       php-mode
-                      projectile
+                      ;; projectile
                       python-mode
-                      qml-mode
+                      ;; qml-mode
                       rainbow-mode
-                      ruby-compilation
+                      ;; ruby-compilation
                       s
                       sass-mode
                       scss-mode
@@ -106,8 +106,8 @@
                       ;; spacegray-theme
                       ;; spacemacs-theme
                       stylus-mode
-                      tagedit
-                      tuareg
+                      ;; tagedit
+                      ;; tuareg
                       use-package
                       utop
                       ;; uuidgen
