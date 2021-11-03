@@ -49,7 +49,7 @@
            ;; "projectile"
            ;; "flycheck
            "flymake"
-           "flymake-d"
+           ;; "flymake-d"
            ;; "lsp"
 
            ;; -- Markup
