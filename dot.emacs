@@ -23,6 +23,7 @@
 (setq usr-prefix
       (cond ((eq system-type 'darwin) "/usr")
             ((eq system-type 'linux) "/usr")
+            ((eq system-type 'berkeley-unix) "/usr/local")
             (t "/usr")))
 
 (setq user-emacs-directory "~/.emacs.d/")  ; Prevent Aquamacs using a different location
