@@ -72,6 +72,7 @@
            ;; -- Languages
            "common-lisp"
            ;; "elm"
+           "fennel"
            ;; "scheme"
            ;; "haskell"
            "lua"
