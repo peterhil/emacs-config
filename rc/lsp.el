@@ -1,6 +1,6 @@
-;; ==============================================================================
+;; ====================================================================
 ;; lsp-mode
-;; ------------------------------------------------------------------------------
+;; --------------------------------------------------------------------
 
 ;; See https://emacs-lsp.github.io/lsp-mode/page/installation/ for docs
 
@@ -9,7 +9,8 @@
   :commands (lsp lsp-deferred)
   :ensure t
   :defer t
-  :hook ((prog-mode-hook . lsp-deferred)
+  :hook ((emacs-lisp-mode-hook . lsp-deferred)
+         (prog-mode-hook . lsp-deferred)
          (zig-mode-hook . lsp-deferred))
   :init
   ;; set prefix for lsp-command-keymap (few alternatives - "C-l", "C-c l")
@@ -29,6 +30,11 @@
 
 
 (use-package lsp-treemacs :commands lsp-treemacs-errors-list)
+
+
+;; lsp-origami
+(require 'lsp-origami)
+(add-hook 'lsp-after-open-hook #'lsp-origami-try-enable)
 
 
 ;; optionally if you want to use debugger
