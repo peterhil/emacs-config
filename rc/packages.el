@@ -78,7 +78,7 @@
                       let-alist
                       linum-off
                       magit
-                      markdown-mode+
+                      markdown-mode
                       md-readme
                       ;; merlin
                       mkdown
