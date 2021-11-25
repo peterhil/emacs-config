@@ -47,6 +47,7 @@
            ;; "yasnippet"
            ;; "qt"
            "paredit"
+           "paxedit"
            ;; "projectile"
            ;; "flycheck
            "flymake"

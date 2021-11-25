@@ -90,6 +90,7 @@
                       paredit-everywhere
                       paredit-menu
                       parinfer
+                      paxedit
                       php-auto-yasnippets
                       php-completion
                       php-mode
