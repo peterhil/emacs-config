@@ -20,8 +20,8 @@
           (define-key paxedit-mode-map (kbd "C-*") 'paxedit-delete)
           (define-key paxedit-mode-map (kbd "C-^") 'paxedit-sexp-raise)
           ;; Symbol backward/forward kill
-          (define-key paxedit-mode-map (kbd "C-w") 'paxedit-backward-kill)
-          (define-key paxedit-mode-map (kbd "M-w") 'paxedit-forward-kill)
+          (define-key paxedit-mode-map (kbd "C-S-w") 'paxedit-backward-kill)
+          (define-key paxedit-mode-map (kbd "M-S-w") 'paxedit-forward-kill)
           ;; Symbol manipulation
           (define-key paxedit-mode-map (kbd "M-u") 'paxedit-symbol-change-case)
           (define-key paxedit-mode-map (kbd "C-@") 'paxedit-symbol-copy)
