@@ -90,7 +90,7 @@
            ;; "coffee"
            "js"
            "js2-refactor"
-           ;; "svelte"
+           "svelte"
            ;; "pure"
            "zig"
 

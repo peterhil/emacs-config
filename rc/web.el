@@ -23,7 +23,7 @@
     "\\.marko\\'"
     "\\.mustache\\'"
     "\\.php\\'"
-    "\\.svelte\\'"
+    ;; "\\.svelte\\'"
     "\\.tag\\'"
     "\\.vue\\'"
     "\\.xhtml\\'"
