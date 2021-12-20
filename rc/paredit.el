@@ -7,6 +7,7 @@
   :hook ((
           emacs-lisp-mode
           eval-expression-minibuffer-setup
+          fennel-mode
           ielm-mode
           lisp-interaction-mode
           lisp-mode
