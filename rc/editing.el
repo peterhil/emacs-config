@@ -28,6 +28,8 @@
 (when (eq system-type 'linux)
   (setq x-select-enable-clipboard t))
 
+;; Turn on visible bell
+(setq visible-bell t)
 
 ;; =============================================================================
 ;; Line numbers
