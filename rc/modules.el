@@ -92,6 +92,7 @@
            "js2-refactor"
            "svelte"
            ;; "pure"
+           "supercollider"
            "zig"
 
            ;; -- Misc
