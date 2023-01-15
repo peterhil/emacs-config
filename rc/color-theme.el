@@ -10,19 +10,6 @@
 ;;   (add-to-list 'custom-theme-load-path (concat user-emacs-directory "themes/color-theme-mgl"))
 ;;   (load-theme 'mgl-dark t))
 
-;; (load-theme 'spacegray t)
-;; (load-theme 'spacemacs-light t)
-;; (load-theme 'spacemacs-dark t)
-;; (load-theme 'zerodark t)
-
-;;; New themes in 2023
-;; (load-theme 'abyss t)
-(load-theme 'almost-mono-gray t)
-;; (load-theme 'almost-mono-white t)
-;; (load-theme 'cyberpunk t)
-;; (load-theme 'cyberpunk-2019 t)
-;; (load-theme 'nofrils-acme t)
-
 (setq
  ;; foreground and background
  monokai-foreground     "#F8F8F2"
@@ -55,3 +42,14 @@
 ;;   :ensure t
 ;;   :init
 ;;   (load-theme 'monokai t))
+
+;;; Alternative themes
+;; (load-theme 'abyss t)
+;; (load-theme 'almost-mono-gray t)
+;; (load-theme 'almost-mono-white t)
+;; (load-theme 'cyberpunk t)
+(load-theme 'cyberpunk-2019 t)
+;; (load-theme 'nofrils-acme t)
+;; (load-theme 'spacegray t)
+;; (load-theme 'spacemacs-light t)
+;; (load-theme 'spacemacs-dark t)
