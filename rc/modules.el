@@ -59,6 +59,7 @@
            "markdown"
            ;; "wikipedia"
            ;; "multi-web-mode"
+           "polymode"
            ;; "zencoding"
            "style"
            ;; "tagedit"
