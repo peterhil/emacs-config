@@ -58,8 +58,9 @@
 ;;; Light themes
 ;; (load-theme 'flatui t)
 ;; (load-theme 'espresso t)
-(load-theme 'plan9 t)
+;; (load-theme 'plan9 t)
 ;; (load-theme 'hemisu-light t)
 ;; (load-theme 'almost-mono-white t)
 ;; (load-theme 'nofrils-acme t)
 ;; (load-theme 'spacemacs-light t)
+(load-theme 'solarized-light t)
