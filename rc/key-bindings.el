@@ -36,6 +36,12 @@
 (define-key global-map (kbd "s-<") 'next-window-any-frame)
 (define-key global-map (kbd "s->") 'previous-window-any-frame)
 
+(global-set-key [mouse-8] 'scroll-up-command)
+(global-set-key [mouse-9] 'scroll-down-command)
+
+(global-set-key [M-mouse-8] 'next-buffer)
+(global-set-key [M-mouse-9] 'previous-buffer)
+
 ;; Backspace
 ;; See http://www.emacswiki.org/emacs/BackspaceKey
 ;; (global-set-key [(control h)] 'delete-backward-char)

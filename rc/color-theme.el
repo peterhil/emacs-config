@@ -10,11 +10,6 @@
 ;;   (add-to-list 'custom-theme-load-path (concat user-emacs-directory "themes/color-theme-mgl"))
 ;;   (load-theme 'mgl-dark t))
 
-;; (load-theme 'spacegray t)
-;; (load-theme 'spacemacs-light t)
-;; (load-theme 'spacemacs-dark t)
-;; (load-theme 'zerodark t)
-
 (setq
  ;; foreground and background
  monokai-foreground     "#F8F8F2"
@@ -43,7 +38,29 @@
  monokai-height-plus-3 1.2
  monokai-height-plus-4 1.3)
 
-(use-package monokai-theme
-  :ensure t
-  :init
-  (load-theme 'monokai t))
+;; (use-package monokai-theme
+;;   :ensure t
+;;   :init
+;;   (load-theme 'monokai t))
+
+;;; Dark themes
+;; (load-theme 'cyberpunk-2019 t)
+;; (load-theme 'dracula t)
+;; (load-theme 'almost-mono-gray t)
+;; (load-theme 'zeno t)
+;; (load-theme 'exotica t)
+;; (load-theme 'spacegray t)
+;; (load-theme 'spacemacs-dark t)
+;; (load-theme 'hemisu-dark t)
+;; (load-theme 'abyss t)
+;; (load-theme 'cyberpunk t)
+
+;;; Light themes
+;; (load-theme 'flatui t)
+;; (load-theme 'espresso t)
+;; (load-theme 'plan9 t)
+;; (load-theme 'hemisu-light t)
+;; (load-theme 'almost-mono-white t)
+;; (load-theme 'nofrils-acme t)
+;; (load-theme 'spacemacs-light t)
+(load-theme 'solarized-light t)

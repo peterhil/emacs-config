@@ -47,17 +47,19 @@
            ;; "yasnippet"
            ;; "qt"
            "paredit"
+           "paxedit"
            ;; "projectile"
            ;; "flycheck
            "flymake"
            ;; "flymake-d"
-           ;; "lsp"
+           "lsp"
 
            ;; -- Markup
            ;; "org"
            "markdown"
            ;; "wikipedia"
            ;; "multi-web-mode"
+           "polymode"
            ;; "zencoding"
            "style"
            ;; "tagedit"
@@ -72,6 +74,7 @@
            ;; -- Languages
            "common-lisp"
            ;; "elm"
+           "fennel"
            ;; "scheme"
            ;; "haskell"
            "lua"
@@ -90,6 +93,7 @@
            "js2-refactor"
            "svelte"
            ;; "pure"
+           "supercollider"
            "zig"
 
            ;; -- Misc

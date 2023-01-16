@@ -78,7 +78,7 @@
                       let-alist
                       linum-off
                       magit
-                      markdown-mode+
+                      markdown-mode
                       md-readme
                       ;; merlin
                       mkdown
@@ -90,6 +90,7 @@
                       paredit-everywhere
                       paredit-menu
                       parinfer
+                      paxedit
                       php-auto-yasnippets
                       php-completion
                       php-mode
