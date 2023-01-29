@@ -45,7 +45,7 @@
 
 ;;; Dark themes
 ;; (load-theme 'cyberpunk-2019 t)
-;; (load-theme 'dracula t)
+(load-theme 'dracula t)
 ;; (load-theme 'almost-mono-gray t)
 ;; (load-theme 'zeno t)
 ;; (load-theme 'exotica t)
@@ -63,4 +63,4 @@
 ;; (load-theme 'almost-mono-white t)
 ;; (load-theme 'nofrils-acme t)
 ;; (load-theme 'spacemacs-light t)
-(load-theme 'solarized-light t)
+;; (load-theme 'solarized-light t)
