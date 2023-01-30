@@ -119,10 +119,12 @@
                       zig-mode
                       ;; THEMES
                       dracula-theme
+                      mbo70s-theme
                       monokai-theme
                       solarized-theme
                       spacegray-theme
                       spacemacs-theme
+                      sublime-themes
                       zonokai-theme
                       )
   "A list of packages to ensure are installed at launch.")

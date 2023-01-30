@@ -45,15 +45,19 @@
 
 ;;; Dark themes
 ;; (load-theme 'cyberpunk-2019 t)
-(load-theme 'dracula t)
+;; (load-theme 'dracula t)
 ;; (load-theme 'almost-mono-gray t)
 ;; (load-theme 'zeno t)
-(load-theme 'exotica t)
+;; (load-theme 'exotica t)
 ;; (load-theme 'spacegray t)
 ;; (load-theme 'spacemacs-dark t)
 ;; (load-theme 'hemisu-dark t)
 ;; (load-theme 'abyss t)
 ;; (load-theme 'cyberpunk t)
+(load-theme 'graham t)
+;; (load-theme 'hickey t)
+;; (load-theme 'spolsky t)
+;; (load-theme 'mbo70s t)
 
 ;;; Light themes
 ;; (load-theme 'flatui t)
