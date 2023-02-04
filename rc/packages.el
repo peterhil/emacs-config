@@ -82,7 +82,6 @@
                       md-readme
                       ;; merlin
                       mkdown
-                      monokai-theme
                       move-text
                       org
                       ;; ox-gfm
@@ -104,8 +103,6 @@
                       scss-mode
                       slime
                       smartparens
-                      ;; spacegray-theme
-                      ;; spacemacs-theme
                       stylus-mode
                       ;; tagedit
                       ;; tuareg
@@ -120,7 +117,15 @@
                       ;; websocket
                       yaml-mode
                       zig-mode
-                      ;; zonokai-theme
+                      ;; THEMES
+                      dracula-theme
+                      mbo70s-theme
+                      monokai-theme
+                      solarized-theme
+                      spacegray-theme
+                      spacemacs-theme
+                      sublime-themes
+                      zonokai-theme
                       )
   "A list of packages to ensure are installed at launch.")
 

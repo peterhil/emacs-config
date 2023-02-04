@@ -54,6 +54,10 @@
 ;; (load-theme 'hemisu-dark t)
 ;; (load-theme 'abyss t)
 ;; (load-theme 'cyberpunk t)
+(load-theme 'graham t)
+;; (load-theme 'hickey t)
+;; (load-theme 'spolsky t)
+;; (load-theme 'mbo70s t)
 
 ;;; Light themes
 ;; (load-theme 'flatui t)
@@ -63,4 +67,4 @@
 ;; (load-theme 'almost-mono-white t)
 ;; (load-theme 'nofrils-acme t)
 ;; (load-theme 'spacemacs-light t)
-(load-theme 'solarized-light t)
+;; (load-theme 'solarized-light t)

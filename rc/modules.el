@@ -32,8 +32,8 @@
            "hex"
            ;; "images"
            ;; "audio"
-           "erc"
-           "shell"
+           ;; "erc"
+           ;; "shell"
            ;; "w3m"
 
            ;; -- Programming tools
@@ -64,7 +64,7 @@
            "style"
            ;; "tagedit"
            ;; "nxhtml"
-           "nxml"
+           ;; "nxml"
            "web"
 
            ;; -- Ocaml
@@ -90,10 +90,10 @@
            ;; "eldoc-php"
            ;; "coffee"
            "js"
-           "js2-refactor"
+           ;; "js2-refactor"
            "svelte"
            ;; "pure"
-           "supercollider"
+           ;; "supercollider"
            "zig"
 
            ;; -- Misc
