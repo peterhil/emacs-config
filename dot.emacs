@@ -29,12 +29,4 @@
 (defun configure (path)
   (load-file (concat rc-dir path ".el")))
 
-(configure "init/env")
-(configure "init/site-lisp")
 (configure "init")
-(configure "init/package")
-(configure "init/use-package")
-(configure "init/packages")
-(add-hook 'after-init-hook
-          #'(lambda ()
-              (load (concat rc-dir "init/modules.el"))))
