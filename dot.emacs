@@ -21,7 +21,7 @@
 ;; ------------------------------------------------------------------------------
 
 (setq usr-prefix
-      (cond ((eq system-type 'darwin) "/usr")
+      (cond ((eq system-type 'darwin) "/opt/local")
             ((eq system-type 'linux) "/usr")
             ((eq system-type 'berkeley-unix) "/usr/local")
             (t "/usr")))
