@@ -12,7 +12,7 @@
  ;; Make use-package always install missing packages with use-package-always-ensure
  ;; https://github.com/jwiegley/use-package#installing-use-package
  ;; Note! Incompatible with `straight-use-package-by-default`!
- use-package-always-ensure t
+ use-package-always-ensure nil
 
  ;; Pinning versions by giving default value for :pin in each use-package:
  ;; use-package-always-pin "melpa"
