@@ -12,4 +12,4 @@
                       :foreground "white" :background "purple"))
 
 (add-hook 'diff-mode-hook
-	  '(lambda () (update-diff-colors)))
+	  #'(lambda () (update-diff-colors)))
