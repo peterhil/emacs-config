@@ -2,104 +2,107 @@
 ;; Mode-specific configs
 ;; ------------------------------------------------------------------------------
 
-(dolist(include
-         '(
-           ;; -- Emacs lisp utility functions, make sure this is loaded first!
-           "elisp"
-           "emacsclient"
+(defvar *my-modules*
+  '(
+       ;; -- Emacs lisp utility functions, make sure this is loaded first!
+       "elisp"
+       "emacsclient"
 
-           ;; -- Colors
-           "rainbow-mode"
-           "color-theme"
+       ;; -- Colors
+       "rainbow-mode"
+       "color-theme"
 
-           ;; -- Editing
-           "locale"
-           "ace-jump"
-           "editing"
-           "editorconfig"
-           ;; "fuzzy-format"
-           "key-bindings"
-           "tabs"
-           "whitespace"
-           "undo-redo"
-           "expand-region"
-           "regexp"
-           "dired"
-           ;; "anything"
-           "elmacro"
-           "macros"
+       ;; -- Editing
+       "locale"
+       "ace-jump"
+       "editing"
+       "editorconfig"
+       ;; "fuzzy-format"
+       "key-bindings"
+       "tabs"
+       "whitespace"
+       "undo-redo"
+       "expand-region"
+       "regexp"
+       "dired"
+       ;; "anything"
+       "elmacro"
+       "macros"
 
-           "hex"
-           ;; "images"
-           ;; "audio"
-           ;; "erc"
-           ;; "shell"
-           ;; "w3m"
+       "hex"
+       ;; "images"
+       ;; "audio"
+       ;; "erc"
+       ;; "shell"
+       ;; "w3m"
 
-           ;; -- Programming tools
-           ;; "company"
-           "diff"
-           "git"
-           "magit"
-           ;; "tags"
-           ;; "auto-completion"
-           "smart-tabs"
-           ;; "yasnippet"
-           ;; "qt"
-           "paredit"
-           "paxedit"
-           ;; "projectile"
-           ;; "flycheck
-           "flymake"
-           ;; "flymake-d"
-           "lsp"
+       ;; -- Programming tools
+       ;; "company"
+       "diff"
+       "git"
+       "magit"
+       ;; "tags"
+       ;; "auto-completion"
+       "smart-tabs"
+       ;; "yasnippet"
+       ;; "qt"
+       "paredit"
+       "paxedit"
+       ;; "projectile"
+       ;; "flycheck
+       "flymake"
+       ;; "flymake-d"
+       "lsp"
 
-           ;; -- Markup
-           ;; "org"
-           "markdown"
-           ;; "wikipedia"
-           ;; "multi-web-mode"
-           "polymode"
-           ;; "zencoding"
-           "style"
-           ;; "tagedit"
-           ;; "nxhtml"
-           ;; "nxml"
-           "web"
+       ;; -- Markup
+       ;; "org"
+       "markdown"
+       ;; "wikipedia"
+       ;; "multi-web-mode"
+       "polymode"
+       ;; "zencoding"
+       "style"
+       ;; "tagedit"
+       ;; "nxhtml"
+       ;; "nxml"
+       "web"
 
-           ;; -- Ocaml
-           ;; "opam-user-setup"
-           ;; "ocaml"
+       ;; -- Ocaml
+       ;; "opam-user-setup"
+       ;; "ocaml"
 
-           ;; -- Languages
-           "common-lisp"
-           ;; "elm"
-           "fennel"
-           ;; "scheme"
-           ;; "haskell"
-           "lua"
-           ;; "lush"
-           "python"
-           ;; "elpy"
-           ;; "ropemacs"
-           ;; "reasonml"
-           ;; "ruby"
-           ;; "rust"
-           ;; "rebol"
-           ;; "php"
-           ;; "eldoc-php"
-           ;; "coffee"
-           "js"
-           ;; "js2-refactor"
-           "svelte"
-           ;; "pure"
-           ;; "supercollider"
-           "zig"
+       ;; -- Languages
+       "common-lisp"
+       ;; "elm"
+       "fennel"
+       ;; "scheme"
+       ;; "haskell"
+       "lua"
+       ;; "lush"
+       "python"
+       ;; "elpy"
+       ;; "ropemacs"
+       ;; "reasonml"
+       ;; "ruby"
+       ;; "rust"
+       ;; "rebol"
+       ;; "php"
+       ;; "eldoc-php"
+       ;; "coffee"
+       "js"
+       ;; "js2-refactor"
+       "svelte"
+       ;; "pure"
+       ;; "supercollider"
+       "zig"
 
-           ;; -- Misc
-           ;; "extra-fun"
-           ;; "fortune"
-           ))
+       ;; -- Misc
+       ;; "extra-fun"
+       ;; "fortune"
+       ))
+
+(dolist
+    (include *my-modules*)
   (configure include))
 
 (if (eq system-type "darwin")
