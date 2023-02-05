@@ -94,6 +94,7 @@
        "svelte"
        ;; "pure"
        ;; "supercollider"
+       "v"
        "zig"
 
        ;; -- Misc
