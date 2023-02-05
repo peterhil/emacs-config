@@ -29,9 +29,9 @@
 (defun configure (path)
   (load-file (concat rc-dir path ".el")))
 
-(configure "env")
+(configure "init/env")
 (configure "init")
-(configure "packages")
+(configure "init/packages")
 (add-hook 'after-init-hook
           #'(lambda ()
-              (load (concat rc-dir "modules.el"))))
+              (load (concat rc-dir "init/modules.el"))))
