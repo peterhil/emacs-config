@@ -6,16 +6,6 @@
 ;; See https://emacs.stackexchange.com/q/58489/16904
 (setq byte-compile-warnings '(cl-functions))
 
-(setq user-home-dir
-      (getenv "HOME"))
-
-(setq app-support-dir
-      (expand-file-name
-       (concat user-home-dir
-               (if (eq system-type 'darwin)
-                   "/Library/Application Support/"
-                 "/.local/share/"))))
-
 ;; ==============================================================================
 ;; Site lisp
 ;; ------------------------------------------------------------------------------

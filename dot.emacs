@@ -20,12 +20,6 @@
 ;; Generic config
 ;; ------------------------------------------------------------------------------
 
-(setq usr-prefix
-      (cond ((eq system-type 'darwin) "/opt/local")
-            ((eq system-type 'linux) "/usr")
-            ((eq system-type 'berkeley-unix) "/usr/local")
-            (t "/usr")))
-
 (setq user-emacs-directory "~/.emacs.d/")  ; Prevent Aquamacs using a different location
 (setq rc-dir (concat user-emacs-directory "rc/"))
 
@@ -35,7 +29,7 @@
 (defun configure (path)
   (load-file (concat rc-dir path ".el")))
 
-
+(configure "env")
 (configure "init")
 (configure "packages")
 (add-hook 'after-init-hook
