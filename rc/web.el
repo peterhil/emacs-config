@@ -30,8 +30,7 @@
     ;; Matching can be done on the path
     "/\\(views\\|html\\|templates\\)/.*\\.\\(php\\|twig\\)\\'"
     "/components/.*\\.js\\'"
-    )
-  )
+    ))
 
-;; (require 'web-mode-edit-element)
-;; (add-hook 'web-mode-hook 'web-mode-edit-element-minor-mode)
+(use-package web-mode-edit-element
+  :hook (web-mode-hook 'web-mode-edit-element-minor-mode))
