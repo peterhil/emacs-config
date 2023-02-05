@@ -10,7 +10,7 @@
 
        ;; -- Colors
        "rainbow-mode"
-       "color-theme"
+       "theme"
 
        ;; -- Editing
        "locale"
