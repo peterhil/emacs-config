@@ -6,10 +6,8 @@
 ;; (use-package nhexl-mode)
 
 
-;; HexView
-;; https://github.com/walterdejong/hexview
 (use-package hexview-mode
-  :load-path "site-lisp/hexview-mode")
+  :straight (hexview-mode :type git :host github :repo "walterdejong/hexview"))
 
 
 ;; (use-package binview
