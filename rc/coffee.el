@@ -2,7 +2,7 @@
 ;; Coffee-script
 ;; ------------------------------------------------------------------------------
 
-(use-package "coffee-mode"
+(use-package coffee-mode
   :mode
   (
     "\\.coffee\\'"

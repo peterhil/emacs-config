@@ -1,2 +1,2 @@
-(use-package "svelte-mode"
+(use-package svelte-mode
   :mode ("\\.svelte\\'"))

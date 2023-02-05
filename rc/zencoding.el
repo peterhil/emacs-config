@@ -2,7 +2,7 @@
 ;; Zencoding mode  https://github.com/rooney/zencoding
 ;; ------------------------------------------------------------------------------
 
-(use-package "zencoding-mode"
+(use-package zencoding-mode
   :config
   (progn
     ;; Auto-start on any markup modes

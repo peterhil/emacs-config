@@ -2,13 +2,11 @@
 ;; PAXedit
 ;; -----------------------------------------------------------------------------
 
-(require 'paxedit)
-
-(add-hook 'clojure-mode-hook 'paxedit-mode)
-(add-hook 'emacs-lisp-mode-hook 'paxedit-mode)
-(add-hook 'lisp-mode-hook 'paxedit-mode)
-
-(eval-after-load "paxedit"
+(use-package paxedit
+  :hook ((clojure-mode-hook . 'paxedit-mode)
+          (emacs-lisp-mode-hook . 'paxedit-mode)
+          (lisp-mode-hook . 'paxedit-mode))
+  :config
   '(progn (define-key paxedit-mode-map (kbd "M-<right>") 'paxedit-transpose-forward)
           (define-key paxedit-mode-map (kbd "M-<left>") 'paxedit-transpose-backward)
           (define-key paxedit-mode-map (kbd "M-<up>") 'paxedit-backward-up)

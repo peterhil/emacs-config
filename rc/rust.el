@@ -1,2 +1,2 @@
-(use-package "rust-mode"
+(use-package rust-mode
   :mode "\\.rs\\'")

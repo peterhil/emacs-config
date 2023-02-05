@@ -3,7 +3,7 @@
 ;; https://github.com/benma/visual-regexp.el
 ;; ==============================================================================
 
-(use-package "visual-regexp"
+(use-package visual-regexp
   :bind
   (
     ("C-c r" . vr/replace)

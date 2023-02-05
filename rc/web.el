@@ -2,7 +2,7 @@
 ;; Web mode -- https://github.com/fxbois/web-mode
 ;; ------------------------------------------------------------------------------
 
-(use-package "web-mode"
+(use-package web-mode
   :config
   (progn
     (setq web-mode-code-indent-offset 4)

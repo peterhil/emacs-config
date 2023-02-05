@@ -4,7 +4,7 @@
 
 (load (concat user-emacs-directory "site-lisp/nxhtml/autostart"))
 
-(use-package "nxhtml-mode"
+(use-package nxhtml-mode
   :load-path "site-lisp/nxhtml"
   :defer t
   :config

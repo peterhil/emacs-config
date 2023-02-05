@@ -33,7 +33,6 @@
 
 ;; Scss
 (use-package scss-mode
-  :ensure t
   ;; :defer t
   :commands (scss-mode scss-compile css-mode web-mode)
   :mode ("\\.scss" . scss-mode)

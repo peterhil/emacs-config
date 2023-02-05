@@ -2,11 +2,11 @@
 ;;  Scheme
 ;; ------------------------------------------------------------------------------
 
-(use-package "scheme")
-(use-package "scheme-complete")
+(use-package scheme)
+(use-package scheme-complete)
 
 ;; Quack mode
-;; (use-package "quack")
+;; (use-package quack)
 (autoload 'quack "quack.el" "Minor mode for editing long lines." t)
 
 ;; (setq scheme-program-name "gsc -:d-") ; Gambit
@@ -26,15 +26,15 @@
   (add-hook 'inferior-scheme-mode-hook (function gambit-inferior-mode))
   (add-hook 'scheme-mode-hook (function gambit-mode))
 
-  (use-package "gambit"))
+  (use-package gambit))
 
 
 ;; ==============================================================================
 ;;  Chicken Scheme
 ;; ------------------------------------------------------------------------------
 
-;; (use-package "hen"
+;; (use-package hen
 ;;   :load-path "site-lisp/hen")
 
 ;; Requires chicken scheme (csi) to be installed
-;; (use-package "geiser")
+;; (use-package geiser)

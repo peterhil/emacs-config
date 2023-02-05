@@ -45,8 +45,7 @@
          ad-do-it)))))
 
 
-(use-package "smart-tab"
-  :ensure t
+(use-package smart-tab
   :config
   (global-smart-tab-mode t)
   ;; (setq smart-tab-debug t)

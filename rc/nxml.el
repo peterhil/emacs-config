@@ -2,7 +2,7 @@
 ;; nXml
 ;; ------------------------------------------------------------------------------
 
-(use-package "nxml-mode"
+(use-package nxml-mode
   :ensure nil
   :magic
   (

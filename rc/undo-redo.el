@@ -2,11 +2,11 @@
 ;; Undo/redo extensions
 ;; ------------------------------------------------------------------------------
 
-;; (use-package "redo+"
+;; (use-package redo+
 ;;   :load-path "site-lisp/redo+")
 
 
-(use-package "undo-tree"
+(use-package undo-tree
   :config
   (global-undo-tree-mode)
   ;; (global-set-key (kbd "s-z g") 'global-undo-tree-mode)

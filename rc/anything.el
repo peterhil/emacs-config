@@ -2,10 +2,10 @@
 ;; Anything - a "spotlight" for Emacs
 ;; ------------------------------------------------------------------------------
 
-(use-package "anything"
+(use-package anything
   :commands 'anything)
 
-(use-package "anything-config"
+(use-package anything-config
   :load-path "site-lisp/anything-config"
   :ensure nil
   :after (anything)

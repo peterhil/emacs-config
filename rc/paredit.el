@@ -2,8 +2,7 @@
 ;; Paredit
 ;; -----------------------------------------------------------------------------
 
-(use-package "paredit-mode"
-  :ensure paredit
+(use-package paredit
   :hook ((
           emacs-lisp-mode
           eval-expression-minibuffer-setup
@@ -13,12 +12,12 @@
           lisp-mode
           scheme-mode
           ))
-  :init (paredit-mode t)
-  )
+  :init (paredit-mode t))
 
-;; (use-package "paredit-everywhere"
+
+;; (use-package paredit-everywhere
 ;;   :ensure t
 ;;   :init (add-hook 'prog-mode-hook 'paredit-everywhere-mode))
 
-(use-package "paredit-menu"
-  :ensure t)
+
+(use-package paredit-menu)

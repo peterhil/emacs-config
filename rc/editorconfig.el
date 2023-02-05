@@ -2,7 +2,7 @@
 ;; Editorconfig
 ;; ------------------------------------------------------------------------------
 
-(use-package "editorconfig"
+(use-package editorconfig
   ;; Read EditorConfig files (.editorconfig) -- http://editorconfig.org/
   ;; https://github.com/editorconfig/editorconfig-emacs.git
   :config

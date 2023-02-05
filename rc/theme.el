@@ -31,9 +31,11 @@
  monokai-height-plus-4 1.3)
 
 ;; (use-package monokai-theme
-;;   :ensure t
 ;;   :init
 ;;   (load-theme 'monokai t))
+
+(use-package dracula-theme)
+(use-package sublime-themes)
 
 ;;; Dark themes
 ;; (load-theme 'cyberpunk-2019 t)
@@ -61,6 +63,9 @@
 ;; (load-theme 'spacemacs-light t)
 ;; (load-theme 'solarized-light t)
 
+(defvar gui-theme 'graham)
+(defvar console-theme 'dracula)
+
 (if (> (display-color-cells) 256)
-       (load-theme 'graham t)
-    (load-theme 'dracula t))
+    (load-theme gui-theme t)
+  (load-theme console-theme t))

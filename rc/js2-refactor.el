@@ -2,7 +2,7 @@
 ;; JS2-refactor
 ;; ------------------------------------------------------------------------------
 
-(use-package "js2-refactor"
+(use-package js2-refactor
   :defer t
   :hook (js2-mode . js2-refactor-mode)
   :config

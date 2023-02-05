@@ -9,7 +9,7 @@
   (set (make-local-variable 'electric-indent-chars) nil))
 
 
-(use-package "js2-mode"
+(use-package js2-mode
   :mode
   (
     "\\.cjs\\'"

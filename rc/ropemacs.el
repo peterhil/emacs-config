@@ -5,7 +5,7 @@
 ;; Resolves a conflict with Pymacs that comes with python-mode.el
 ;; (add-hook 'python-mode-hook '(lambda () (setf py-load-pymacs-p nil)))
 
-;; (use-package "pymacs"
+;; (use-package pymacs
 ;;   :load-path "site-lisp/pymacs")
 ;; (autoload ’pymacs-apply "pymacs")
 ;; (autoload ’pymacs-call "pymacs")
@@ -42,7 +42,7 @@
   "Load pymacs and ropemacs"
   (interactive)
   (ropemacs-disable-shortcuts)
-  (use-package "pymacs"
+  (use-package pymacs
     :load-path "site-lisp/pymacs")
   (pymacs-load "ropemacs" "rope-")
   ;; Automatically save project python buffers before refactorings

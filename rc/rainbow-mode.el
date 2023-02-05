@@ -6,7 +6,7 @@
 
 ;; (autoload 'rainbow-mode "rainbow-mode.el" "Minor mode for editing HTML colors" t)
 
-(use-package "rainbow-mode"
+(use-package rainbow-mode
   :mode (
          "-theme\\.el\\'"
          "\\.css\\'"

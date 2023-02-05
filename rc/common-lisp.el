@@ -8,8 +8,7 @@
 ;; SLIME
 ;; ------------------------------------------------------------------------------
 
-(use-package slime
-  :ensure t)
+(use-package slime)
 
 (add-to-list 'load-path (concat my-system-site-lisp "slime"))
 ;; (add-to-list 'load-path (concat user-emacs-directory "site-lisp/slime") ;; Already on path

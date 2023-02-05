@@ -1,5 +1,4 @@
-(use-package "tagedit"
-  :ensure t
+(use-package tagedit
   :init
   (progn
     ;; https://github.com/magnars/tagedit#experimental-tag-editing
