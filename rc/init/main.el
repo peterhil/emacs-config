@@ -9,7 +9,7 @@
 (configure "init/env")
 (configure "init/site-lisp")
 (configure "init/use-package")
-(configure "init/packages")
+(configure "init/my-packages")
 (configure "init/package")
 
 (add-hook 'after-init-hook
