@@ -62,7 +62,6 @@
  '(tab-always-indent t)
  '(tab-width 4)
  '(text-mode-hook '(turn-on-auto-fill text-mode-hook-identify))
- '(tool-bar-mode nil)
  '(uniquify-buffer-name-style 'forward nil (uniquify))
  '(vc-annotate-background nil)
  '(vc-annotate-color-map

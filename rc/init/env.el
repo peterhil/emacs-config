@@ -17,3 +17,6 @@
                (if (eq system-type 'darwin)
                    "/Library/Application Support/"
                  "/.local/share/"))))
+
+(when window-system
+  (customize-set-variable 'tool-bar-mode nil))
