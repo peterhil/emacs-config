@@ -2,14 +2,6 @@
 ;; Color Theme
 ;; -----------------------------------------------------------------------------
 
-;; (if (> (display-color-cells) 256)
-;;     (load-theme 'monokai t)
-;;   (load-theme 'jazz t))
-
-;; (progn
-;;   (add-to-list 'custom-theme-load-path (concat user-emacs-directory "themes/color-theme-mgl"))
-;;   (load-theme 'mgl-dark t))
-
 (setq
  ;; foreground and background
  monokai-foreground     "#F8F8F2"
@@ -54,7 +46,7 @@
 ;; (load-theme 'hemisu-dark t)
 ;; (load-theme 'abyss t)
 ;; (load-theme 'cyberpunk t)
-(load-theme 'graham t)
+;; (load-theme 'graham t)
 ;; (load-theme 'hickey t)
 ;; (load-theme 'spolsky t)
 ;; (load-theme 'mbo70s t)
@@ -68,3 +60,7 @@
 ;; (load-theme 'nofrils-acme t)
 ;; (load-theme 'spacemacs-light t)
 ;; (load-theme 'solarized-light t)
+
+(if (> (display-color-cells) 256)
+       (load-theme 'graham t)
+    (load-theme 'dracula t))
