@@ -62,7 +62,6 @@
        "polymode"
        "zencoding"
        "style"
-       ;; "tagedit"
        "nxml"
        "web"
 
