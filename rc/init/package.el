@@ -23,3 +23,29 @@
 ;; New on Emacs 25 - install packages based on package-selected-packages list:
 ;; http://endlessparentheses.com/new-in-package-el-in-emacs-25-1-user-selected-packages.html
 ;; (package-install-selected-packages)
+
+
+(defun package-update-load-path ()
+  "Update the load path for newly installed packages."
+  (interactive)
+  (let ((package-dir (expand-file-name package-user-dir)))
+    (mapc (lambda (pkg)
+            (let ((stem (symbol-name (car pkg)))
+                  (version "")
+                  (first t)
+                  path)
+              (mapc (lambda (num)
+                      (if first
+                          (setq first nil)
+                        (setq version (format "%s." version)))
+                      (setq version (format "%s%s" version num)))
+                    (aref (cdr pkg) 0))
+              (setq path (format "%s/%s-%s" package-dir stem version))
+              (add-to-list 'load-path path)))
+          package-alist)))
+
+
+(defun my-install-package-list ()
+  (dolist (p my-packages)
+    (when (not (package-installed-p p))
+      (package-install p))))

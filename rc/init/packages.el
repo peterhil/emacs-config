@@ -2,25 +2,6 @@
 ;; My packages
 ;; ------------------------------------------------------------------------------
 
-(defun package-update-load-path ()
-  "Update the load path for newly installed packages."
-  (interactive)
-  (let ((package-dir (expand-file-name package-user-dir)))
-    (mapc (lambda (pkg)
-            (let ((stem (symbol-name (car pkg)))
-                  (version "")
-                  (first t)
-                  path)
-              (mapc (lambda (num)
-                      (if first
-                          (setq first nil)
-                        (setq version (format "%s." version)))
-                      (setq version (format "%s%s" version num)))
-                    (aref (cdr pkg) 0))
-              (setq path (format "%s/%s-%s" package-dir stem version))
-              (add-to-list 'load-path path)))
-          package-alist)))
-
 (defvar my-packages
   '(
     ;; ac-dabbrev
@@ -126,9 +107,4 @@
     sublime-themes
     zonokai-theme
     )
-  "A list of packages to ensure are installed at launch.")
-
-(defun my-install-package-list ()
-  (dolist (p my-packages)
-    (when (not (package-installed-p p))
-      (package-install p))))
+  "A list of my packages")
