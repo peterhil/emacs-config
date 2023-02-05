@@ -29,4 +29,4 @@
 (defun configure (path)
   (load-file (concat rc-dir path ".el")))
 
-(configure "init")
+(configure "init/main")
