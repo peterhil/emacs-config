@@ -10,7 +10,9 @@
 (configure "init/site-lisp")
 (configure "init/use-package")
 (configure "init/my-packages")
-(configure "init/package")
+
+;; (configure "init/package")
+(configure "init/straight")
 
 (add-hook 'after-init-hook
           #'(lambda ()
