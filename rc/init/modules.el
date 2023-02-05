@@ -63,7 +63,6 @@
        ;; "zencoding"
        "style"
        ;; "tagedit"
-       ;; "nxhtml"
        ;; "nxml"
        "web"
 
