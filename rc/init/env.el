@@ -2,6 +2,8 @@
 ;; Environment setup
 ;; ------------------------------------------------------------------------------
 
+;; TODO Use shell command `which emacs` to set this automatically.
+;; See rc/reasonml.el for an example.
 (setq usr-prefix
       (cond ((eq system-type 'darwin) "/opt/local")
             ((eq system-type 'linux) "/usr")
