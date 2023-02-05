@@ -18,4 +18,8 @@
       (eval-print-last-sexp)))
   (load bootstrap-file nil 'nomessage))
 
-(setq straight-use-package-by-default t)
+
+(setq
+ ;; straight-pull-recipe-repositories t
+ ;; straight-recipes-emacsmirror-use-mirror t
+ straight-use-package-by-default t)
