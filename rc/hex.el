@@ -3,11 +3,9 @@
 ;; ------------------------------------------------------------------------------
 
 ;; Better alternative to the builtin hexl-mode
-;; (use-package nhexl-mode)
+(use-package nhexl-mode)
 
 
+;; Hexview mode does not have undo, but should be fast
+;; https://unix.stackexchange.com/q/18852
 (use-package hexview-mode)
-
-
-;; (use-package binview
-;;   :load-path "site-lisp/binview")
