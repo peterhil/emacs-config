@@ -60,7 +60,7 @@
        ;; "wikipedia"
        ;; "multi-web-mode"
        "polymode"
-       ;; "zencoding"
+       "zencoding"
        "style"
        ;; "tagedit"
        "nxml"
