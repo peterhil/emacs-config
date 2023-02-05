@@ -63,7 +63,7 @@
        ;; "zencoding"
        "style"
        ;; "tagedit"
-       ;; "nxml"
+       "nxml"
        "web"
 
        ;; -- Ocaml
