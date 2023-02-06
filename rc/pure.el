@@ -2,6 +2,11 @@
 ;; Pure language
 ;; ------------------------------------------------------------------------------
 
+;; Pure languagge works with PureData and Faust
+;;
+;; Web page: https://agraef.github.io/pure-lang/
+;; Wikipedia: https://en.wikipedia.org/wiki/Pure_(programming_language)
+
 ;; HideShow support
 ;; (use-package hideshow
 ;;   :hook (pure-mode . 'hs-minor-mode))
