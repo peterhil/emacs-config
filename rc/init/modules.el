@@ -81,7 +81,7 @@
        ;; "elpy"
        ;; "ropemacs"
        ;; "reasonml"
-       ;; "ruby"
+       "ruby"
        ;; "rust"
        ;; "rebol"
        ;; "php"
