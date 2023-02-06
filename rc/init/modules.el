@@ -74,7 +74,7 @@
        ;; "elm"
        "fennel"
        ;; "scheme"
-       ;; "haskell"
+       "haskell"
        "lua"
        ;; "lush"
        "python"
