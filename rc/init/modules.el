@@ -38,7 +38,7 @@
 
        ;; -- Programming tools
        ;; "company"
-       "diff"
+       ;; "diff"
        "git"
        "magit"
        ;; "tags"
