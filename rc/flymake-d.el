@@ -1,4 +1,4 @@
-(use-package "flymake")
+(use-package flymake)
 
 (defun flymake-d-init ()
   (let* ((temp-file (flymake-init-create-temp-buffer-copy
@@ -23,7 +23,7 @@
   (local-set-key (kbd "C-c C-n") 'flymake-goto-next-error)
   (local-set-key (kbd "C-c C-p") 'flymake-goto-prev-error))
 
-(use-package "d-mode"
+(use-package d-mode
   :hook (d-mode . flymake-d-load))
 
 (provide 'flymake-d)

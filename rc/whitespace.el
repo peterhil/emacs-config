@@ -2,7 +2,7 @@
 ;; Whitespace
 ;; ------------------------------------------------------------------------------
 
-;; (use-package "whitespace")
+;; (use-package whitespace)
 
 ;; Or autoload at least one of the commands:
 ;; `whitespace-mode'

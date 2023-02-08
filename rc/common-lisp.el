@@ -8,6 +8,8 @@
 ;; SLIME
 ;; ------------------------------------------------------------------------------
 
+(use-package slime)
+
 (add-to-list 'load-path (concat my-system-site-lisp "slime"))
 ;; (add-to-list 'load-path (concat user-emacs-directory "site-lisp/slime") ;; Already on path
 ;; (add-to-list 'load-path "~/quicklisp/dists/quicklisp/software/slime-v2.24/")

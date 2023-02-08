@@ -2,9 +2,9 @@
 ;; Csv files
 ;; ------------------------------------------------------------------------------
 
-(use-package "csv-mode"
+(use-package csv-mode
   :mode
   ("\\.csv\\'"
    "\\.tsv\\'"))
 
-(use-package "csv-nav")
+(use-package csv-nav)

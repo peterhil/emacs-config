@@ -6,7 +6,6 @@
   :commands (ace-jump-mode
              ace-jump-mode-pop-mark
              ace-jump-mode-enable-mark-sync)
-  :ensure t
   :defer t
   :hook ((prog-mode-hook . ace-jump-mode)
          (ace-jump-mode-hook . ace-jump-mode-enable-mark-sync))

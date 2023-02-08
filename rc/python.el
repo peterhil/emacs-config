@@ -2,7 +2,7 @@
 ;; Python-mode
 ;; ------------------------------------------------------------------------------
 
-(use-package "python-mode"
+(use-package python-mode
   :mode "\\.py\\'"
   :interpreter "python"
   :config

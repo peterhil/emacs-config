@@ -45,13 +45,13 @@
     ad-do-it))
 
 ;; You may want to turn off linum for certain modes (this uses linum-off):
-(use-package "linum-off")
+(use-package linum-off)
 
 ;; Hightlight current line
 (global-hl-line-mode t)
 
 ;; Highlight the current line number (requires hlinum):
-(use-package "hlinum"
+(use-package hlinum
   :config
   (hlinum-activate))
 

@@ -2,5 +2,5 @@
 ;;  REBOL
 ;; ------------------------------------------------------------------------------
 
-(use-package "rebol"
+(use-package rebol
   :load-path "site-lisp/rebol")

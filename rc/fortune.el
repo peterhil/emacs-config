@@ -8,7 +8,7 @@
 
 
 ;; Show a fortune on *scratch* buffer on startup
-(use-package "fortune-cookie"
+(use-package fortune-cookie
   :if (not (and (eq system-type 'gnu/linux) (eq window-system 'x)))
   :init
   ;; (setq fortune-cookie-cowsay-args  "-f blowfish")

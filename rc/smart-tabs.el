@@ -45,8 +45,7 @@
          ad-do-it)))))
 
 
-(use-package "smart-tab"
-  :load-path "site-lisp/smart-tab"
+(use-package smart-tab
   :config
   (global-smart-tab-mode t)
   ;; (setq smart-tab-debug t)
@@ -67,5 +66,4 @@
 
   ;; JS2-mode
   ;;
-  (smart-tabs-advice js2-indent-line js2-basic-offset)
-  )
+  (smart-tabs-advice js2-indent-line js2-basic-offset))

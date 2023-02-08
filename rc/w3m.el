@@ -19,7 +19,7 @@
 ;; W3M settings
 (setq w3m-use-cookies t)
 
-(use-package "w3m-search"
+(use-package w3m-search
   :config
   (add-to-list
    'w3m-search-engine-alist

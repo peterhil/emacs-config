@@ -11,12 +11,6 @@
   (setq merlin-ac-setup t))
 
 
-(defun shell-cmd (cmd)
-  "Returns the stdout output of a shell command or nil if the command returned
-   an error"
-  (car (ignore-errors (apply 'process-lines (split-string cmd)))))
-
-
 ;; Setup load paths
 (let* ((refmt-bin (or (shell-cmd "refmt ----where")
                       (shell-cmd "which refmt")))

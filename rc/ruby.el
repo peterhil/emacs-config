@@ -2,7 +2,7 @@
 ;; Ruby
 ;; ------------------------------------------------------------------------------
 
-(use-package "ruby-mode"
+(use-package ruby-mode
   :mode
   ("\\.rb\\'"
    "\\'Capfile\\'")
@@ -16,7 +16,7 @@
 ;; Cucumber
 ;; ------------------------------------------------------------------------------
 
-(use-package "feature-mode"
+(use-package feature-mode
   :mode "\\.feature\\'")
 
 
@@ -24,5 +24,5 @@
 ;; Haml
 ;; ------------------------------------------------------------------------------
 
-(use-package "haml-mode"
+(use-package haml-mode
   :mode "\\.hamlc?\\'")

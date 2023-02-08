@@ -2,22 +2,18 @@
 ;; nXml
 ;; ------------------------------------------------------------------------------
 
-(use-package "nxml-mode"
-  :ensure nil
+(use-package nxml-mode
+  :straight nil
   :magic
-  (
-    "<\\?xml"
-    )
+  ("<\\?xml")
   :mode
-  (
-    "\\.rng\\'"
-    "\\.rss\\'"
-    "\\.sch\\'"
-    "\\.svg\\'"
-    "\\.xml\\'"
-    "\\.xsd\\'"
-    "\\.xslt\\'"
-    )
+  ("\\.rng\\'"
+   "\\.rss\\'"
+   "\\.sch\\'"
+   "\\.svg\\'"
+   "\\.xml\\'"
+   "\\.xsd\\'"
+   "\\.xslt\\'")
   :config
   (setq nxml-child-indent 4)
   (setq nxml-outline-child-indent 4)

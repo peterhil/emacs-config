@@ -2,7 +2,7 @@
 ;; Projectile mode
 ;; ------------------------------------------------------------------------------
 
-(use-package "projectile"
+(use-package projectile
   :config
   (projectile-mode +1)
 

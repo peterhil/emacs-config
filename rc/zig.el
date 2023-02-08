@@ -1,2 +1,2 @@
-(use-package "zig-mode"
+(use-package zig-mode
   :mode ("\\.zig\\'"))
