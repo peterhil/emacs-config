@@ -78,6 +78,4 @@
   :commands turn-on-css-eldoc
   ;; add a hook if you want always to see the selector options in the minibuffer
   :config
-  (add-hook 'css-mode-hook 'turn-on-css-eldoc)
-  (add-hook 'sass-mode-hook 'turn-on-css-eldoc)
-  (add-hook 'scss-mode-hook 'turn-on-css-eldoc))
+  (add-hook 'css-mode-hook 'turn-on-css-eldoc))
