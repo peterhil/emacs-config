@@ -3,11 +3,14 @@
 ;; -----------------------------------------------------------------------------
 
 (use-package paredit
-  :hook ((emacs-lisp-mode-hook . paredit-mode)
-         (fennel-mode-hook . paredit-mode)
-         (lisp-mode-hook . paredit-mode)
-         (scheme-mode-hook . paredit-mode))
-  :init (paredit-mode +1))
+  :config
+  (show-paren-mode t)
+  (add-hook 'emacs-lisp-mode-hook 'paredit-mode)
+  (add-hook 'fennel-mode-hook 'paredit-mode)
+  (add-hook 'lisp-mode-hook 'paredit-mode)
+  (add-hook 'scheme-mode-hook 'paredit-mode)
+  (add-hook 'slime-repl-mode-hook  'paredit-mode)
+  )
 
 
 (use-package paredit-everywhere
