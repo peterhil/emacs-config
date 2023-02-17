@@ -56,7 +56,6 @@
 
        ;; -- Markup
        ;; "org"
-       "lit"
        "markdown"
        ;; "wikipedia"
        ;; "multi-web-mode"
