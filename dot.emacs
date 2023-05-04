@@ -30,3 +30,5 @@
   (load-file (concat rc-dir path ".el")))
 
 (configure "init/main")
+
+(put 'upcase-region 'disabled nil)
