@@ -90,6 +90,7 @@
        "js"
        ;; "js2-refactor"
        "svelte"
+       "typescript"
        ;; "pure"
        ;; "supercollider"
        "v"
