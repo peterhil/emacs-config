@@ -36,7 +36,9 @@
 ;; -----------------------------------------------------------------------------
 
 ;; Show line numbers, dynamically with spaces on either side:
-(global-linum-mode 1)
+(when (< emacs-major-version 29)
+  (global-linum-mode 1)
+  (global-display-line-numbers-mode 1))
 
 ;; (defadvice linum-update-window (around linum-dynamic activate)
 ;;   (let* ((w (length (number-to-string
