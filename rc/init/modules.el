@@ -84,7 +84,7 @@
        "ruby"
        ;; "rust"
        ;; "rebol"
-       ;; "php"
+       "php"
        ;; "eldoc-php"
        ;; "coffee"
        "js"
