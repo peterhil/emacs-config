@@ -13,8 +13,8 @@
   (tuareg-mode . merlin-mode)
   (tuareg-mode . tuareg-imenu-set-imenu)
   :mode
-  "\\.ml[ily]?$"
-  "\\.topml$"
+  ("\\.ml[ily]?$" . tuareg-mode)
+  ("\\.topml$" . tuareg-mode)
   :config
   (autoload 'utop-setup-ocaml-buffer "utop" "Toplevel for OCaml" t))
 
