@@ -17,6 +17,7 @@
     ;; caml
     clojure-mode
     ;; coffee-mode
+    company
     csv-mode
     csv-nav
     ;; cypher-mode
