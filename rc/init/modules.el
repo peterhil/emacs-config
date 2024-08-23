@@ -76,6 +76,7 @@
        "haskell"
        "lua"
        ;; "lush"
+       "nim"
        "python"
        ;; "elpy"
        ;; "ropemacs"
