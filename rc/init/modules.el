@@ -42,7 +42,6 @@
        "git"
        "magit"
        ;; "tags"
-       ;; "auto-completion"
        "smart-tabs"
        ;; "yasnippet"
        ;; "qt"

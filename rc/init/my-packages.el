@@ -4,14 +4,11 @@
 
 (defvar my-packages
   '(
-    ;; ac-dabbrev
-    ;; ac-python
     ;; ack
     ;; ack-and-a-half
     ag
     ;; alchemist
     ;; anything
-    auto-complete
     auto-minor-mode
     avy
     ;; caml
