@@ -69,8 +69,6 @@
     paredit-menu
     parinfer
     paxedit
-    php-auto-yasnippets
-    php-completion
     php-mode
     ;; projectile
     python-mode
