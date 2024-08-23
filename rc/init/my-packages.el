@@ -6,7 +6,6 @@
   '(
     ;; ac-dabbrev
     ;; ac-python
-    ace-jump-mode
     ;; ack
     ;; ack-and-a-half
     ag
@@ -14,6 +13,7 @@
     ;; anything
     auto-complete
     auto-minor-mode
+    avy
     ;; caml
     clojure-mode
     ;; coffee-mode

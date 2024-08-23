@@ -14,7 +14,7 @@
 
        ;; -- Editing
        "locale"
-       "ace-jump"
+       "avy"
        "editing"
        "editorconfig"
        ;; "fuzzy-format"
