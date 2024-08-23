@@ -4,28 +4,23 @@
 ;; ------------------------------------------------------------------------------
 
 ;; =============================================================================
-;; Tuareg mode
+;; Tuareg: An Emacs OCaml mode
 ;; ------------------------------------------------------------------------------
 
-(autoload 'utop-setup-ocaml-buffer "utop" "Toplevel for OCaml" t)
-
-(my-auto-mode-extensions
-  'tuareg-mode
-  '("\\.ml[ily]?$"
-    "\\.topml$"))
-
-(add-hook 'tuareg-mode-hook 'utop-setup-ocaml-buffer)
-(add-hook 'tuareg-mode-hook 'merlin-mode)
-(add-hook 'tuareg-mode-hook 'tuareg-imenu-set-imenu)
-
+(use-package tuareg
+  :hook
+  (tuareg-mode . utop-setup-ocaml-buffer)
+  (tuareg-mode . merlin-mode)
+  (tuareg-mode . tuareg-imenu-set-imenu)
+  :mode
+  "\\.ml[ily]?$"
+  "\\.topml$"
+  :config
+  (autoload 'utop-setup-ocaml-buffer "utop" "Toplevel for OCaml" t))
 
 ;; =============================================================================
 ;; Merlin setup
 ;; -----------------------------------------------------------------------------
-
-(setq opam-share (substring (shell-command-to-string "opam config var share") 0 -1))
-(add-to-list 'load-path (concat opam-share "/emacs/site-lisp"))
-
 
 (use-package merlin
   :hook
@@ -41,8 +36,7 @@
     (kbd "C-c <up>") 'merlin-type-enclosing-go-up)
   (define-key merlin-mode-map
     (kbd "C-c <down>") 'merlin-type-enclosing-go-down)
-  (set-face-background 'merlin-type-face "#88FF44")
-  )
+  (set-face-background 'merlin-type-face "#88FF44"))
 
 
 (use-package auto-complete
