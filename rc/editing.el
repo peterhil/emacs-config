@@ -37,25 +37,11 @@
 
 ;; Show line numbers, dynamically with spaces on either side:
 (when (< emacs-major-version 29)
-  (global-linum-mode 1)
+  (global-linum-mode 0)
   (global-display-line-numbers-mode 1))
 
-;; (defadvice linum-update-window (around linum-dynamic activate)
-;;   (let* ((w (length (number-to-string
-;;                      (count-lines (point-min) (point-max)))))
-;;          (linum-format (concat " %" (number-to-string w) "d ")))
-;;     ad-do-it))
-
-;; You may want to turn off linum for certain modes (this uses linum-off):
-(use-package linum-off)
-
-;; Hightlight current line
-(global-hl-line-mode t)
-
-;; Highlight the current line number (requires hlinum):
-(use-package hlinum
-  :config
-  (hlinum-activate))
+;; Highlight current line
+(global-hl-line-mode 1)
 
 
 ;; =============================================================================

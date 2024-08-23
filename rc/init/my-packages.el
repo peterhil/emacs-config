@@ -48,7 +48,6 @@
     ;; git-rebase-mode
     ;; grizzl
     ;; haml-mode
-    hlinum
     ;; jade-mode
     jinja2-mode
     js2-mode
@@ -56,7 +55,6 @@
     lua-mode
     less-css-mode
     let-alist
-    linum-off
     magit
     markdown-mode
     md-readme
