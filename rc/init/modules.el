@@ -37,7 +37,7 @@
        ;; "w3m"
 
        ;; -- Programming tools
-       ;; "company"
+       "company"
        ;; "diff"
        "git"
        "magit"

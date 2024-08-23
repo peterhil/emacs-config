@@ -1,46 +1,32 @@
 ;; ==============================================================================
 ;; Ocaml support
-;; https://github.com/realworldocaml/book/wiki/Installation-Instructions
+;; http://ocamlverse.net/content/editor_setup.html#manual-setup
 ;; ------------------------------------------------------------------------------
 
-;; =============================================================================
 ;; Tuareg: An Emacs OCaml mode
-;; ------------------------------------------------------------------------------
-
 (use-package tuareg
-  :hook
-  (tuareg-mode . utop-setup-ocaml-buffer)
-  (tuareg-mode . merlin-mode)
-  (tuareg-mode . tuareg-imenu-set-imenu)
-  :mode
-  ("\\.ml[ily]?$" . tuareg-mode)
-  ("\\.topml$" . tuareg-mode)
-  :config
-  (autoload 'utop-setup-ocaml-buffer "utop" "Toplevel for OCaml" t))
+  :ensure t
+  :mode (("\\.ocamlinit\\'" . tuareg-mode)))
 
-;; =============================================================================
-;; Merlin setup
-;; -----------------------------------------------------------------------------
+(use-package dune
+  :ensure t)
 
 (use-package merlin
-  :hook
-  ;; Enable Merlin for ML buffers
-  (tuareg-mode . merlin-mode)
+  :ensure t
   :config
-  (setq merlin-use-auto-complete-mode t)
-  (setq merlin-error-after-save nil)
+  (add-hook 'tuareg-mode-hook #'merlin-mode)
+  (add-hook 'merlin-mode-hook #'company-mode)
+  ;; we're using flycheck instead
+  (setq merlin-error-after-save nil))
 
-  ;; So you can do it on a mac, where `C-<up>` and `C-<down>` are used
-  ;; by spaces.
-  (define-key merlin-mode-map
-    (kbd "C-c <up>") 'merlin-type-enclosing-go-up)
-  (define-key merlin-mode-map
-    (kbd "C-c <down>") 'merlin-type-enclosing-go-down)
-  (set-face-background 'merlin-type-face "#88FF44"))
+(use-package merlin-eldoc
+  :ensure t
+  :hook ((tuareg-mode) . merlin-eldoc-setup))
 
+;; This uses Merlin internally
+(use-package flycheck-ocaml
+  :ensure t
+  :config
+  (flycheck-ocaml-setup))
 
-(use-package auto-complete
-  :hook (tuareg-mode . auto-complete-mode))
-
-
-(use-package ocp-indent)
+;; (use-package ocp-indent)
