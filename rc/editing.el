@@ -36,9 +36,11 @@
 ;; -----------------------------------------------------------------------------
 
 ;; Show line numbers, dynamically with spaces on either side:
+(global-display-line-numbers-mode 1)
+
 (when (< emacs-major-version 29)
-  (global-linum-mode 0)
-  (global-display-line-numbers-mode 1))
+  (global-linum-mode 0))
+
 
 ;; Highlight current line
 (global-hl-line-mode 1)
