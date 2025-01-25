@@ -15,6 +15,7 @@
     "\\.cjs\\'"
     "\\.esm\\'"
     "\\.js\\'"
+    "\\.mjs\\'"
     ; "\\.ts\\'"
     )
   ;; :hook (js2-mode . 'my-disable-electric-indent)
