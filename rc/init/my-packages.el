@@ -4,19 +4,17 @@
 
 (defvar my-packages
   '(
-    ;; ac-dabbrev
-    ;; ac-python
-    ace-jump-mode
     ;; ack
     ;; ack-and-a-half
     ag
     ;; alchemist
     ;; anything
-    auto-complete
     auto-minor-mode
+    avy
     ;; caml
     clojure-mode
     ;; coffee-mode
+    company
     csv-mode
     csv-nav
     ;; cypher-mode
@@ -48,7 +46,6 @@
     ;; git-rebase-mode
     ;; grizzl
     ;; haml-mode
-    hlinum
     ;; jade-mode
     jinja2-mode
     js2-mode
@@ -56,7 +53,6 @@
     lua-mode
     less-css-mode
     let-alist
-    linum-off
     magit
     markdown-mode
     md-readme
@@ -70,8 +66,6 @@
     paredit-menu
     parinfer
     paxedit
-    php-auto-yasnippets
-    php-completion
     php-mode
     ;; projectile
     python-mode
