@@ -30,10 +30,10 @@
 
 ;; Use cmd key as meta
 (when (eq system-type 'darwin)
-  (setq mac-option-key-is-meta nil
-        mac-command-key-is-meta t
+  (setq mac-command-key-is-meta t
         mac-command-modifier 'meta
-        mac-option-modifier 'none))
+        mac-option-key-is-meta nil
+        mac-option-modifier nil))
 
 ;; Turn on visible bell
 (setq visible-bell t)
