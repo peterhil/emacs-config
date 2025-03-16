@@ -28,12 +28,11 @@
 (when (eq system-type 'linux)
   (setq x-select-enable-clipboard t))
 
-;; Use cmd key as meta
+;; Use command key as meta, keep option and right command as they are
 (when (eq system-type 'darwin)
-  (setq mac-command-key-is-meta t
-        mac-command-modifier 'meta
-        mac-option-key-is-meta nil
-        mac-option-modifier nil))
+  (setopt mac-command-modifier 'meta)
+  (setopt mac-option-modifier nil)
+  (setopt mac-right-command-modifier 'super))
 
 ;; Turn on visible bell
 (setq visible-bell t)
@@ -50,7 +49,7 @@
 
 
 ;; Highlight current line
-(global-hl-line-mode 1)
+(global-hl-line-mode 0)
 
 
 ;; =============================================================================
