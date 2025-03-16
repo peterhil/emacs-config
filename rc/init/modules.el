@@ -14,7 +14,7 @@
 
        ;; -- Editing
        "locale"
-       "ace-jump"
+       "avy"
        "editing"
        "editorconfig"
        ;; "fuzzy-format"
@@ -37,12 +37,11 @@
        ;; "w3m"
 
        ;; -- Programming tools
-       ;; "company"
+       "company"
        ;; "diff"
        "git"
        "magit"
        ;; "tags"
-       ;; "auto-completion"
        "smart-tabs"
        ;; "yasnippet"
        ;; "qt"
@@ -66,8 +65,8 @@
        "web"
 
        ;; -- Ocaml
-       ;; "opam-user-setup"
-       ;; "ocaml"
+       "opam-user-setup"
+       "ocaml"
 
        ;; -- Languages
        "common-lisp"
@@ -77,6 +76,7 @@
        "haskell"
        "lua"
        ;; "lush"
+       "nim"
        "python"
        ;; "elpy"
        ;; "ropemacs"
@@ -84,12 +84,13 @@
        "ruby"
        ;; "rust"
        ;; "rebol"
-       ;; "php"
+       "php"
        ;; "eldoc-php"
        ;; "coffee"
        "js"
        ;; "js2-refactor"
        "svelte"
+       "typescript"
        ;; "pure"
        ;; "supercollider"
        "v"

@@ -11,7 +11,7 @@ you provide the regexp in between"
   (format "\\.%s\\'" extension))
 
 
-(defun ext-regex-list (extension-list)
+(defun extension-regexps (extension-list)
   "Create a list of extension regexps from provided extension
 list. Note that they can contain regexps, see xr for more info"
   (mapcar 'xr extension-list))

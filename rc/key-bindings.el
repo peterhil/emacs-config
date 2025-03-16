@@ -42,6 +42,8 @@
 (global-set-key [M-mouse-8] 'next-buffer)
 (global-set-key [M-mouse-9] 'previous-buffer)
 
+(define-key global-map (kbd "ESC M-r") 'my-reverse-text)
+
 ;; Backspace
 ;; See http://www.emacswiki.org/emacs/BackspaceKey
 ;; (global-set-key [(control h)] 'delete-backward-char)

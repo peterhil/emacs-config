@@ -20,6 +20,10 @@
 
 
 (setq
+ ;; Use develop branch for Emacs 29:
+ ;; https://jeffkreeftmeijer.com/emacs-straight-use-package/
+ straight-repository-branch "develop"
+
  ;; straight-pull-recipe-repositories t
  ;; straight-recipes-emacsmirror-use-mirror t
  straight-use-package-by-default t)
