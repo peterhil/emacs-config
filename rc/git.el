@@ -2,4 +2,4 @@
 ;; Git support
 ;; -----------------------------------------------------------------------------
 
-(use-package git-commit)
+;; (use-package git-commit)
