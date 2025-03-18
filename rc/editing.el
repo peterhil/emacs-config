@@ -28,12 +28,6 @@
 (when (eq system-type 'linux)
   (setq x-select-enable-clipboard t))
 
-;; Use command key as meta, keep option and right command as they are
-(when (eq system-type 'darwin)
-  (setopt mac-command-modifier 'meta)
-  (setopt mac-option-modifier nil)
-  (setopt mac-right-command-modifier 'super))
-
 ;; Turn on visible bell
 (setq visible-bell t)
 
