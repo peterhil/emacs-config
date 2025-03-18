@@ -15,7 +15,7 @@
        ;; -- Editing
        "locale"
        "avy"
-       "editing"
+       "text-editing"
        "editorconfig"
        ;; "fuzzy-format"
        "key-bindings"
