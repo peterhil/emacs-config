@@ -2,22 +2,19 @@
 ;; Editing
 ;; ------------------------------------------------------------------------------
 
-(column-number-mode 1)
-(setq fill-column 78)
-;; (fringe-mode -1)
-
-;; Disable eldoc globally:
-;; https://emacs.stackexchange.com/questions/31414/how-to-globally-disable-eldoc
-(global-eldoc-mode -1)
+(setopt fill-column 78)
 
 ;; Save-hist-mode
-(setq savehist-additional-variables '(kill-ring search-ring regexp-search-ring))
-(setq savehist-file (concat user-emacs-directory "cache/savehist"))
+(setopt savehist-additional-variables '(kill-ring search-ring regexp-search-ring))
+(setopt savehist-file (concat user-emacs-directory "cache/savehist"))
 (savehist-mode 1)
 
 ;; Parenthesis matching
-(setq show-paren-delay 0)
+(setopt show-paren-delay 0)
 (show-paren-mode 1)
+
+;; Turn on visible bell
+(setopt visible-bell t)
 
 ;; Show full pathname in minibuffer
 (setq frame-title-format
@@ -26,21 +23,18 @@
 
 ;; Enable syncing clipboard and yanking only on Linux
 (when (eq system-type 'linux)
-  (setq x-select-enable-clipboard t))
-
-;; Turn on visible bell
-(setq visible-bell t)
+  (setopt x-select-enable-clipboard t))
 
 ;; =============================================================================
-;; Line numbers
+;; Line and column numbers
 ;; -----------------------------------------------------------------------------
 
+(column-number-mode 1)
+
 ;; Show line numbers, dynamically with spaces on either side:
-(global-display-line-numbers-mode 1)
-
-(when (< emacs-major-version 29)
-  (global-linum-mode 0))
-
+(if (< emacs-major-version 29)
+    (global-linum-mode 0)
+  (global-display-line-numbers-mode 1))
 
 ;; Highlight current line
 (global-hl-line-mode 0)
