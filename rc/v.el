@@ -4,9 +4,8 @@
              :host github
              :repo "damon-kwok/v-mode"
              :files ("tokens" "v-mode.el"))
-  :config
-  :bind-keymap
+  :bind
   ("M-z" . v-menu)
-  ("<f6>" . v-menu)
   ("C-c C-f" . v-format-buffer)
-  :mode ("\\(\\.v?v\\|\\.vsh\\)$" . 'v-mode))
+  :mode (("\\.v?v$" . 'v-mode)
+         ("\\.vsh$" . 'v-mode)))
