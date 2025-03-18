@@ -11,7 +11,7 @@
   (global-undo-tree-mode)
 
   ;; Prevent undo tree files from polluting your project directories
-  (setq undo-tree-history-directory-alist '(("." . "~/.emacs.d/undo")))
+  (setopt undo-tree-history-directory-alist '(("." . "~/.emacs.d/undo")))
 
   (global-set-key (kbd "M-s-z g") 'global-undo-tree-mode)
   (global-set-key (kbd "M-s-z t") 'undo-tree-visualize)
