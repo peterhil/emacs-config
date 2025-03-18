@@ -37,3 +37,7 @@ list. Note that they can contain regexps, see xr for more info"
    mode
    (extension-regexps extension-list)
    'auto-minor-mode-alist))
+
+
+(defun my-disable-electric-indent ()
+  (set (make-local-variable 'electric-indent-chars) nil))
