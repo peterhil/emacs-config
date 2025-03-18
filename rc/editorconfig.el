@@ -2,12 +2,10 @@
 ;; Editorconfig
 ;; ------------------------------------------------------------------------------
 
-(use-package editorconfig
-  ;; Read EditorConfig files (.editorconfig) -- http://editorconfig.org/
-  ;; https://github.com/editorconfig/editorconfig-emacs.git
-  :config
-  (editorconfig-mode 1)
+;; Read EditorConfig files (.editorconfig) -- http://editorconfig.org/
+;; https://github.com/editorconfig/editorconfig-emacs.git
 
-  ;; Ignore indent_size on lisp modes
-  (setq editorconfig-lisp-use-default-indent t)
-  )
+(use-package editorconfig
+  :config
+  (setq editorconfig-lisp-use-default-indent t) ; Ignore indent_size on lisp modes
+  (editorconfig-mode 1))
