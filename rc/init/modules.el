@@ -39,6 +39,7 @@
        ;; -- Programming tools
        "company"
        ;; "diff"
+       "eldoc"
        "git"
        "magit"
        ;; "tags"
