@@ -13,13 +13,13 @@
 
 (defun set-tabs-local (width use-tabs)
   "Set local tab width and whether or not tab characters should be used"
-  (setq c-basic-offset width)
-  (setq sgml-basic-offset width)
-  (setq javascript-indent-level width)
+  (setopt c-basic-offset width)
+  (setopt indent-tabs-mode use-tabs)
+  (setopt tab-stop-list (make-tab-stop-list width 80))
+  (setopt tab-width width)
   (setq cssm-indent-level width)
-  (setq indent-tabs-mode use-tabs)
-  (setq tab-stop-list (make-tab-stop-list width 80))
-  (setq tab-width width))
+  (setq javascript-indent-level width)
+  (setq sgml-basic-offset width))
 
 
 (defun make-tabs-global ()
