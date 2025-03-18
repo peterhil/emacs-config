@@ -35,7 +35,7 @@
       (dolist (var (car (read-from-string env)))
         (setenv (car var) (cadr var))
         (when (string= (car var) "PATH")
-          (setq exec-path (split-string (cadr var) path-separator)))))))
+          (setopt exec-path (split-string (cadr var) path-separator)))))))
 
 (opam-update-env nil)
 
