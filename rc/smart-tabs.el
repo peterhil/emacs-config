@@ -20,7 +20,7 @@
     (if (memq indent-line-function
               '(indent-relative
                 indent-relative-maybe))
-        (setq indent-tabs-mode indent-tabs-mode))
+        (setopt indent-tabs-mode indent-tabs-mode))
     ad-do-it))
 
 
@@ -34,7 +34,7 @@
            (beginning-of-line)
            (while (looking-at "\t*\\( +\\)\t+")
              (replace-match "" nil nil nil 1)))
-         (setq tab-width tab-width)
+         (setopt tab-width tab-width)
          (let ((tab-width fill-column)
                (,offset fill-column)
                (wstart (window-start)))
@@ -48,7 +48,7 @@
 (use-package smart-tab
   :config
   (global-smart-tab-mode t)
-  ;; (setq smart-tab-debug t)
+  ;; (setopt smart-tab-debug t)
 
   ;; Standard Emacs autocomplete with dabbrev:
   ;; Alternatively use hippie-expand with (M-x hip RET):
@@ -59,7 +59,7 @@
   ;; C like languages
   ;;
   (make-local-variable 'tab-width)
-  (setq tab-width (or (default-value 'tab-width) 4))
+  (setopt tab-width (or (default-value 'tab-width) 4))
   (setq cua-auto-tabify-rectangles nil)
   (smart-tabs-advice c-indent-line c-basic-offset)
   (smart-tabs-advice c-indent-region c-basic-offset)
