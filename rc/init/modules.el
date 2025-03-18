@@ -99,7 +99,7 @@
 
        ;; -- Misc
        ;; "extra-fun"
-       ;; "fortune"
+       "fortune"
        ))
 
 (dolist
