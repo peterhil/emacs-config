@@ -2,12 +2,12 @@
 ;; Hex and binary file format editing
 ;; ------------------------------------------------------------------------------
 
-(require 'cl-lib)
-
-;; Better alternative to the builtin hexl-mode
-(use-package nhexl-mode)
+;; Better alternative to the builtin hexl-mode and has undo through overlays:
+;; https://unix.stackexchange.com/q/18852
+(use-package nhexl-mode
+  :bind ("C-c x" . nhexl-mode))
 
 
 ;; Hexview mode does not have undo, but should be fast
-;; https://unix.stackexchange.com/q/18852
-(use-package hexview-mode)
+;; (require 'cl-lib)
+;; (use-package hexview-mode)
