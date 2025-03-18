@@ -2,6 +2,8 @@
 ;; Zencoding mode  https://github.com/rooney/zencoding
 ;; ------------------------------------------------------------------------------
 
+(require 'cl-lib)
+
 (use-package zencoding-mode
   :config
   (progn

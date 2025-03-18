@@ -2,6 +2,8 @@
 ;; Hex and binary file format editing
 ;; ------------------------------------------------------------------------------
 
+(require 'cl-lib)
+
 ;; Better alternative to the builtin hexl-mode
 (use-package nhexl-mode)
 
