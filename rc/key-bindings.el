@@ -33,11 +33,19 @@
 ;; (global-set-key [(hyper h)] 'help)
 (define-key function-key-map (kbd "H-e m") 'event-apply-meta-modifier)
 
+
+;; ==============================================================================
+;; Mode toggles and other quick helpers
+;;------------------------------------------------------------------------------
+
 ;; Open link in browser
-(define-key global-map (kbd "C-x o") 'browse-url-at-point)
+(define-key global-map (kbd "C-c b") 'browse-url-at-point)
 
 ;; Eldoc mode
-(define-key global-map (kbd "C-h e") 'eldoc-mode)
+(define-key global-map (kbd "C-c e") 'eldoc-mode)
+
+;; Paredit mode
+(define-key global-map (kbd "C-c p") 'paredit-mode)
 
 
 ;; ==============================================================================
