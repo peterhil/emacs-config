@@ -21,7 +21,7 @@
      (slime-require 'swank-listener-hooks)))
 
 ;; Set UTF-8 coding for swank/slime, see: https://answers.launchpad.net/sbcl/+question/74497
-(setq slime-net-coding-system 'utf-8-unix)
+(setopt slime-net-coding-system 'utf-8-unix)
 (setq language-environment "utf-8")
 
 ;; Slime Lisp Implementations
@@ -32,7 +32,7 @@
         (ccl64 (,(concat usr-prefix "/bin/ccl64")))
         (ecl   (,(concat usr-prefix "/bin/ecl")) :coding-system iso-latin-1-unix)))
 
-(setq inferior-lisp-program (concat usr-prefix "/bin/sbcl"))
+(setopt inferior-lisp-program (concat usr-prefix "/bin/sbcl"))
 
 (add-hook 'lisp-mode-hook
           (lambda ()
