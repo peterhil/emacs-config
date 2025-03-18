@@ -33,6 +33,9 @@
 ;; (global-set-key [(hyper h)] 'help)
 (define-key function-key-map (kbd "H-e m") 'event-apply-meta-modifier)
 
+;; Open link in browser
+(define-key global-map (kbd "C-x o") 'browse-url-at-point)
+
 ;; Eldoc mode
 (define-key global-map (kbd "C-h e") 'eldoc-mode)
 
