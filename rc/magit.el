@@ -7,7 +7,6 @@
 
 (use-package magit
   :config
-  (progn
-    ;; (setq magit-auto-revert-mode nil)
-    ;; (setq magit-diff-use-overlays nil)
-    (global-set-key (kbd "C-x g") 'magit-status)))
+  ;; (setopt magit-auto-revert-mode nil)
+  ;; (setopt magit-diff-use-overlays nil)
+  (global-set-key (kbd "C-x g") 'magit-status))
