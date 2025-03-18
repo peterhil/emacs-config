@@ -44,9 +44,6 @@
 ;; Eldoc mode
 (define-key global-map (kbd "C-c e") 'eldoc-mode)
 
-;; Paredit mode
-(define-key global-map (kbd "C-c p") 'paredit-mode)
-
 
 ;; ==============================================================================
 ;; Extra modifiers
