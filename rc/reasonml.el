@@ -21,7 +21,7 @@
   ;; Add npm merlin.el to the emacs load path and tell emacs where to find ocamlmerlin
   (when merlin-bin
     (add-to-list 'load-path (concat merlin-base-dir "share/emacs/site-lisp/"))
-    (setq merlin-command merlin-bin))
+    (setopt merlin-command merlin-bin))
 
   (when refmt-bin
     (setq refmt-command refmt-bin)))
