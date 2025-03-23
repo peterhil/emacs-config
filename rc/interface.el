@@ -2,12 +2,12 @@
 ;; Emacs interface options
 ;; ------------------------------------------------------------------------------
 
-(setopt font-use-system-font t)
-(setopt indicate-buffer-boundaries 'left)
-(setopt inhibit-startup-screen t)
-(setopt one-buffer-one-frame-mode nil)
-(setopt size-indication-mode t)
-(setopt visible-bell t)
+(customize-set-variable 'font-use-system-font t)
+(customize-set-variable 'indicate-buffer-boundaries 'left)
+(customize-set-variable 'inhibit-startup-screen t)
+(customize-set-variable 'one-buffer-one-frame-mode nil)
+(customize-set-variable 'size-indication-mode t)
+(customize-set-variable 'visible-bell t)
 
 ;; Show full pathname in frame titles
 ;; (setq frame-title-format
@@ -16,4 +16,7 @@
 
 ;; Enable syncing clipboard and yanking only on Linux
 (when (eq system-type 'linux)
-  (setopt select-enable-clipboard t))
+  (customize-set-variable 'select-enable-clipboard t))
+
+(when window-system
+  (customize-set-variable 'tool-bar-mode nil))

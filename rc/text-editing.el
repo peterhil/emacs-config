@@ -3,7 +3,8 @@
 ;; ------------------------------------------------------------------------------
 
 (setopt fill-column 78)
-(add-hook 'text-mode-hook '(turn-on-auto-fill text-mode-hook-identify))
+(add-hook 'text-mode-hook 'text-mode-hook-identify)
+(add-hook 'text-mode-hook 'turn-on-auto-fill)
 
 ;; Save-hist-mode
 (setopt savehist-additional-variables '(kill-ring search-ring regexp-search-ring))
