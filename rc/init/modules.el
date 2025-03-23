@@ -14,6 +14,7 @@
        "theme"
 
        ;; -- Editing
+       "interface"
        "locale"
        "avy"
        "text-editing"

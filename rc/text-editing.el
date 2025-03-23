@@ -13,18 +13,6 @@
 (setopt show-paren-delay 0)
 (show-paren-mode 1)
 
-;; Turn on visible bell
-(setopt visible-bell t)
-
-;; Show full pathname in minibuffer
-(setq frame-title-format
-      (list (format "%s %%S: %%j " (system-name))
-            '(buffer-file-name "%f" (dired-directory dired-directory "%b"))))
-
-;; Enable syncing clipboard and yanking only on Linux
-(when (eq system-type 'linux)
-  (setopt x-select-enable-clipboard t))
-
 ;; =============================================================================
 ;; Line and column numbers
 ;; -----------------------------------------------------------------------------

@@ -7,4 +7,6 @@
 
 (use-package magit
   :bind (("C-c g" . magit)
-         ("C-x g" . magit-status)))
+         ("C-x g" . magit-status))
+  :config
+  (setq magit-diff-use-overlays nil))

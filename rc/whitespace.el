@@ -20,3 +20,5 @@
 (global-set-key (kbd "H-w t") 'whitespace-toggle-options)
 (global-set-key (kbd "H-w W") 'global-whitespace-mode)
 (global-set-key (kbd "H-w T") 'global-whitespace-toggle-options)
+
+(setopt show-trailing-whitespace t)

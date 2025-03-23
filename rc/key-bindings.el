@@ -38,11 +38,14 @@
 ;; Mode toggles and other quick helpers
 ;;------------------------------------------------------------------------------
 
-;; Open link in browser
+;; Browse URL
 (define-key global-map (kbd "C-c b") 'browse-url-at-point)
 
 ;; Eldoc mode
 (define-key global-map (kbd "C-c e") 'eldoc-mode)
+
+;; Visual line mode (word wrap)
+(define-key global-map (kbd "C-c v") 'visual-line-mode)
 
 
 ;; ==============================================================================
