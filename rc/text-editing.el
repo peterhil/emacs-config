@@ -6,6 +6,10 @@
 (add-hook 'text-mode-hook 'text-mode-hook-identify)
 (add-hook 'text-mode-hook 'turn-on-auto-fill)
 
+;; Longlines mode
+(autoload 'longlines-mode "longlines.el"
+  "Minor mode for editing long lines." t)
+
 ;; Save-hist-mode
 (setopt savehist-additional-variables '(kill-ring search-ring regexp-search-ring))
 (setopt savehist-file (concat user-emacs-directory "cache/savehist"))
