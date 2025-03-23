@@ -15,4 +15,4 @@
       (kmacro-lambda-form
        [?\C-a tab ?\C-  ?\C-a left ?\C-w ?\M-x ?e ?n ?d tab ?k tab] 0 "%d"))
 
-(define-key prog-mode-map (kbd "C-M-S-<backspace>") #'my-delete-into-previous-line)
+(define-key prog-mode-map (kbd "M-m w") #'my-delete-into-previous-line)

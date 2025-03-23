@@ -3,6 +3,12 @@
 ;; ------------------------------------------------------------------------------
 
 (setopt fill-column 78)
+(add-hook 'text-mode-hook 'text-mode-hook-identify)
+(add-hook 'text-mode-hook 'turn-on-auto-fill)
+
+;; Longlines mode
+(autoload 'longlines-mode "longlines.el"
+  "Minor mode for editing long lines." t)
 
 ;; Save-hist-mode
 (setopt savehist-additional-variables '(kill-ring search-ring regexp-search-ring))
@@ -12,18 +18,6 @@
 ;; Parenthesis matching
 (setopt show-paren-delay 0)
 (show-paren-mode 1)
-
-;; Turn on visible bell
-(setopt visible-bell t)
-
-;; Show full pathname in minibuffer
-(setq frame-title-format
-      (list (format "%s %%S: %%j " (system-name))
-            '(buffer-file-name "%f" (dired-directory dired-directory "%b"))))
-
-;; Enable syncing clipboard and yanking only on Linux
-(when (eq system-type 'linux)
-  (setopt x-select-enable-clipboard t))
 
 ;; =============================================================================
 ;; Line and column numbers

@@ -8,10 +8,12 @@
 (use-package flymake-css
   :hook (css-mode . flymake-css-load))
 
+(use-package flymake-jslint
+  :hook ((js-mode . flymake-jslint-load)))
+
 (use-package flymake-json
-  :hook
-  ((json-mode . flymake-json-load)
-    (js-mode . flymake-json-maybe-load)))
+  :hook ((json-mode . flymake-json-load)
+         (js-mode . flymake-json-maybe-load)))
 
 (use-package flymake-php
   :hook (php-mode . flymake-php-load))

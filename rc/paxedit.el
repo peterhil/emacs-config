@@ -6,10 +6,11 @@
 ;; https://github.com/promethial/paxedit
 
 (use-package paxedit
-  :hook ((clojure-mode-hook . 'paxedit-mode)
-         (emacs-lisp-mode-hook . 'paxedit-mode)
-         (fennel-mode-hook . 'paxedit-mode)
-         (lisp-mode-hook . 'paxedit-mode))
+  :hook
+  (clojure-mode . paxedit-mode)
+  (emacs-lisp-mode . paxedit-mode)
+  (fennel-mode . paxedit-mode)
+  (lisp-mode . paxedit-mode)
   :config
   (progn (define-key paxedit-mode-map (kbd "M-<right>") 'paxedit-transpose-forward)
          (define-key paxedit-mode-map (kbd "M-<left>") 'paxedit-transpose-backward)

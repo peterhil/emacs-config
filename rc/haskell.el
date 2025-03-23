@@ -2,4 +2,9 @@
 ;; Haskell mode
 ;; ------------------------------------------------------------------------------
 
-(use-package haskell-mode)
+(use-package haskell-mode
+  :mode
+  "\\.hs\\'"
+  "\\.lhs\\'"
+  :config
+  (use-package haskell-snippets))

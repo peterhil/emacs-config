@@ -38,11 +38,21 @@
 ;; Mode toggles and other quick helpers
 ;;------------------------------------------------------------------------------
 
-;; Open link in browser
+;; Auto Fill mode (insert new line beyond fill-column value)
+(define-key global-map (kbd "C-c f") 'auto-fill-mode)
+(define-key global-map (kbd "C-c F") 'toggle-text-mode-auto-fill)
+
+;; Browse URL
 (define-key global-map (kbd "C-c b") 'browse-url-at-point)
 
 ;; Eldoc mode
 (define-key global-map (kbd "C-c e") 'eldoc-mode)
+
+;; Visual line mode (word wrap)
+(define-key global-map (kbd "C-c v") 'visual-line-mode)
+
+;; Zencoding mode
+(define-key global-map (kbd "C-c z") 'zencoding-mode)
 
 
 ;; ==============================================================================
