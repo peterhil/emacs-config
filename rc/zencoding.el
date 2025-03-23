@@ -1,12 +1,11 @@
 ;; ==============================================================================
 ;; Zencoding mode  https://github.com/rooney/zencoding
 ;; ------------------------------------------------------------------------------
-
-(require 'cl-lib)
+;;
+;; Write HTML based on CSS selectors
 
 (use-package zencoding-mode
-  :config
   ;; Auto-start on any markup modes
-  (add-hook 'less-css-mode-hook 'zencoding-mode)
-  (add-hook 'sgml-mode-hook 'zencoding-mode)
-  (add-hook 'web-mode-hook 'zencoding-mode))
+  :hook
+  (sgml-mode . zencoding-mode)
+  (web-mode . zencoding-mode))

@@ -51,6 +51,9 @@
 ;; Visual line mode (word wrap)
 (define-key global-map (kbd "C-c v") 'visual-line-mode)
 
+;; Zencoding mode
+(define-key global-map (kbd "C-c z") 'zencoding-mode)
+
 
 ;; ==============================================================================
 ;; Extra modifiers
