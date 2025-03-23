@@ -25,7 +25,7 @@
        "expand-region"
        "regexp"
        "dired"
-       ;; "anything"
+       "anything"
        "elmacro"
        "macros"
 

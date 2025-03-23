@@ -3,11 +3,11 @@
 ;; ------------------------------------------------------------------------------
 
 (use-package anything
-  :commands 'anything)
-
-(use-package anything-config
-  :load-path "site-lisp/anything-config"
-  :ensure nil
-  :after (anything)
   :bind ("C-x a n" . anything-mini)
-  :commands 'anything-config)
+  :config
+  (setopt anything-command-map-prefix-key "C-x a")
+
+  ;; Fix errors about void variables
+  (setopt browse-url-galeon-program "firefox")
+  (setopt browse-url-mosaic-program "firefox")
+  (setopt browse-url-netscape-program "firefox"))

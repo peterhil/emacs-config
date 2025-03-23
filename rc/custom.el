@@ -9,14 +9,11 @@
  ;; If there is more than one, they won't work right.
  '(ansi-color-names-vector
    ["#222627" "#F92672" "#A6E22E" "#E6DB74" "#66D9EF" "#FD5FF0" "#A1EFE4" "#F8F8F2"])
- '(anything-command-map-prefix-key "C-x a")
  '(better-fringes-mode t)
  '(c-echo-syntactic-information-p t)
  '(c-special-indent-hook '(ignore))
  '(c-tab-always-indent 'other)
  '(color-theme-is-cumulative nil)
- '(column-number-mode t)
- '(compilation-message-face 'default)
  '(create-frame-min-width 120)
  '(custom-enabled-themes '(fogus))
  '(custom-safe-themes
