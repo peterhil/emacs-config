@@ -61,7 +61,7 @@
        ;; "org"
        "markdown"
        "wikipedia"
-       ;; "multi-web-mode"
+       "multi-web-mode"
        "polymode"
        "zencoding"
        "style"
