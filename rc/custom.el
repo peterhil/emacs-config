@@ -26,7 +26,6 @@
  '(save-place-mode t nil (saveplace))
  '(semantic-stickyfunc-indent-string " ")
  '(split-width-threshold 240)
- '(text-mode-hook '(turn-on-auto-fill text-mode-hook-identify))
  '(uniquify-buffer-name-style 'forward nil (uniquify))
  '(yaml-indent-offset 4))
 

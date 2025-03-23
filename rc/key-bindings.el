@@ -38,6 +38,10 @@
 ;; Mode toggles and other quick helpers
 ;;------------------------------------------------------------------------------
 
+;; Auto Fill mode (insert new line beyond fill-column value)
+(define-key global-map (kbd "C-c f") 'auto-fill-mode)
+(define-key global-map (kbd "C-c F") 'toggle-text-mode-auto-fill)
+
 ;; Browse URL
 (define-key global-map (kbd "C-c b") 'browse-url-at-point)
 
