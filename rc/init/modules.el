@@ -91,7 +91,6 @@
        "rust"
        ;; "rebol"
        "php"
-       ;; "eldoc-php"
        ;; "coffee"
        "js"
        ;; "js2-refactor"
