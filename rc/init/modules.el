@@ -75,7 +75,7 @@
        ;; -- Languages
        "common-lisp"
        "elixir"
-       ;; "elm"
+       "elm"
        "fennel"
        ;; "scheme"
        "haskell"
