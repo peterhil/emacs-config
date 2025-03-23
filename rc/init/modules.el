@@ -44,7 +44,7 @@
        "eldoc"
        "git"
        "magit"
-       ;; "tags"
+       "tags"
        "smart-tabs"
        ;; "yasnippet"
        ;; "qt"
@@ -59,7 +59,7 @@
        ;; -- Markup
        ;; "org"
        "markdown"
-       ;; "wikipedia"
+       "wikipedia"
        ;; "multi-web-mode"
        "polymode"
        "zencoding"
