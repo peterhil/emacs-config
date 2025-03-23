@@ -2,31 +2,34 @@
 ;;  Scheme
 ;; ------------------------------------------------------------------------------
 
-(use-package scheme)
-(use-package scheme-complete)
+(use-package scheme
+  :mode "\\.scm\\'"
+  :config
+  (use-package scheme-complete)
 
-;; Quack mode
-;; (use-package quack)
-(autoload 'quack "quack.el" "Minor mode for editing long lines." t)
+  ;; (setq scheme-program-name "gsc -:d-") ; Gambit
+  ;; (setq scheme-program-name "csi -:d-") ; Chicken
+  ;; (setq scheme-program-name "gosh -i") ; Gauche
+  (setq scheme-program-name "larceny") ; Larceny
 
-;; (setq scheme-program-name "gsc -:d-") ; Gambit
-;; (setq scheme-program-name "csi -:d-") ; Chicken
-;; (setq scheme-program-name "gosh -i") ; Gauche
-(setq scheme-program-name "larceny") ; Larceny
+  ;; Quack enhances Emacs support for Scheme programming
+  (use-package quack))
 
 
 ;;==============================================================================
 ;;  Gambit Scheme
 ;; ------------------------------------------------------------------------------
 
-(when (eq system-type "darwin")
-  (add-to-list 'load-path "/Library/Gambit-C/current/share/emacs/site-lisp")
-  (autoload 'gambit-inferior-mode "gambit" "Hook Gambit mode into cmuscheme.")
-  (autoload 'gambit-mode "gambit" "Hook Gambit mode into scheme.")
-  (add-hook 'inferior-scheme-mode-hook (function gambit-inferior-mode))
-  (add-hook 'scheme-mode-hook (function gambit-mode))
-
-  (use-package gambit))
+(when (and (file-exists-p "/Library/Gambit-C/current/share/emacs/site-lisp")
+           (eq system-type "darwin"))
+  (use-package gambit
+    :load-path "/Library/Gambit-C/current/share/emacs/site-lisp"
+    :hook
+    (inferior-scheme-mode . gambit-inferior-mode)
+    (scheme-mode-hook . gambit-mode)
+    :config
+    (autoload 'gambit-inferior-mode "gambit" "Hook Gambit mode into cmuscheme.")
+    (autoload 'gambit-mode "gambit" "Hook Gambit mode into scheme.")))
 
 
 ;; ==============================================================================
