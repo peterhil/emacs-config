@@ -47,7 +47,7 @@
        "magit"
        "tags"
        "smart-tabs"
-       ;; "yasnippet"
+       "yasnippet"
        ;; "qt"
        "paredit"
        "paxedit"
