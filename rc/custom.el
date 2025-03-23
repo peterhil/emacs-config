@@ -7,8 +7,6 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(ansi-color-names-vector
-   ["#222627" "#F92672" "#A6E22E" "#E6DB74" "#66D9EF" "#FD5FF0" "#A1EFE4" "#F8F8F2"])
  '(better-fringes-mode t)
  '(c-echo-syntactic-information-p t)
  '(c-special-indent-hook '(ignore))
@@ -23,18 +21,7 @@
  '(desktop-save-mode nil)
  '(dired-auto-revert-buffer 'dired-directory-changed-p)
  '(emulate-mac-finnish-keyboard-mode t)
- '(fci-rule-color "#4E5959")
  '(font-use-system-font t)
- '(highlight-changes-colors ("#FD5FF0" "#AE81FF"))
- '(highlight-tail-colors
-   '(("#4E5959" . 0)
-     ("#67930F" . 20)
-     ("#349B8D" . 30)
-     ("#21889B" . 50)
-     ("#968B26" . 60)
-     ("#A45E0A" . 70)
-     ("#A41F99" . 85)
-     ("#4E5959" . 100)))
  '(indent-tabs-mode nil)
  '(indicate-buffer-boundaries 'left)
  '(inhibit-startup-screen t)
@@ -44,8 +31,6 @@
  '(one-buffer-one-frame-mode nil)
  '(package-selected-packages
    '(paredit-mode v-mode smart-tab mbo70s-theme sublime-themes toml-mode solarized-theme poly-markdown polymode espresso-theme flatui-dark-theme flatui-theme hemisu-theme exotica-theme dracula-theme plan9-theme zeno-theme zerodark-theme spacemacs-theme jade-mode paxedit cyberpunk-2019-theme nofrils-acme-theme abyss-theme cyberpunk-theme almost-mono-themes haskell-snippets django-snippets common-lisp-snippets elixir-yasnippets alchemist elixir-mode cider-eval-sexp-fu cider origami-mode lsp-origami which-key lsp-treemacs helm-lsp lsp-haskell markchars fennel-mode company-mode lsp-ui origami 2048-game ztree lsp-julia css-eldoc com-css-sort elpher gemini-mode paredit paredit-everywhere paredit-menu pomodoro lsp-mode web-mode-edit-element zig-mode nix-mode geiser-chicken js2-mode haml-mode magit git-commit fuzzy js2-refactor svelte-mode elmacro nhexl-mode quickrun reason-mode rust-mode expand-region markdown-mode nxml-mode elpy edit-server csv-mode undo-tree hen scheme-complete zeal-at-point use-package-ensure-system-package utop merlin fill-column-indicator faustine faust-mode fortune-cookie form-feed magit-delta fireplace use-package auto-minor-mode picolisp-mode lua-mode flymake-jslint visual-regexp feature-mode vue-html-mode vue-mode typescript-mode xref-js2 zencoding-mode eslint-fix exec-path-from-shell csv-nav yaml-mode web-mode w3m uuidgen stylus-mode spacegray-theme smartparens slime scss-mode sass-mode rainbow-mode python-mode php-mode move-text monokai-theme mkdown md-readme markdown-mode+ less-css-mode json-mode jinja2-mode jazz-theme fuzzy-format flymake-php flymake-json flymake-css flymake-coffee flycheck-pyflakes flycheck-haskell flycheck-clojure editorconfig cypher-mode coffee-mode anything ag))
- '(pos-tip-background-color "#FFFACE")
- '(pos-tip-foreground-color "#272822")
  '(safe-local-variable-values
    '((encoding . utf-8)
      (Syntax . ANSI-Common-Lisp)
@@ -60,30 +45,7 @@
  '(tab-width 4)
  '(text-mode-hook '(turn-on-auto-fill text-mode-hook-identify))
  '(uniquify-buffer-name-style 'forward nil (uniquify))
- '(vc-annotate-background nil)
- '(vc-annotate-color-map
-   '((20 . "#F92672")
-     (40 . "#CF4F1F")
-     (60 . "#C26C0F")
-     (80 . "#E6DB74")
-     (100 . "#AB8C00")
-     (120 . "#A18F00")
-     (140 . "#989200")
-     (160 . "#8E9500")
-     (180 . "#A6E22E")
-     (200 . "#729A1E")
-     (220 . "#609C3C")
-     (240 . "#4E9D5B")
-     (260 . "#3C9F79")
-     (280 . "#A1EFE4")
-     (300 . "#299BA6")
-     (320 . "#2896B5")
-     (340 . "#2790C3")
-     (360 . "#66D9EF")))
- '(vc-annotate-very-old-color nil)
  '(visual-line-mode nil t)
- '(weechat-color-list
-   (unspecified "#222627" "#4E5959" "#A20C41" "#F92672" "#67930F" "#A6E22E" "#968B26" "#E6DB74" "#21889B" "#66D9EF" "#A41F99" "#FD5FF0" "#349B8D" "#A1EFE4" "#F8F8F2" "#F8F8F0"))
  '(yaml-indent-offset 4))
 
 

@@ -9,6 +9,7 @@
        "emacsclient"
 
        ;; -- Colors
+       "colours"
        "rainbow-mode"
        "theme"
 
