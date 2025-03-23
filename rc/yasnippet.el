@@ -12,9 +12,9 @@
   :bind
   ("H-<tab>" . yas-expand)
   ("C-c y e" . yas-expand)
-  :init (yas-reload-all)
   :hook (prog-mode . yas-minor-mode)
   :config
+  (yas-reload-all)
   (yas-load-directory (concat user-emacs-directory "snippets"))
 
   ;; Use global mode or alternatively load minor mode from hooks
