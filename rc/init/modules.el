@@ -30,6 +30,7 @@
        "anything"
        "elmacro"
        "macros"
+       "which-key"
 
        "hex"
        ;; "images"
@@ -54,7 +55,7 @@
        ;; "flycheck
        "flymake"
        ;; "flymake-d"
-       "lsp"
+       ;; "lsp"
 
        ;; -- Markup
        ;; "org"
