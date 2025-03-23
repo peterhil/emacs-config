@@ -3,5 +3,8 @@
 ;; ------------------------------------------------------------------------------
 
 (use-package haskell-mode
+  :mode
+  "\\.hs\\'"
+  "\\.lhs\\'"
   :config
   (use-package haskell-snippets))
