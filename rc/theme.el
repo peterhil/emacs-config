@@ -30,10 +30,34 @@
  monokai-height-plus-3 1.2
  monokai-height-plus-4 1.3)
 
-(use-package cyberpunk-theme)
-(use-package dracula-theme)
-(use-package monokai-theme)
-(use-package sublime-themes)
+(progn
+  ;; *****
+  (use-package cyberpunk-theme)
+  (use-package dracula-theme)
+  (use-package exotica-theme)
+  (use-package flatui-dark-theme)
+  (use-package flatui-theme)
+  (use-package jazz-theme)
+  (use-package solarized-theme)
+  (use-package sublime-themes)
+
+  ;; ****
+  (use-package abyss-theme)
+  (use-package almost-mono-themes)
+  (use-package mbo70s-theme)
+  (use-package monokai-theme)
+  (use-package zeno-theme)
+
+  ;; ***
+  (use-package cyberpunk-2019-theme)
+  (use-package espresso-theme)
+  (use-package hemisu-theme)
+  (use-package nofrils-acme-theme)
+  (use-package plan9-theme)
+  (use-package spacegray-theme)
+  (use-package spacemacs-theme)
+  (use-package zerodark-theme)
+  )
 
 ;;; Dark themes
 ;; (load-theme 'cyberpunk-2019 t)
