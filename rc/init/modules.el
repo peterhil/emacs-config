@@ -87,7 +87,7 @@
        ;; "ropemacs"
        ;; "reasonml"
        "ruby"
-       ;; "rust"
+       "rust"
        ;; "rebol"
        "php"
        ;; "eldoc-php"
