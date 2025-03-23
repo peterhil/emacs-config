@@ -73,6 +73,7 @@
 
        ;; -- Languages
        "common-lisp"
+       "elixir"
        ;; "elm"
        "fennel"
        ;; "scheme"
