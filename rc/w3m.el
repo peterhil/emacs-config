@@ -18,6 +18,7 @@
 (setq w3m-use-cookies t)
 
 (use-package w3m-search
+  :defer t
   :config
   (add-to-list
    'w3m-search-engine-alist
