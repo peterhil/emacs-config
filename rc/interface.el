@@ -9,10 +9,10 @@
 (setopt size-indication-mode t)
 (setopt visible-bell t)
 
-;; Show full pathname in minibuffer
-(setq frame-title-format
-      (list (format "%s %%S: %%j " (system-name))
-            '(buffer-file-name "%f" (dired-directory dired-directory "%b"))))
+;; Show full pathname in frame titles
+;; (setq frame-title-format
+;;       (list (format "%s %%S: %%j " (system-name))
+;;             '(buffer-file-name "%f" (dired-directory dired-directory "%b"))))
 
 ;; Enable syncing clipboard and yanking only on Linux
 (when (eq system-type 'linux)
