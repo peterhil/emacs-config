@@ -3,4 +3,5 @@
 ;; https://github.com/Silex/elmacro
 ;; -----------------------------------------------------------------------------
 
-(use-package elmacro)
+(use-package elmacro
+  :defer t)
