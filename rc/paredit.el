@@ -7,6 +7,7 @@
   :config (use-package paredit-menu)
   :hook ((emacs-lisp-mode . enable-paredit-mode)
          (fennel-mode . enable-paredit-mode)
+         (hy-mode . enable-paredit-mode)
          (lisp-mode . enable-paredit-mode)
          (scheme-mode . enable-paredit-mode)
          (slime-repl-mode . enable-paredit-mode)))

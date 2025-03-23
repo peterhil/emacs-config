@@ -79,6 +79,7 @@
        "fennel"
        ;; "scheme"
        "haskell"
+       "hy"
        "lua"
        ;; "lush"
        "nim"
