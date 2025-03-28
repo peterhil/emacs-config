@@ -3,6 +3,7 @@
 ;; ------------------------------------------------------------------------------
 
 (use-package web-mode
+  :hook (web-mode . lsp-deferred)
   :config
   (progn
     (setq web-mode-code-indent-offset 4)
