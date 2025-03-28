@@ -9,4 +9,5 @@
 
 ;; (configure "init/package")
 (configure "init/straight")
+(configure "init/start")
 (configure "init/modules")

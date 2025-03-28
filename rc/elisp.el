@@ -11,6 +11,15 @@ you provide the regexp in between"
   (format "\\.%s\\'" extension))
 
 
+;; https://github.com/daut/dotfiles/blob/master/.emacs.d/init.el
+(defun daut/display-startup-time ()
+  (message "Emacs loaded in %s with %d garbage collections."
+           (format "%.2f seconds"
+                   (float-time
+                    (time-subtract after-init-time before-init-time)))
+           gcs-done))
+
+
 (defun extension-regexps (extension-list)
   "Create a list of extension regexps from provided extension
 list. Note that they can contain regexps, see xr for more info"
