@@ -8,5 +8,6 @@
 
 
 (use-package tsx-ts-mode
+  :disabled
   :mode
   "\\.tsx\\'")
