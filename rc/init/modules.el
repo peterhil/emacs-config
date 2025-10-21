@@ -70,7 +70,7 @@
        "web"
 
        ;; -- Ocaml
-       "opam-user-setup"
+       ;; "opam-user-setup"
        "ocaml"
 
        ;; -- Languages
