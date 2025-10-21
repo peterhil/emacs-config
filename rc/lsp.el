@@ -3,6 +3,7 @@
 ;; --------------------------------------------------------------------
 
 (use-package lsp-mode
+  :disabled
   :commands (lsp lsp-deferred)
   :hook ((prog-mode . lsp-deferred)
          (zig-mode . lsp-deferred))
