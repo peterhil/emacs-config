@@ -1,2 +1,3 @@
 (use-package zig-mode
-  :mode ("\\.zig\\'"))
+  :mode ("\\.zig\\'"
+         "\\.zig.zon\\'"))
