@@ -53,8 +53,8 @@
        "paredit"
        "paxedit"
        ;; "projectile"
-       ;; "flycheck
-       "flymake"
+       "flycheck"
+       ;; "flymake"
        ;; "flymake-d"
        "lsp"
 
