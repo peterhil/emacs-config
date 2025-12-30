@@ -56,7 +56,7 @@
        ;; "flycheck
        "flymake"
        ;; "flymake-d"
-       ;; "lsp"
+       "lsp"
 
        ;; -- Markup
        ;; "org"
@@ -70,7 +70,7 @@
        "web"
 
        ;; -- Ocaml
-       "opam-user-setup"
+       ;; "opam-user-setup"
        "ocaml"
 
        ;; -- Languages

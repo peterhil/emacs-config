@@ -3,9 +3,9 @@
 ;; --------------------------------------------------------------------
 
 (use-package lsp-mode
+  :disabled
   :commands (lsp lsp-deferred)
-  :hook ((emacs-lisp-mode . lsp-deferred)
-         (prog-mode . lsp-deferred)
+  :hook ((prog-mode . lsp-deferred)
          (zig-mode . lsp-deferred))
   :init
   ;; set prefix for lsp-command-keymap (few alternatives - "C-l", "C-c l")
