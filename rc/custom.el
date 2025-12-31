@@ -84,7 +84,7 @@
  '(package-selected-packages
    '(2048-game ag anything auto-minor-mode cider cider-eval-sexp-fu coffee-mode
                common-lisp-snippets company-mode csv-mode csv-nav cypher-mode
-               django-snippets edit-server editorconfig elmacro elpher elpy
+               django-snippets edit-server editorconfig elmacro elpher
                eslint-fix exec-path-from-shell expand-region faust-mode
                faustine feature-mode fennel-mode fill-column-indicator
                fireplace flycheck-clojure flycheck-haskell flycheck-pyflakes

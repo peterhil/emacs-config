@@ -84,7 +84,6 @@
        ;; "lush"
        "nim"
        "python"
-       ;; "elpy"
        ;; "ropemacs"
        ;; "reasonml"
        "ruby"
