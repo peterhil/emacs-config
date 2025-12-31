@@ -4,6 +4,7 @@
 
 (defvar *my-modules*
   '(
+       "interface"
        ;; -- Emacs lisp utility functions, make sure this is loaded first!
        "elisp"
        "emacsclient"
@@ -11,10 +12,10 @@
        ;; -- Colors
        "colours"
        "rainbow-mode"
+       "rainbow-delimiters"
        "theme"
 
        ;; -- Editing
-       "interface"
        "locale"
        "avy"
        "text-editing"

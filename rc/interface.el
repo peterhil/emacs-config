@@ -2,6 +2,9 @@
 ;; Emacs interface options
 ;; ------------------------------------------------------------------------------
 
+(when window-system
+  (customize-set-variable 'tool-bar-mode nil))
+
 (customize-set-variable 'font-use-system-font t)
 (customize-set-variable 'indicate-buffer-boundaries 'left)
 (customize-set-variable 'inhibit-startup-screen t)
@@ -17,6 +20,3 @@
 ;; Enable syncing clipboard and yanking only on Linux
 (when (eq system-type 'linux)
   (customize-set-variable 'select-enable-clipboard t))
-
-(when window-system
-  (customize-set-variable 'tool-bar-mode nil))
