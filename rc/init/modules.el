@@ -36,7 +36,6 @@
 
        "hex"
        ;; "images"
-       ;; "audio"
        ;; "erc"
        "shell"
        ;; "w3m"
