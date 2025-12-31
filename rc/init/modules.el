@@ -92,7 +92,7 @@
        "php"
        ;; "coffee"
        "js"
-       ;; "js2-refactor"
+       "js2-refactor"
        "svelte"
        "typescript"
        ;; "pure"
