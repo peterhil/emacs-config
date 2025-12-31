@@ -6,7 +6,8 @@
   :disabled
   :commands (lsp lsp-deferred)
   :hook ((prog-mode . lsp-deferred)
-         (zig-mode . lsp-deferred))
+         (zig-mode . lsp-deferred)
+         (web-mode . lsp-deferred))
   :init
   ;; set prefix for lsp-command-keymap (few alternatives - "C-l", "C-c l")
   (setq lsp-keymap-prefix "C-c l")
