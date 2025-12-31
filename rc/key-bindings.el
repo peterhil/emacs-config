@@ -8,7 +8,7 @@
   (setopt mac-command-modifier 'meta)
   (setopt mac-option-modifier nil)
   (setopt mac-right-command-modifier 'super)
-  (setopt mac-right-option-modifier 'hyper))
+  (setopt mac-right-option-modifier nil))
 
 ;; My bindings
 (define-key global-map (kbd "C-'") 'comment-or-uncomment-region)

@@ -22,7 +22,6 @@
        "editorconfig"
        ;; "fuzzy-format"
        "key-bindings"
-       ;; "finnish-keyboard-fix"
        "tabs"
        "whitespace"
        "undo-redo"
