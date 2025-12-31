@@ -55,7 +55,6 @@
        "flycheck"
        ;; "flymake"
        ;; "flymake-d"
-       "lsp"
 
        ;; -- Markup
        ;; "org"

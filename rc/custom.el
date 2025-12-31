@@ -82,27 +82,24 @@
  '(desktop-save-mode nil)
  '(dired-auto-revert-buffer 'dired-directory-changed-p)
  '(package-selected-packages
-   '(2048-game ag anything auto-minor-mode cider cider-eval-sexp-fu coffee-mode
-               common-lisp-snippets company-mode csv-mode csv-nav cypher-mode
-               django-snippets edit-server editorconfig elmacro elpher
-               eslint-fix exec-path-from-shell expand-region faust-mode
-               faustine feature-mode fennel-mode fill-column-indicator
-               fireplace flycheck-clojure flycheck-haskell flycheck-pyflakes
-               form-feed fortune-cookie fuzzy fuzzy-format geiser-chicken
-               gemini-mode git-commit haml-mode helm-lsp hen jade-mode
-               jinja2-mode js2-mode js2-refactor json-mode lsp-haskell
-               lsp-julia lsp-mode lsp-origami lsp-treemacs lsp-ui lua-mode
-               magit magit-delta markchars markdown-mode markdown-mode+
-               md-readme merlin mkdown move-text nhexl-mode nix-mode nxml-mode
-               origami origami-mode paredit paredit-everywhere paredit-menu
-               paredit-mode paxedit php-mode picolisp-mode poly-markdown
-               polymode pomodoro python-mode quickrun rainbow-mode reason-mode
-               rust-mode sass-mode scheme-complete slime smart-tab smartparens
-               stylus-mode svelte-mode toml-mode typescript-mode undo-tree
-               use-package use-package-ensure-system-package utop uuidgen
-               v-mode visual-regexp vue-html-mode vue-mode w3m web-mode
-               web-mode-edit-element which-key xref-js2 yaml-mode
-               zeal-at-point zencoding-mode zig-mode ztree) t)
+   '(2048-game ag anything auto-minor-mode cider cider-eval-sexp-fu
+     coffee-mode common-lisp-snippets company-mode csv-mode csv-nav
+     cypher-mode django-snippets edit-server editorconfig elmacro elpher
+     eslint-fix exec-path-from-shell expand-region faust-mode faustine
+     feature-mode fennel-mode fill-column-indicator fireplace flycheck-clojure
+     flycheck-haskell flycheck-pyflakes form-feed fortune-cookie fuzzy
+     fuzzy-format geiser-chicken gemini-mode git-commit haml-mode hen
+     jade-mode jinja2-mode js2-mode js2-refactor json-mode lua-mode magit
+     magit-delta markchars markdown-mode markdown-mode+ md-readme merlin
+     mkdown move-text nhexl-mode nix-mode nxml-mode origami origami-mode
+     paredit paredit-everywhere paredit-menu paredit-mode paxedit php-mode
+     picolisp-mode poly-markdown polymode pomodoro python-mode quickrun
+     rainbow-mode reason-mode rust-mode sass-mode scheme-complete slime
+     smart-tab smartparens stylus-mode svelte-mode toml-mode typescript-mode
+     undo-tree use-package use-package-ensure-system-package utop uuidgen
+     v-mode visual-regexp vue-html-mode vue-mode w3m web-mode
+     web-mode-edit-element which-key xref-js2 yaml-mode zeal-at-point
+     zencoding-mode zig-mode ztree) t)
  '(safe-local-variable-values '((encoding . utf-8) (syntax . ANSI-Common-Lisp)))
  '(save-place-mode t nil (saveplace))
  '(semantic-stickyfunc-indent-string " ")
