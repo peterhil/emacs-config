@@ -2,11 +2,9 @@
 ;; W3M web browser
 ;; -----------------------------------------------------------------------------
 
-(setq browse-url-browser-function 'w3m-browse-url)
 (autoload 'w3m-browse-url "w3m" "Ask a WWW browser to show a URL." t)
 
-;; Optional keyboard shortcut
-(global-set-key "\C-xm" 'browse-url-at-point)
+(setopt browse-url-browser-function 'w3m-browse-url)
 
 ;; Text encoding UTF-8
 (setq w3m-coding-system 'utf-8
@@ -20,6 +18,7 @@
 (setq w3m-use-cookies t)
 
 (use-package w3m-search
+  :defer t
   :config
   (add-to-list
    'w3m-search-engine-alist

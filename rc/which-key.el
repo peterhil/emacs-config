@@ -1,7 +1,8 @@
 ;; =============================================================================
-;; Elmacro - produce elisp code from interactive commands
-;; https://github.com/Silex/elmacro
+;; Which key - https://github.com/justbur/emacs-which-key
 ;; -----------------------------------------------------------------------------
 
-(use-package elmacro
-  :defer t)
+(use-package which-key
+  :defer t
+  :config
+  (which-key-mode))

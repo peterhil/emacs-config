@@ -6,8 +6,7 @@
 ;; https://magit.vc/manual/magit/index.html
 
 (use-package magit
+  :bind (("C-c g" . magit)
+         ("C-x g" . magit-status))
   :config
-  (progn
-    ;; (setq magit-auto-revert-mode nil)
-    ;; (setq magit-diff-use-overlays nil)
-    (global-set-key (kbd "C-x g") 'magit-status)))
+  (setq magit-diff-use-overlays nil))

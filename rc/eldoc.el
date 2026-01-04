@@ -6,8 +6,12 @@
 ;; the argument list of the function call you are currently writing. Very handy. By NoahFriedman.
 ;; Part of Emacs.
 
-(add-hook 'emacs-lisp-mode-hook 'turn-on-eldoc-mode)
-(add-hook 'lisp-interaction-mode-hook 'turn-on-eldoc-mode)
-(add-hook 'ielm-mode-hook 'turn-on-eldoc-mode)
-
-(load-file "eldoc-php.el")
+(use-package eldoc
+  :no-require t
+  :bind ("C-c e" . eldoc-mode)
+  :hook
+  ;; (emacs-lisp-mode . turn-on-eldoc-mode)
+  (lisp-interaction-mode . turn-on-eldoc-mode)
+  (ielm-mode . turn-on-eldoc-mode)
+  :config
+  (global-eldoc-mode -1))

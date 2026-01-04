@@ -2,10 +2,7 @@
 ;; Hex and binary file format editing
 ;; ------------------------------------------------------------------------------
 
-;; Better alternative to the builtin hexl-mode
-(use-package nhexl-mode)
-
-
-;; Hexview mode does not have undo, but should be fast
+;; Better alternative to the builtin hexl-mode and has undo through overlays:
 ;; https://unix.stackexchange.com/q/18852
-(use-package hexview-mode)
+(use-package nhexl-mode
+  :bind ("C-c x" . nhexl-mode))

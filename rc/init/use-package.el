@@ -18,5 +18,6 @@
 
  ;; Debugging use-package
  use-package-verbose 'errors
+ use-package-compute-statistics t ; check with use-package-report
  ;; use-package-expand-minimally t
  )

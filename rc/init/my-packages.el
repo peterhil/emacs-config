@@ -32,12 +32,11 @@
     ;; fireplace
     flycheck
     flycheck-clojure
-    ;; flycheck-haskell
-    flycheck-pyflakes
-    flymake
+    flycheck-haskell
+    ;; flymake
     ;; flymake-coffee
-    flymake-css
-    flymake-json
+    ;; flymake-css
+    ;; flymake-json
     ;; flymake-php
     ;; flymd
     fortune-cookie

@@ -1,6 +1,7 @@
 ;; ==============================================================================
-;;  REBOL
+;;  REBOL - https://www.rebol.com/tools/rebol.el
 ;; ------------------------------------------------------------------------------
 
 (use-package rebol
-  :load-path "site-lisp/rebol")
+  :load-path "site-lisp/rebol"
+  :mode "\\.reb\\'")

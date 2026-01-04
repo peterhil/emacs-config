@@ -11,5 +11,4 @@
   (set-face-attribute 'diff-changed nil
                       :foreground "white" :background "purple"))
 
-(add-hook 'diff-mode-hook
-	  #'(lambda () (update-diff-colors)))
+(add-hook 'diff-mode-hook 'update-diff-colors)

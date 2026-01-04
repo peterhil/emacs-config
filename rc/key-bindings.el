@@ -1,33 +1,14 @@
 ;; ==============================================================================
-;; Extra modifiers
-;;------------------------------------------------------------------------------
-
-;; Meta
-(define-key function-key-map (kbd "C-c m") 'event-apply-meta-modifier)
-(define-key function-key-map (kbd "<f16>") 'event-apply-meta-modifier)
-(define-key function-key-map (kbd "<S-f6>") 'event-apply-meta-modifier)
-
-;; Super
-(define-key function-key-map (kbd "C-c s") 'event-apply-super-modifier)
-(define-key function-key-map (kbd "<f17>") 'event-apply-super-modifier)
-(define-key function-key-map (kbd "<S-f7>") 'event-apply-super-modifier)
-
-;; Hyper
-(define-key function-key-map (kbd "C-c h") 'event-apply-hyper-modifier)
-(define-key function-key-map (kbd "<f18>") 'event-apply-hyper-modifier)
-(define-key function-key-map (kbd "<S-f8>") 'event-apply-hyper-modifier)
-
-
-;; ==============================================================================
 ;; Key bindings
 ;; ------------------------------------------------------------------------------
 
-;; Left option as meta, right as option
+;; Use command key as meta, keep option and right command as they are
 ;; https://www.emacswiki.org/emacs/EmacsForMacOS#toc31
-(when (eq system-type 'darwin) ;; mac specific settings
-  (setq mac-option-modifier 'meta)
-  (setq mac-right-option-modifier nil)
-  )
+(when (eq system-type 'darwin)
+  (setopt mac-command-modifier 'meta)
+  (setopt mac-option-modifier nil)
+  (setopt mac-right-command-modifier 'super)
+  (setopt mac-right-option-modifier nil))
 
 ;; My bindings
 (define-key global-map (kbd "C-'") 'comment-or-uncomment-region)
@@ -48,8 +29,41 @@
 ;; See http://www.emacswiki.org/emacs/BackspaceKey
 ;; (global-set-key [(control h)] 'delete-backward-char)
 
-;; Help
-(global-set-key [(hyper h)] 'help)
+;; Hyper shortcuts
+;; (global-set-key [(hyper h)] 'help)
+(define-key function-key-map (kbd "H-e m") 'event-apply-meta-modifier)
+
+
+;; ==============================================================================
+;; Mode toggles and other quick helpers
+;;------------------------------------------------------------------------------
+
+;; Auto Fill mode (insert new line beyond fill-column value)
+(define-key global-map (kbd "C-c f") 'auto-fill-mode)
+(define-key global-map (kbd "C-c F") 'toggle-text-mode-auto-fill)
+
+;; Browse URL
+(define-key global-map (kbd "C-c b") 'browse-url-at-point)
 
 ;; Eldoc mode
-(define-key global-map (kbd "C-h e") 'eldoc-mode)
+(define-key global-map (kbd "C-c e") 'eldoc-mode)
+
+;; Visual line mode (word wrap)
+(define-key global-map (kbd "C-c v") 'visual-line-mode)
+
+;; Zencoding mode
+(define-key global-map (kbd "C-c z") 'zencoding-mode)
+
+
+;; ==============================================================================
+;; Extra modifiers
+;;------------------------------------------------------------------------------
+
+;; Meta
+(define-key function-key-map (kbd "C-c ,") 'event-apply-meta-modifier)
+
+;; Super
+(define-key function-key-map (kbd "C-c .") 'event-apply-super-modifier)
+
+;; Hyper
+(define-key function-key-map (kbd "C-c -") 'event-apply-hyper-modifier)

@@ -1,8 +1,10 @@
-;; company-mode
+;; ==============================================================================
+;; CompAny mode - complete anything
+;; ------------------------------------------------------------------------------
 
 (use-package company
-  :ensure t
+  :bind (("C-c RET" . company-mode)
+         ("C-c M-RET" . global-company-mode)
+         ("C-c TAB" . company-complete))
   :config
-  ;; (add-hook 'after-init-hook 'global-company-mode)
-  (global-company-mode 1)
-  (global-set-key (kbd "C-c c") 'company-complete))
+  (setopt company-idle-delay 0.5))

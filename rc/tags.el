@@ -2,15 +2,14 @@
 ;; Emacs Tags
 ;; ------------------------------------------------------------------------------
 
-(setq path-to-ctags
-      ;; (shell-cmd "which ctags")  ; Apple has NIH syndrome again
-      (concat usr-prefix "/bin/ctags"))
-
 (defun create-tags (dir-name)
   "Create tags file."
-  (interactive "Directory: ")
+  (interactive "DDirectory: ")
   (shell-command
-   (format "%s -e --verbose=yes --exclude=cache --exclude='vendor*' --exclude=backups --exclude=node_modules -f %sTAGS -R %s"
-	       path-to-ctags
-	       dir-name
-	       (directory-file-name dir-name))))
+   (let ((path-to-ctags (concat usr-prefix "/bin/ctags"))
+         (excludes "--exclude=cache --exclude='vendor*' --exclude=backups --exclude=node_modules"))
+     (format "%s -e --verbose=yes %s -f %sTAGS -R %s"
+	         path-to-ctags
+             excludes
+	         dir-name
+	         (directory-file-name dir-name)))))

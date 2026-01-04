@@ -31,6 +31,3 @@
   "Returns the stdout output of a shell command or nil if the command returned
    an error"
   (car (ignore-errors (apply 'process-lines (split-string cmd)))))
-
-(when window-system
-  (customize-set-variable 'tool-bar-mode nil))

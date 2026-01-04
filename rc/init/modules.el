@@ -4,18 +4,21 @@
 
 (defvar *my-modules*
   '(
+       "interface"
        ;; -- Emacs lisp utility functions, make sure this is loaded first!
        "elisp"
        "emacsclient"
 
        ;; -- Colors
+       "colours"
        "rainbow-mode"
+       "rainbow-delimiters"
        "theme"
 
        ;; -- Editing
        "locale"
        "avy"
-       "editing"
+       "text-editing"
        "editorconfig"
        ;; "fuzzy-format"
        "key-bindings"
@@ -25,39 +28,39 @@
        "expand-region"
        "regexp"
        "dired"
-       ;; "anything"
+       "anything"
        "elmacro"
        "macros"
+       "which-key"
 
        "hex"
        ;; "images"
-       ;; "audio"
        ;; "erc"
-       ;; "shell"
+       "shell"
        ;; "w3m"
 
        ;; -- Programming tools
        "company"
        ;; "diff"
+       "eldoc"
        "git"
        "magit"
-       ;; "tags"
+       "tags"
        "smart-tabs"
-       ;; "yasnippet"
+       "yasnippet"
        ;; "qt"
        "paredit"
        "paxedit"
        ;; "projectile"
-       ;; "flycheck
-       "flymake"
+       "flycheck"
+       ;; "flymake"
        ;; "flymake-d"
-       "lsp"
 
        ;; -- Markup
        ;; "org"
        "markdown"
-       ;; "wikipedia"
-       ;; "multi-web-mode"
+       "wikipedia"
+       "multi-web-mode"
        "polymode"
        "zencoding"
        "style"
@@ -65,30 +68,30 @@
        "web"
 
        ;; -- Ocaml
-       "opam-user-setup"
+       ;; "opam-user-setup"
        "ocaml"
 
        ;; -- Languages
        "common-lisp"
-       ;; "elm"
+       "elixir"
+       "elm"
        "fennel"
        ;; "scheme"
        "haskell"
+       "hy"
        "lua"
        ;; "lush"
        "nim"
        "python"
-       ;; "elpy"
        ;; "ropemacs"
        ;; "reasonml"
        "ruby"
-       ;; "rust"
+       "rust"
        ;; "rebol"
        "php"
-       ;; "eldoc-php"
        ;; "coffee"
        "js"
-       ;; "js2-refactor"
+       "js2-refactor"
        "svelte"
        "typescript"
        ;; "pure"
@@ -98,7 +101,7 @@
 
        ;; -- Misc
        ;; "extra-fun"
-       ;; "fortune"
+       "fortune"
        ))
 
 (dolist

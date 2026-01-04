@@ -1,8 +1,9 @@
 ;; ==============================================================================
-;; PHP mode
+;; Elixir
 ;; ------------------------------------------------------------------------------
 
-(use-package php-mode
-  :mode
-  "\\.inc\\'"
-  "\\.php\\'")
+(use-package elixir-mode
+  :mode "\\.ex\\'"
+  :config
+  (use-package alchemist)
+  (use-package elixir-yasnippets))

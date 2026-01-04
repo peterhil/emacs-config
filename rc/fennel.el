@@ -3,5 +3,4 @@
 ;; ------------------------------------------------------------------------------
 
 (use-package fennel-mode
-  :config
-  (add-to-list 'auto-mode-alist '("\\.fnl\\'" . fennel-mode)))
+  :mode "\\.fnl\\'")

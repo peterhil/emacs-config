@@ -13,20 +13,19 @@
 
 (use-package merlin
   :ensure t
+  :hook ((tuareg-mode . merlin-mode)
+         (merlin-mode . company-mode))
   :config
-  (add-hook 'tuareg-mode-hook #'merlin-mode)
-  (add-hook 'merlin-mode-hook #'company-mode)
-  ;; we're using flycheck instead
-  (setq merlin-error-after-save nil))
+  ;; Using flycheck instead
+  (setopt merlin-error-after-save nil))
 
 (use-package merlin-eldoc
   :ensure t
-  :hook ((tuareg-mode) . merlin-eldoc-setup))
+  :hook (tuareg-mode . merlin-eldoc-setup))
 
 ;; This uses Merlin internally
 (use-package flycheck-ocaml
   :ensure t
-  :config
-  (flycheck-ocaml-setup))
+  :config (flycheck-ocaml-setup))
 
 ;; (use-package ocp-indent)
