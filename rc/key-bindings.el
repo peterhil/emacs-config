@@ -8,14 +8,21 @@
   (setopt mac-command-modifier 'meta)
   (setopt mac-option-modifier nil)
   (setopt mac-right-command-modifier 'super)
-  (setopt mac-right-option-modifier nil))
+  (setopt mac-right-option-modifier 'alt))
 
 ;; My bindings
-(define-key global-map (kbd "C-'") 'comment-or-uncomment-region)
-(define-key global-map (kbd "C-M-'") 'uncomment-region)
+(keymap-set global-map "M-h" 'ns-do-hide-emacs)
+(keymap-set global-map "M-<" 'other-frame)
 
-(define-key global-map (kbd "s-<") 'next-window-any-frame)
-(define-key global-map (kbd "s->") 'previous-window-any-frame)
+(keymap-set global-map "C-<" 'beginning-of-buffer)
+(keymap-set global-map "C->" 'end-of-buffer)
+(keymap-set global-map "S-<home>" 'end-of-buffer)
+
+(keymap-set global-map "C-'" 'comment-or-uncomment-region)
+(keymap-set global-map "C-M-'" 'uncomment-region)
+
+(keymap-set global-map "s-<" 'next-window-any-frame)
+(keymap-set global-map "s->" 'previous-window-any-frame)
 
 (global-set-key [mouse-8] 'scroll-up-command)
 (global-set-key [mouse-9] 'scroll-down-command)
@@ -23,7 +30,7 @@
 (global-set-key [M-mouse-8] 'next-buffer)
 (global-set-key [M-mouse-9] 'previous-buffer)
 
-(define-key global-map (kbd "ESC M-r") 'my-reverse-text)
+(keymap-set global-map "ESC M-r" 'my-reverse-text)
 
 ;; Backspace
 ;; See http://www.emacswiki.org/emacs/BackspaceKey
